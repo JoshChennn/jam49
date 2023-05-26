@@ -1,1 +1,0 @@
-ds_map_secure_save(gamedata, "gamedata.penguin");
