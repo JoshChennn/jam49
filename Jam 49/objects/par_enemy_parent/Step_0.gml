@@ -1,13 +1,14 @@
 length = 48;
-var player_distance = length + 48;
+var player_distance = length + 16;
 
 potential_direction = point_direction(x, y, obj_player.x, obj_player.y);
 
 var obj = instance_position(x + lengthdir_x(length, potential_direction), y + lengthdir_y(length, potential_direction), par_enemy_parent);
 var player = instance_position(x + lengthdir_x(player_distance, potential_direction), y + lengthdir_y(player_distance, potential_direction), obj_player);
-var circle = collision_circle(x, y, radius, par_enemy_parent, true, true);
+var circle_other = collision_circle(x, y, radius, par_enemy_parent, true, true);
+var circle_player = collision_circle(x, y, radius * 2.5, obj_player, true, true);
 
-if (circle){
+if (circle_other) || (circle_player){
 	
 	if (collision_timer <= 0){
 		
@@ -23,6 +24,7 @@ if (circle){
 	or (player){
 
 		path_speed = 0;
+		alarm[0] = 1;
 
 	} else path_speed = movespeed;
 

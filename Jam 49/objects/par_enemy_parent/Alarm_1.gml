@@ -16,6 +16,6 @@ if (place_empty(xx, yy, par_enemy_parent) && place_empty(xx, yy, par_wall_basic)
 	mp_grid_path(global.grid, path, x, y, xx, yy, true);
 	path_start(path, movespeed * 1.5, path_action_stop, true);
 
-}
+} else alarm[1] = 1;
 
-collision_timer = 30;
+collision_timer = 15;
