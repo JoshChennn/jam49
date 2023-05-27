@@ -7,6 +7,7 @@
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
     {"name":"Controllers","order":2,"path":"folders/Objects/Controllers.yy",},
     {"name":"Enemies","order":4,"path":"folders/Objects/Enemies.yy",},
+    {"name":"Environment","order":5,"path":"folders/Objects/Environment.yy",},
     {"name":"Game","order":1,"path":"folders/Objects/Game.yy",},
     {"name":"GUI","order":3,"path":"folders/Objects/GUI.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
@@ -22,7 +23,6 @@
     {"name":"GUI","order":4,"path":"folders/Sprites/GUI.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Environment","order":5,"path":"folders/Objects/Environment.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
