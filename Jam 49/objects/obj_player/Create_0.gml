@@ -5,3 +5,4 @@ spdMax = 4;
 spd = 0;
 acc = 0.6;
 depth = -1;
+hlth = 100;
