@@ -23,25 +23,22 @@ moveX = lengthdir_x(spd,dir);
 moveY = lengthdir_y(spd,dir);
 
 //Horizontal collision
-if (place_meeting(x+moveX,y,obj_wall)) {
-	while(!place_meeting(x+sign(moveX),y,obj_wall)) {
+if (place_meeting_obstacle(x+moveX,y)) {
+	while(!place_meeting_obstacle(x+sign(moveX),y)) {
 		x += sign(moveX);
 	}
 	moveX = 0;
 }
+
 x += moveX;
 
 //Verticle collision
-if (place_meeting(x,y+moveY,obj_wall)) {
-	while(!place_meeting(x,y+sign(moveY),obj_wall)) {
+if (place_meeting_obstacle(x,y+moveY)) {
+	while(!place_meeting_obstacle(x,y+sign(moveY))) {
 		y += sign(moveY);
 	}
 	moveY = 0;
 }
 y += moveY;
 
-//Change wall depth based on player pos
-with (obj_wall) {
-	if (y > other.y) depth = -2;
-	else depth = 0;
-}
+depth = -y;
