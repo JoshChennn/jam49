@@ -1,2 +1,2 @@
-x = obj_player.x;
-y = obj_player.y;
+targetX = obj_player.x;
+targetY = obj_player.y;
