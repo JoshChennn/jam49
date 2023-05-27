@@ -1,12 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_player",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_portal","path":"objects/obj_portal/obj_portal.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
-  ],
+  "name": "obj_portal",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -30,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player",
-    "path": "sprites/spr_player/spr_player.yy",
+    "name": "spr_portal",
+    "path": "sprites/spr_portal/spr_portal.yy",
   },
   "spriteMaskId": null,
   "visible": true,

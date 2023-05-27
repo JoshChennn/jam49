@@ -45,3 +45,6 @@ with (obj_wall) {
 	if (y > other.y) depth = -2;
 	else depth = 0;
 }
+if (!place_meeting(x,y,obj_portal)) {
+	coll_portal = false;
+}
