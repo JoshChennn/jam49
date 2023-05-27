@@ -1,2 +1,2 @@
 image_alpha = 0;
-depth = -50;
+depth = -room_height;

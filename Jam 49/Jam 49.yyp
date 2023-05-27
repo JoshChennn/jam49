@@ -56,6 +56,7 @@
     {"id":{"name":"spr_shop","path":"sprites/spr_shop/spr_shop.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_fade","path":"objects/obj_fade/obj_fade.yy",},},
+    {"id":{"name":"collisions","path":"scripts/collisions/collisions.yy",},},
     {"id":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
     {"id":{"name":"obj_tutorialPopup","path":"objects/obj_tutorialPopup/obj_tutorialPopup.yy",},},
     {"id":{"name":"obj_blacksmith","path":"objects/obj_blacksmith/obj_blacksmith.yy",},},
