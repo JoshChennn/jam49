@@ -7,6 +7,7 @@
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
     {"name":"Controllers","order":2,"path":"folders/Objects/Controllers.yy",},
     {"name":"Enemies","order":4,"path":"folders/Objects/Enemies.yy",},
+    {"name":"Environment","order":5,"path":"folders/Objects/Environment.yy",},
     {"name":"Game","order":1,"path":"folders/Objects/Game.yy",},
     {"name":"GUI","order":3,"path":"folders/Objects/GUI.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
@@ -22,7 +23,6 @@
     {"name":"GUI","order":4,"path":"folders/Sprites/GUI.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Environment","order":5,"path":"folders/Objects/Environment.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
@@ -34,6 +34,7 @@
     {"name":"obj_portal","order":2,"path":"objects/obj_portal/obj_portal.yy",},
     {"name":"spr_shop","order":8,"path":"sprites/spr_shop/spr_shop.yy",},
     {"name":"obj_camera","order":4,"path":"objects/obj_camera/obj_camera.yy",},
+    {"name":"fnt_trade","order":1,"path":"fonts/fnt_trade/fnt_trade.yy",},
     {"name":"obj_fade","order":2,"path":"objects/obj_fade/obj_fade.yy",},
     {"name":"rm_intro","order":1,"path":"rooms/rm_intro/rm_intro.yy",},
     {"name":"obj_tutorialPopup","order":1,"path":"objects/obj_tutorialPopup/obj_tutorialPopup.yy",},
