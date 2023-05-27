@@ -1,1 +1,1 @@
-draw_sprite_ext(spr_fade,0,0,0,1,1,0,-1,image_alpha);
+draw_sprite_ext(spr_fade,0,obj_camera.x-960,obj_camera.y-540,1,1,0,-1,image_alpha);

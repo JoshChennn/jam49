@@ -31,6 +31,7 @@
     {"name":"obj_typewriter","order":1,"path":"objects/obj_typewriter/obj_typewriter.yy",},
     {"name":"obj_portal","order":2,"path":"objects/obj_portal/obj_portal.yy",},
     {"name":"spr_shop","order":8,"path":"sprites/spr_shop/spr_shop.yy",},
+    {"name":"obj_camera","order":4,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_fade","order":2,"path":"objects/obj_fade/obj_fade.yy",},
     {"name":"rm_intro","order":1,"path":"rooms/rm_intro/rm_intro.yy",},
     {"name":"obj_tutorialPopup","order":1,"path":"objects/obj_tutorialPopup/obj_tutorialPopup.yy",},
@@ -41,6 +42,7 @@
     {"name":"spr_enemy_03","order":2,"path":"sprites/spr_enemy_03/spr_enemy_03.yy",},
     {"name":"obj_enemy_02","order":2,"path":"objects/obj_enemy_02/obj_enemy_02.yy",},
     {"name":"spr_blacksmith","order":7,"path":"sprites/spr_blacksmith/spr_blacksmith.yy",},
+    {"name":"obj_campfire","order":6,"path":"objects/obj_campfire/obj_campfire.yy",},
     {"name":"spr_wall","order":1,"path":"sprites/spr_wall/spr_wall.yy",},
     {"name":"spr_fade","order":2,"path":"sprites/spr_fade/spr_fade.yy",},
     {"name":"spr_tutorialPopup","order":1,"path":"sprites/spr_tutorialPopup/spr_tutorialPopup.yy",},
@@ -48,6 +50,7 @@
     {"name":"obj_enemy_03","order":3,"path":"objects/obj_enemy_03/obj_enemy_03.yy",},
     {"name":"obj_shop","order":4,"path":"objects/obj_shop/obj_shop.yy",},
     {"name":"rm_mirrorWorld","order":2,"path":"rooms/rm_mirrorWorld/rm_mirrorWorld.yy",},
+    {"name":"spr_campfire","order":10,"path":"sprites/spr_campfire/spr_campfire.yy",},
     {"name":"spr_enemy_02","order":1,"path":"sprites/spr_enemy_02/spr_enemy_02.yy",},
   ],
 }

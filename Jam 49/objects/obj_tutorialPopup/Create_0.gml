@@ -1,4 +1,4 @@
-x = room_width/2;
-y = room_height/2;
+x = obj_camera.x;
+y = obj_camera.y;
 
 text = 0;
