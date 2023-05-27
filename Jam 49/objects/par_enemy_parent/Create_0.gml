@@ -4,6 +4,7 @@ else if (object_get_name(object_index) == "obj_enemy_03") movespeed = .5;
 
 cell_width = obj_motion_planning.cell_width;
 radius = 36;
+radius_player = radius * 2.5;
 
 path = path_add();
 
