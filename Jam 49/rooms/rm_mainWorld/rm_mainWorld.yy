@@ -20,6 +20,7 @@
     {"name":"inst_32C4178E","path":"rooms/rm_mainWorld/rm_mainWorld.yy",},
     {"name":"inst_6F9640C0","path":"rooms/rm_mainWorld/rm_mainWorld.yy",},
     {"name":"inst_631D1E75","path":"rooms/rm_mainWorld/rm_mainWorld.yy",},
+    {"name":"inst_631D1E75","path":"rooms/rm_mainWorld/rm_mainWorld.yy",},
   ],
   "isDnd": false,
   "layers": [
