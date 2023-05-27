@@ -1,0 +1,77 @@
+length = 48;
+var player_distance = length + 48;
+
+potential_direction = point_direction(x, y, obj_player.x, obj_player.y);
+
+var obj = instance_position(x + lengthdir_x(length, potential_direction), y + lengthdir_y(length, potential_direction), par_enemy_parent);
+var player = instance_position(x + lengthdir_x(player_distance, potential_direction), y + lengthdir_y(player_distance, potential_direction), obj_player);
+var circle = collision_circle(x, y, radius, par_enemy_parent, true, true);
+
+if (circle){
+	
+	if (collision_timer <= 0){
+		
+		if (irandom(1) == 0) alarm[1] = 1;
+		
+	}
+	
+} else {
+	
+	alarm[1] = -1;
+
+	if (obj) && (obj != id)
+	or (player){
+
+		path_speed = 0;
+
+	} else path_speed = movespeed;
+
+}
+
+if (collision_timer > 0) collision_timer--;
+
+
+
+
+/*
+
+length = 48;
+var player_distance = length + 48;
+
+potential_direction = point_direction(x, y, obj_player.x, obj_player.y);
+
+var obj = instance_position(x + lengthdir_x(length, potential_direction), y + lengthdir_y(length, potential_direction), par_enemy_parent);
+var player = instance_position(x + lengthdir_x(player_distance, potential_direction), y + lengthdir_y(player_distance, potential_direction), obj_player);
+var circle = collision_circle(x, y, radius, par_enemy_parent, true, true);
+
+if (circle){
+	
+	if (collision_timer <= 0){
+		
+		if (irandom(1) == 0) alarm[1] = 1;
+		
+	}
+	
+} else {
+	
+	alarm[1] = -1;
+
+	if (obj) && (obj != id)
+	or (player){
+
+		path_speed = 0;
+
+	} else path_speed = movespeed;
+
+}
+
+if (collision_timer > 0) collision_timer--;
+
+
+/*
+if (position_meeting(x + lengthdir_x(length, potential_direction), y + lengthdir_y(length, potential_direction), par_enemy_parent))
+or (position_meeting(x + lengthdir_x(length + 8, potential_direction), y + lengthdir_y(length + 8, potential_direction), obj_player)){
+
+	path_speed = 0;
+
+} else path_speed = movespeed;
