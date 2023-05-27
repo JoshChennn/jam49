@@ -28,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_enemy_03",
-    "path": "sprites/spr_enemy_03/spr_enemy_03.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

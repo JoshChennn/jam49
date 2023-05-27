@@ -39,7 +39,7 @@ if (circle_other) || (circle_player){
 
 if (collision_timer > 0) collision_timer--;
 
-
+if ((path_speed == 0) || (path_index = -1)) && (irandom(20) == 0) direction = point_direction(x, y, obj_player.x, obj_player.y);
 
 
 /*
