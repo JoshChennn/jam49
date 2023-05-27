@@ -34,6 +34,7 @@
     {"name":"obj_portal","order":2,"path":"objects/obj_portal/obj_portal.yy",},
     {"name":"spr_shop","order":8,"path":"sprites/spr_shop/spr_shop.yy",},
     {"name":"obj_camera","order":4,"path":"objects/obj_camera/obj_camera.yy",},
+    {"name":"fnt_trade","order":1,"path":"fonts/fnt_trade/fnt_trade.yy",},
     {"name":"obj_fade","order":2,"path":"objects/obj_fade/obj_fade.yy",},
     {"name":"rm_intro","order":1,"path":"rooms/rm_intro/rm_intro.yy",},
     {"name":"obj_tutorialPopup","order":1,"path":"objects/obj_tutorialPopup/obj_tutorialPopup.yy",},

@@ -55,6 +55,7 @@
     {"id":{"name":"obj_portal","path":"objects/obj_portal/obj_portal.yy",},},
     {"id":{"name":"spr_shop","path":"sprites/spr_shop/spr_shop.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
+    {"id":{"name":"fnt_trade","path":"fonts/fnt_trade/fnt_trade.yy",},},
     {"id":{"name":"obj_fade","path":"objects/obj_fade/obj_fade.yy",},},
     {"id":{"name":"collisions","path":"scripts/collisions/collisions.yy",},},
     {"id":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
