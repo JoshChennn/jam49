@@ -1,5 +1,5 @@
 if typing {
-	if count < string_length(text) { //Counting
+	if count < string_length(_text) { //Counting
 		time++;
 		if time >= spd {
 			count++;
@@ -7,15 +7,14 @@ if typing {
 		}
 	}
 	else { //Reached the end of the text
-		count = string_length(text);
+		count = string_length(_text);
 		typing = false;
 	}
 }
-//Skip typing
-if keyboard_check_pressed(key) {
-	count = string_length(text);
-}
+
 //Drawing
 draw_set_font(fnt_type);
-draw_set_color(c_white);
-draw_text(30,30,string_copy(text,1,count));
+draw_set_color(c_black);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_text(obj_camera.x,obj_camera.y,string_copy(_text,1,count));
