@@ -1,6 +1,6 @@
 draw_self();
 
-if (keyboard_check(ord("N"))){
+if (keyboard_check(ord("N")) and global.bow_level > 0){
 	
 	draw_sprite_ext(spr_bow,1,x+lengthdir_x(60,point_dir),y+lengthdir_y(60,point_dir),1,1,point_dir,-1,1);
 	draw_set_color(c_white);

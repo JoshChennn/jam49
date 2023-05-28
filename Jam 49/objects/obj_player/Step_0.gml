@@ -174,13 +174,14 @@ if swing {
 }
 
 point_dir = point_dir + (angle_difference(dir,point_dir) * 0.5);
+
+//If not pulling bow
 if (!keyboard_check(ord("N"))) {
 	if (arrow != 0 and _stretch > 10) {
 		arrow.speed = _stretch;
 		arrow = 0;
 	}
-	_stretch -= 15;
-	if (_stretch < 0) _stretch = 0;
+	_stretch = 0;
 }
 
 #region BLINK MODE

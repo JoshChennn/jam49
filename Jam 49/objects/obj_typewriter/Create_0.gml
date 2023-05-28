@@ -7,7 +7,5 @@ spd = 2;
 time = spd;
 //If typing is allowed
 typing = true;
-//Key to skip typing
-key = vk_space;
 
 depth = -room_height+1
