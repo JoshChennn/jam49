@@ -15,6 +15,3 @@ if (!file_exists("gamedata.penguin")){
 	global.player_exp = exp_value;
 
 }
-
-
-
