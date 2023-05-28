@@ -4,9 +4,23 @@ key_up = keyboard_check(ord("W")) or keyboard_check(vk_up);
 key_right = keyboard_check(ord("D")) or keyboard_check(vk_right);
 key_down = keyboard_check(ord("S")) or keyboard_check(vk_down);
 
+//sketchy direction determination
+if (key_up && key_right) direction = 45;
+else if (key_up && key_left) direction = 135;
+else if (key_down && key_right) direction = 315;
+else if (key_down && key_left) direction = 225;
+else if (key_left) direction = 180;
+else if (key_up) direction = 90;
+else if (key_right) direction = 0;
+else if (key_down) direction = 270;
+else if (key_up && key_right) direction = 45;
+else if (key_up && key_left) direction = 135;
+else if (key_down && key_right) direction = 315;
+else if (key_down && key_left) direction = 225;
+
 //Actual movement
-var hsp = key_right - key_left;
-var vsp = key_down - key_up;
+hsp = key_right - key_left;
+vsp = key_down - key_up;
 
 //If the player is pressing a key
 if (hsp != 0 or vsp != 0) {
@@ -54,7 +68,7 @@ if swing {
 		swing = false;
 	}
 }
-mouse_dir = point_direction(x,y,mouse_x,mouse_y);
+//mouse_dir = point_direction(x,y,mouse_x,mouse_y);
 if (!keyboard_check(ord("N"))) {
 	if (arrow != 0 and _stretch > 10) {
 		arrow.speed = _stretch;

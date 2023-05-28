@@ -10,6 +10,8 @@ mouse_dir = 0;
 sword_dir = 0;
 sword = 0;
 hearts = 3;
+hsp = 0;
+vsp = 0;
 //Create 3 hearts
 for (var i = 0; i < 3; i++) {
 	var a = instance_create_layer(x+(i-1)*30,y+50,"Instances",obj_heart);
