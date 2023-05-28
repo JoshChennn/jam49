@@ -15,4 +15,5 @@ for (var i = 0; i < 3; i++) {
 	var a = instance_create_layer(x+(i-1)*30,y+50,"Instances",obj_heart);
 	a._id = i;
 }
-stretch = 0;
+_stretch = 0;
+arrow = 0;

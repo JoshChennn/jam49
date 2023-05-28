@@ -56,6 +56,10 @@ if swing {
 }
 mouse_dir = point_direction(x,y,mouse_x,mouse_y);
 if (!keyboard_check(ord("N"))) {
-	stretch -= 4;
-	if (stretch < 0) stretch = 0;
+	if (arrow != 0 and _stretch > 10) {
+		arrow.speed = _stretch / 2;
+		arrow = 0;
+	}
+	_stretch -= 7;
+	if (_stretch < 0) _stretch = 0;
 }
