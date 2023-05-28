@@ -54,3 +54,8 @@ if swing {
 		swing = false;
 	}
 }
+mouse_dir = point_direction(x,y,mouse_x,mouse_y);
+if (!keyboard_check(ord("N"))) {
+	stretch -= 4;
+	if (stretch < 0) stretch = 0;
+}

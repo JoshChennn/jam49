@@ -65,6 +65,7 @@
     {"name":"spr_blacksmith","order":7,"path":"sprites/spr_blacksmith/spr_blacksmith.yy",},
     {"name":"spr_enemy_03_up_right","order":6,"path":"sprites/spr_enemy_03_up_right/spr_enemy_03_up_right.yy",},
     {"name":"obj_campfire","order":6,"path":"objects/obj_campfire/obj_campfire.yy",},
+    {"name":"spr_bow","order":13,"path":"sprites/spr_bow/spr_bow.yy",},
     {"name":"spr_enemy_01_up_left","order":6,"path":"sprites/spr_enemy_01_up_left/spr_enemy_01_up_left.yy",},
     {"name":"spr_enemy_02_down_left","order":1,"path":"sprites/spr_enemy_02_down_left/spr_enemy_02_down_left.yy",},
     {"name":"spr_enemy_01_left","order":3,"path":"sprites/spr_enemy_01_left/spr_enemy_01_left.yy",},

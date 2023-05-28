@@ -89,6 +89,7 @@
     {"id":{"name":"spr_enemy_03_up_right","path":"sprites/spr_enemy_03_up_right/spr_enemy_03_up_right.yy",},},
     {"id":{"name":"spr_enemy_01_down","path":"sprites/spr_enemy_01_down/spr_enemy_01_down.yy",},},
     {"id":{"name":"obj_campfire","path":"objects/obj_campfire/obj_campfire.yy",},},
+    {"id":{"name":"spr_bow","path":"sprites/spr_bow/spr_bow.yy",},},
     {"id":{"name":"spr_enemy_01_up_left","path":"sprites/spr_enemy_01_up_left/spr_enemy_01_up_left.yy",},},
     {"id":{"name":"spr_enemy_02_down_left","path":"sprites/spr_enemy_02_down_left/spr_enemy_02_down_left.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
