@@ -12,6 +12,18 @@ sword = 0;
 hearts = 3;
 hsp = 0;
 vsp = 0;
+
+dash_left = 0;
+dash_right = 0;
+dash_up = 0;
+dash_down = 0;
+dash_left_counter = 0;
+dash_right_counter = 0;
+dash_up_counter = 0;
+dash_down_counter = 0;
+hsp_dash = 0;
+vsp_dash = 0;
+
 //Create 3 hearts
 for (var i = 0; i < 3; i++) {
 	var a = instance_create_layer(x+(i-1)*30,y+50,"Instances",obj_heart);

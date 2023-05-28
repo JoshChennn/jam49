@@ -9,3 +9,7 @@ if (keyboard_check(ord("N"))){
 	if (instance_exists(obj_arrow)) draw_rectangle(x-5,y-30,x+5,y-40,false);
 
 }
+
+/*
+draw_text(x, y - 32, dash_left);
+draw_text(x, y - 48, hsp_dash);
