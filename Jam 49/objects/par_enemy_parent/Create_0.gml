@@ -42,6 +42,9 @@ if (object_get_name(object_index) == "obj_enemy_01"){
 cell_width = obj_motion_planning.cell_width;
 radius = 36;
 radius_player = radius * 2.5;
+state = 0;
+pre_attack_timer = 0;
+blink = 0;
 
 path = path_add();
 
