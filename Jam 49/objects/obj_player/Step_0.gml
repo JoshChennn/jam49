@@ -179,7 +179,7 @@ if (!keyboard_check(ord("N"))) {
 		arrow.speed = _stretch;
 		arrow = 0;
 	}
-	_stretch -= 7;
+	_stretch -= 15;
 	if (_stretch < 0) _stretch = 0;
 }
 
