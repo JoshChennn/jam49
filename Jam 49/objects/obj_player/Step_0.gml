@@ -173,7 +173,7 @@ if swing {
 	}
 }
 
-//[OBSOLETE] mouse_dir = point_direction(x,y,mouse_x,mouse_y);
+point_dir = lerp(point_dir,dir,0.5);
 if (!keyboard_check(ord("N"))) {
 	if (arrow != 0 and _stretch > 10) {
 		arrow.speed = _stretch;
