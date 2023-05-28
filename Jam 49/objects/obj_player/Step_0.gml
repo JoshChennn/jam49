@@ -42,3 +42,15 @@ if (place_meeting_obstacle(x,y+moveY)) {
 y += moveY;
 
 depth = -y;
+
+//If swinging sword
+if swing {
+	sword_dir += 15;
+	sword.x = x+lengthdir_x(60,sword_dir);
+	sword.y = y+lengthdir_y(60,sword_dir);
+	sword.direction = point_direction(x,y,sword.x,sword.y);
+	if (sword_dir >= swing_dir + 50) {
+		instance_destroy(sword);
+		swing = false;
+	}
+}

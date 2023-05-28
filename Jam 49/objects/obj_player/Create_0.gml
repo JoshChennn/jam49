@@ -6,3 +6,7 @@ spd = 0;
 acc = 0.6;
 depth = -1;
 hlth = 100;
+swing = false;
+swing_dir = 0;
+sword_dir = 0;
+sword = 0;
