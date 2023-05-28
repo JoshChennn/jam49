@@ -1,6 +1,34 @@
 length = 48;
 var player_distance = length + 16;
 
+#region NOOB MODE (TOOK DAMAGE)
+
+if (noob_mode > 0){
+
+	noob_mode--;
+	
+	pre_attack_timer++;
+		
+	if (pre_attack_timer mod 5 == 0) blink++;
+	if (blink > 1) blink = 0;
+		
+	if (blink) image_blend = c_red;
+	else image_blend = c_white;
+		
+	if (pre_attack_timer >= 40){
+			
+		noob_mode = 0;
+		pre_attack_timer = 0;
+		image_blend = c_white;
+		blink = 0;
+				
+	}
+
+
+}
+
+#endregion
+
 potential_direction = point_direction(x, y, obj_player.x, obj_player.y);
 
 var obj = instance_position(x + lengthdir_x(length, potential_direction), y + lengthdir_y(length, potential_direction), par_enemy_parent);
