@@ -4,6 +4,9 @@ key_up = keyboard_check(ord("W")) or keyboard_check(vk_up);
 key_right = keyboard_check(ord("D")) or keyboard_check(vk_right);
 key_down = keyboard_check(ord("S")) or keyboard_check(vk_down);
 
+//Lucas' area stuff
+#region //LUCAS' AREA: DIRECTION DETERMINATION
+
 //sketchy direction determination
 if (key_up && key_right) direction = 45;
 else if (key_up && key_left) direction = 135;
@@ -18,7 +21,10 @@ else if (key_up && key_left) direction = 135;
 else if (key_down && key_right) direction = 315;
 else if (key_down && key_left) direction = 225;
 
-#region //PERFORM DASH
+#endregion
+
+//Lucas' area stuff
+#region //LUCAS' AREA: PERFORM DASH
 
 //perform dash
 if (keyboard_check_pressed(vk_left)) || (keyboard_check_pressed(ord("A"))) dash_left++;
@@ -114,6 +120,7 @@ else if (vsp_dash < 0) vsp_dash++;
 #endregion
 
 
+
 //Actual movement
 hsp = key_right - key_left;
 vsp = key_down - key_up;
@@ -164,7 +171,8 @@ if swing {
 		swing = false;
 	}
 }
-//mouse_dir = point_direction(x,y,mouse_x,mouse_y);
+
+//[OBSOLETE] mouse_dir = point_direction(x,y,mouse_x,mouse_y);
 if (!keyboard_check(ord("N"))) {
 	if (arrow != 0 and _stretch > 10) {
 		arrow.speed = _stretch;
