@@ -24,6 +24,8 @@ dash_down_counter = 0;
 hsp_dash = 0;
 vsp_dash = 0;
 
+
+
 //Create 3 hearts
 for (var i = 0; i < 3; i++) {
 	var a = instance_create_layer(x+(i-1)*30,y+50,"Instances",obj_heart);

@@ -67,6 +67,7 @@
     {"name":"spr_portal","order":2,"path":"sprites/spr_portal/spr_portal.yy",},
     {"name":"obj_tutorial","order":2,"path":"objects/obj_tutorial/obj_tutorial.yy",},
     {"name":"obj_enemy_01","order":1,"path":"objects/obj_enemy_01/obj_enemy_01.yy",},
+    {"name":"tanh","order":1,"path":"scripts/tanh/tanh.yy",},
     {"name":"obj_enemy_02","order":2,"path":"objects/obj_enemy_02/obj_enemy_02.yy",},
     {"name":"spr_enemy_02_down_right","order":2,"path":"sprites/spr_enemy_02_down_right/spr_enemy_02_down_right.yy",},
     {"name":"Sprite44","order":16,"path":"sprites/Sprite44/Sprite44.yy",},

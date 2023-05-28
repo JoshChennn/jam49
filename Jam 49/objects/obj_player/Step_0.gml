@@ -136,8 +136,9 @@ else {
 	if (spd > 0) spd -= acc;
 }
 //Final movement
-moveX = lengthdir_x(spd + hsp_dash * sign(hsp_dash), dir)
-moveY = lengthdir_y(spd + vsp_dash * sign(vsp_dash), dir)
+
+moveX = lengthdir_x(spd + hsp_dash * sign(hsp_dash), dir);
+moveY = lengthdir_y(spd + vsp_dash * sign(vsp_dash), dir);
 
 //Horizontal collision
 if (place_meeting_obstacle(x+moveX,y)) {

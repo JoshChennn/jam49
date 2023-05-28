@@ -5,7 +5,7 @@ if (delay >= 3){
 	if (image_index < image_number - 1) image_index += .8;
 }
 
-var val = (power(euler, decrement) - power(euler, -decrement)) / (power(euler, decrement) + power(euler, -decrement));
+var val = tanh(decrement);
 
 if (image_alpha > 0) image_alpha = val * .2;
 else instance_destroy();

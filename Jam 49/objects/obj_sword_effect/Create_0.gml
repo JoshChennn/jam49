@@ -5,4 +5,3 @@ decrement = 4;
 delay = 0;
 self_destruct_timer = 0;
 
-euler = 2.71828;
