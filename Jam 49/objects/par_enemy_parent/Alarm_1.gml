@@ -1,4 +1,4 @@
-
+/// @description PATH COLLIDE WITH EACH OTHER
 	
 path_delete(path);
 path = path_add();

@@ -24,7 +24,9 @@ dash_down_counter = 0;
 hsp_dash = 0;
 vsp_dash = 0;
 
-
+blink_mode = false;
+blink_timer = 0;
+blink = 0;
 
 //Create 3 hearts
 for (var i = 0; i < 3; i++) {

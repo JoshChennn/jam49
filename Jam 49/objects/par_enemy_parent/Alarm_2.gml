@@ -1,3 +1,5 @@
+/// @description UPDATING SPRITES (DIRECTIONAL)
+
 switch (object_get_name(object_index)){
 
 	case "obj_enemy_01":

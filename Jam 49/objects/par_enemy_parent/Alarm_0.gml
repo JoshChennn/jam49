@@ -1,3 +1,5 @@
+/// @description PATH CHASE PLAYER
+
 path_delete(path);
 path = path_add();
 

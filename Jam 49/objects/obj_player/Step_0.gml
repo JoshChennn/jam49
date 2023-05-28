@@ -183,5 +183,29 @@ if (!keyboard_check(ord("N"))) {
 	if (_stretch < 0) _stretch = 0;
 }
 
+#region BLINK MODE
+
+	if (blink_mode){
+	
+			blink_timer++;
+		
+			if (blink_timer mod 10 == 0) blink++;
+			if (blink > 1) blink = 0;
+		
+			if (blink) image_blend = c_red;
+			else image_blend = c_white;
+		
+			if (blink_timer >= 40){
+			
+				blink_mode = 0;
+				blink_timer = 0;
+				image_blend = c_white;
+				blink = 0;
+				
+			}	
+	
+	}
+
+#endregion
 
 

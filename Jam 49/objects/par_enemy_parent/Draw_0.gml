@@ -1,5 +1,7 @@
 if (sprite_index != -1) draw_self();
 
+draw_text(x, y- 32, distance_to_object(obj_player));
+
 /*
 draw_line(x, y, x + lengthdir_x(length, potential_direction), y + lengthdir_y(length, potential_direction));
 
