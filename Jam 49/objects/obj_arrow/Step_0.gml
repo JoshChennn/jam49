@@ -1,6 +1,6 @@
 if (obj_player.arrow == id) {
-	x = obj_player.x + lengthdir_x(40-obj_player._stretch,obj_player.direction);
-	y = obj_player.y + lengthdir_y(40-obj_player._stretch,obj_player.direction);
+	x = obj_player.x + lengthdir_x(40-obj_player._stretch,obj_player.point_dir);
+	y = obj_player.y + lengthdir_y(40-obj_player._stretch,obj_player.point_dir);
 	image_angle = obj_player.direction;
 	direction = image_angle;
 }
