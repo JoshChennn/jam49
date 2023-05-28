@@ -1,6 +1,7 @@
 if (object_get_name(object_index) == "obj_enemy_01"){
 		 
 	movespeed = 1.5;
+	hlth = 20;
 	
 	sprite_left = spr_enemy_01_left;
 	sprite_right = spr_enemy_01_right;
@@ -14,6 +15,7 @@ if (object_get_name(object_index) == "obj_enemy_01"){
 } else if (object_get_name(object_index) == "obj_enemy_02"){ 
 	
 	movespeed = .85;
+	hlth = 40;
 	
 	sprite_left = spr_enemy_02_left;
 	sprite_right = spr_enemy_02_right;
@@ -27,6 +29,7 @@ if (object_get_name(object_index) == "obj_enemy_01"){
 } else if (object_get_name(object_index) == "obj_enemy_03"){
 	
 	movespeed = .5;
+	hlth = 60;
 	
 	sprite_left = spr_enemy_03_left;
 	sprite_right = spr_enemy_03_right;

@@ -3,3 +3,5 @@ target_y = obj_player.y;
 
 orientation = 0;
 alarm[0] = 4;
+
+deflect = false;

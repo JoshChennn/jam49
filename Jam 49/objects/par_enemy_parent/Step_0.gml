@@ -160,5 +160,11 @@ if (place_meeting(x, y, obj_player)) && (!obj_player.blink_mode){
 
 if ((path_speed == 0) || (path_index = -1)) && (irandom(20) == 0) direction = point_direction(x, y, obj_player.x, obj_player.y);
 
+//health stuff
+if (hlth <= 0){
 
+	instance_create_depth(x, y, depth, obj_smoke);	
+	instance_destroy();
+
+}
 
