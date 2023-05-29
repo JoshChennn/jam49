@@ -9,8 +9,9 @@ key_down = keyboard_check(ord("S")) or keyboard_check(vk_down);
 
 var closest_enemy = instance_nearest(x, y, par_combat_targets) 
 
-if (distance_to_object(closest_enemy) <= 80){
+if (distance_to_object(closest_enemy) <= 96){
 	
+	//auto aim at the closest enemy or fireball when not pushin a directional button
 	direction = (point_direction(x, y, closest_enemy.x, closest_enemy.y) div 45) * 45;
 	
 } else {
