@@ -1,5 +1,5 @@
 //how many enemy volume there can be
-enemy_max_capacity = 0;
+enemy_max_capacity = 50;
 capacity_used = 0;
 
 //how many of the capacity the enemy types use up

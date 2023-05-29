@@ -13,6 +13,8 @@ hearts = 3;
 hsp = 0;
 vsp = 0;
 
+sword_cool_down = 0;
+
 dash_left = 0;
 dash_right = 0;
 dash_up = 0;

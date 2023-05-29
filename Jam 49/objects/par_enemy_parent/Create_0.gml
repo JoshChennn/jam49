@@ -3,6 +3,7 @@ if (object_get_name(object_index) == "obj_enemy_01"){
 	movespeed = 1.5;
 	hlth = 20;
 	max_hlth = hlth;
+	damage = .5;
 	
 	sprite_left = spr_enemy_01_left;
 	sprite_right = spr_enemy_01_right;
@@ -18,6 +19,7 @@ if (object_get_name(object_index) == "obj_enemy_01"){
 	movespeed = .85;
 	hlth = 40;
 	max_hlth = hlth;
+	damage = .5;
 	
 	sprite_left = spr_enemy_02_left;
 	sprite_right = spr_enemy_02_right;
@@ -33,10 +35,13 @@ if (object_get_name(object_index) == "obj_enemy_01"){
 	movespeed = .5;
 	hlth = 60;
 	max_hlth = hlth;
+	damage = .5;
+	
 	foot_print_timer = 0;
 	foot_print_orientation = 0;
 	invisible_counter = 0;
 	invisible_state = 0;
+	invisible_time = 0;
 	state_switch = 0;
 	
 	sprite_left = spr_enemy_03_left;

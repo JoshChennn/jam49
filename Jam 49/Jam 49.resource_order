@@ -61,6 +61,7 @@
     {"name":"spr_enemy_01_up_right","order":7,"path":"sprites/spr_enemy_01_up_right/spr_enemy_01_up_right.yy",},
     {"name":"fnt_trade","order":1,"path":"fonts/fnt_trade/fnt_trade.yy",},
     {"name":"spr_enemy_01_right","order":4,"path":"sprites/spr_enemy_01_right/spr_enemy_01_right.yy",},
+    {"name":"pth_crazy","order":2,"path":"paths/pth_crazy/pth_crazy.yy",},
     {"name":"obj_fade","order":2,"path":"objects/obj_fade/obj_fade.yy",},
     {"name":"spr_enemy_02_up_left","order":6,"path":"sprites/spr_enemy_02_up_left/spr_enemy_02_up_left.yy",},
     {"name":"obj_sword","order":7,"path":"objects/obj_sword/obj_sword.yy",},

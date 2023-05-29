@@ -6,7 +6,7 @@ draw_set_alpha(floor(image_alpha));
 	draw_healthbar(x - dist, y - 48 - 8, x + dist, y - 32 - 8, hp, c_dkgray, c_maroon, c_green, 0, true, true);
 draw_set_alpha(1);
 
-
+/*
 if (object_get_name(object_index) == "obj_enemy_03"){
 
 	if (invisible_state == 2) draw_text(x, y, invisible_counter);

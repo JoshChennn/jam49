@@ -7,19 +7,26 @@ key_down = keyboard_check(ord("S")) or keyboard_check(vk_down);
 //Lucas' area stuff
 #region //LUCAS' AREA: DIRECTION DETERMINATION
 
-//sketchy direction determination
-if (key_up && key_right) direction = 45;
-else if (key_up && key_left) direction = 135;
-else if (key_down && key_right) direction = 315;
-else if (key_down && key_left) direction = 225;
-else if (key_left) direction = 180;
-else if (key_up) direction = 90;
-else if (key_right) direction = 0;
-else if (key_down) direction = 270;
-else if (key_up && key_right) direction = 45;
-else if (key_up && key_left) direction = 135;
-else if (key_down && key_right) direction = 315;
-else if (key_down && key_left) direction = 225;
+var closest_enemy = instance_nearest(x, y, par_enemy_parent);
+if (distance_to_object(closest_enemy) <= 32){
+	
+	direction = (point_direction(x, y, closest_enemy.x, closest_enemy.y) div 45) * 45;
+	
+} else {
+	//sketchy direction determination
+	if (key_up && key_right) direction = 45;
+	else if (key_up && key_left) direction = 135;
+	else if (key_down && key_right) direction = 315;
+	else if (key_down && key_left) direction = 225;
+	else if (key_left) direction = 180;
+	else if (key_up) direction = 90;
+	else if (key_right) direction = 0;
+	else if (key_down) direction = 270;
+	else if (key_up && key_right) direction = 45;
+	else if (key_up && key_left) direction = 135;
+	else if (key_down && key_right) direction = 315;
+	else if (key_down && key_left) direction = 225;
+}
 
 #endregion
 
@@ -28,9 +35,9 @@ else if (key_down && key_left) direction = 225;
 
 //perform dash
 if (keyboard_check_pressed(vk_left)) || (keyboard_check_pressed(ord("A"))) dash_left++;
-else if (keyboard_check_pressed(vk_right)) || (keyboard_check_pressed(ord("D"))) dash_right++;
-else if (keyboard_check_pressed(vk_up)) || (keyboard_check_pressed(ord("W"))) dash_up++;
-else if (keyboard_check_pressed(vk_down)) || (keyboard_check_pressed(ord("S"))) dash_down++;
+if (keyboard_check_pressed(vk_right)) || (keyboard_check_pressed(ord("D"))) dash_right++;
+if (keyboard_check_pressed(vk_up)) || (keyboard_check_pressed(ord("W"))) dash_up++;
+if (keyboard_check_pressed(vk_down)) || (keyboard_check_pressed(ord("S"))) dash_down++;
 
 var dash_speed = 24;
 var counter_max = 30;
@@ -111,6 +118,7 @@ if (dash_down > 1){
 	
 }
 
+//decrease dash timers
 if (hsp_dash > 0) hsp_dash--;
 else if (hsp_dash < 0) hsp_dash++;
 
@@ -173,6 +181,7 @@ if swing {
 	}
 }
 
+
 point_dir = point_dir + (angle_difference(dir,point_dir) * 0.5);
 
 //If not pulling bow
@@ -209,4 +218,8 @@ if (!keyboard_check(ord("N"))) {
 
 #endregion
 
+//death
+if (hearts <= 0) game_restart();
 
+//sword cooldown
+if (sword_cool_down > 0) sword_cool_down--;

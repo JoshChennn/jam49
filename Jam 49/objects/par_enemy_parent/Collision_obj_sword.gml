@@ -5,7 +5,9 @@ if (noob_mode <= 0){
 	alarm[0] = -1;
 	alarm[1] = -1;
 	path_end();
-	direction = obj_player.direction;
-	speed = 8;
+	
+	path_start(pth_crazy, 8, path_action_stop, false);
+	path_orientation = obj_player.direction;
+
 
 }

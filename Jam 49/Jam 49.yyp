@@ -83,6 +83,7 @@
     {"id":{"name":"spr_enemy_01_up_right","path":"sprites/spr_enemy_01_up_right/spr_enemy_01_up_right.yy",},},
     {"id":{"name":"fnt_trade","path":"fonts/fnt_trade/fnt_trade.yy",},},
     {"id":{"name":"spr_enemy_01_right","path":"sprites/spr_enemy_01_right/spr_enemy_01_right.yy",},},
+    {"id":{"name":"pth_crazy","path":"paths/pth_crazy/pth_crazy.yy",},},
     {"id":{"name":"obj_fade","path":"objects/obj_fade/obj_fade.yy",},},
     {"id":{"name":"spr_enemy_02_up_left","path":"sprites/spr_enemy_02_up_left/spr_enemy_02_up_left.yy",},},
     {"id":{"name":"obj_sword","path":"objects/obj_sword/obj_sword.yy",},},
