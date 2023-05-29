@@ -49,7 +49,6 @@
     {"id":{"name":"spr_enemy_02_up","path":"sprites/spr_enemy_02_up/spr_enemy_02_up.yy",},},
     {"id":{"name":"pth_curve_02","path":"paths/pth_curve_02/pth_curve_02.yy",},},
     {"id":{"name":"spr_enemy_02_left","path":"sprites/spr_enemy_02_left/spr_enemy_02_left.yy",},},
-    {"id":{"name":"obj_exitButton","path":"objects/obj_exitButton/obj_exitButton.yy",},},
     {"id":{"name":"spr_sword_effect","path":"sprites/spr_sword_effect/spr_sword_effect.yy",},},
     {"id":{"name":"LootLockerLeaderboards","path":"extensions/LootLockerLeaderboards/LootLockerLeaderboards.yy",},},
     {"id":{"name":"spr_trade","path":"sprites/spr_trade/spr_trade.yy",},},

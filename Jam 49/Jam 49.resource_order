@@ -31,7 +31,6 @@
     {"name":"spr_enemy_02_up","order":5,"path":"sprites/spr_enemy_02_up/spr_enemy_02_up.yy",},
     {"name":"pth_curve_02","order":1,"path":"paths/pth_curve_02/pth_curve_02.yy",},
     {"name":"spr_enemy_02_left","order":3,"path":"sprites/spr_enemy_02_left/spr_enemy_02_left.yy",},
-    {"name":"obj_exitButton","order":14,"path":"objects/obj_exitButton/obj_exitButton.yy",},
     {"name":"spr_sword_effect","order":15,"path":"sprites/spr_sword_effect/spr_sword_effect.yy",},
     {"name":"LootLockerLeaderboards","order":1,"path":"extensions/LootLockerLeaderboards/LootLockerLeaderboards.yy",},
     {"name":"spr_trade","order":16,"path":"sprites/spr_trade/spr_trade.yy",},
