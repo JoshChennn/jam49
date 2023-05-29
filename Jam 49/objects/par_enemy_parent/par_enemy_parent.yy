@@ -20,7 +20,10 @@
     "name": "Enemies",
     "path": "folders/Objects/Enemies.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "par_combat_targets",
+    "path": "objects/par_combat_targets/par_combat_targets.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

@@ -16,13 +16,13 @@ if (noob_mode > 0){
 	
 	pre_attack_timer++;
 		
-	if (pre_attack_timer mod 4 == 0) blink++;
+	if (pre_attack_timer mod 5 == 0) blink++;
 	if (blink > 1) blink = 0;
 		
 	if (blink) image_blend = c_red;
 	else image_blend = c_white;
 		
-	if (pre_attack_timer >= 24){
+	if (pre_attack_timer >= 80){
 			
 		noob_mode = 0;
 		pre_attack_timer = 0;
@@ -97,9 +97,9 @@ if (noob_mode > 0){
 				case "obj_enemy_02":
 			
 			
-					if (distance_to_object(obj_player) >= 256){
+					if (distance_to_object(obj_player) >= 256) && (instance_number(obj_fireball) <= 2){
 	
-						if (irandom(500) == 0) && (instance_number(obj_fireball) <= 4) state = 1;
+						if (irandom(500) == 0) state = 1;
 	
 					} else if (distance_to_object(obj_player) <= 64){
 	
@@ -140,7 +140,7 @@ if (noob_mode > 0){
 				if (pre_attack_timer mod 10 == 0) blink++;
 				if (blink > 1) blink = 0;
 		
-				if (blink) image_blend = c_red;
+				if (blink) image_blend = c_black;
 				else image_blend = c_white;
 		
 				if (pre_attack_timer >= 100){
