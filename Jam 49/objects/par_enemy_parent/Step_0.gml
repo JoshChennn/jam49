@@ -196,3 +196,76 @@ if (hlth <= 0){
 
 }
 
+// Enemy 3 footprint & invisible stuff
+if (object_get_name(object_index) == "obj_enemy_03"){
+
+	foot_print_timer++;
+	
+	//##### FADE STUFF #############
+	
+	var fade_amount = .02;
+	
+	if (distance_to_object(obj_player) > 256){
+	
+	#region STATE FAR AWAY
+		if (invisible_state != 2){
+		
+			if (!invisible_state){
+		
+				if (image_alpha < 1) image_alpha += fade_amount;
+				else invisible_state = 2;
+			
+			} else {
+		
+				if (image_alpha > 0) image_alpha -= fade_amount;
+				else invisible_state = 2;
+		
+			}
+		
+		} else {
+		
+			if (invisible_counter < 480){
+			
+				invisible_counter++;
+			
+			} else {
+		
+				invisible_counter = 0;
+				state_switch++;
+				if (state_switch > 1) state_switch = 0;
+				invisible_state = state_switch;
+		
+			}
+	
+	
+		}
+	#endregion
+	
+	} else {
+	
+	#region CLOSE TO PLAYER
+	
+		if (distance_to_object(obj_player) > 64){
+		
+			image_alpha = 0;
+		
+		} else image_alpha = 1;
+
+	#endregion
+	
+	}
+	
+	//##### FADE STUFF END ###########
+	
+	if (foot_print_timer mod 48 == 0){
+	
+		foot_print_orientation++;
+		if (foot_print_orientation > 1) foot_print_orientation = 0;
+		
+		var foot_print = instance_create_depth(x, y, depth + 1, obj_enemy_03_footprint);			
+		foot_print.image_index = foot_print_orientation;
+		foot_print.image_angle = direction;
+			
+	}
+
+}
