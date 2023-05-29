@@ -16,13 +16,13 @@ if (noob_mode > 0){
 	
 	pre_attack_timer++;
 		
-	if (pre_attack_timer mod 5 == 0) blink++;
+	if (pre_attack_timer mod 4 == 0) blink++;
 	if (blink > 1) blink = 0;
 		
 	if (blink) image_blend = c_red;
 	else image_blend = c_white;
 		
-	if (pre_attack_timer >= 40){
+	if (pre_attack_timer >= 24){
 			
 		noob_mode = 0;
 		pre_attack_timer = 0;
