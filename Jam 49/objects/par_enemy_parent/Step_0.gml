@@ -209,7 +209,7 @@ if (hlth <= 0){
 }
 
 #region FOOTPRINTS & INVISIBLE STUFF
-if (path_speed != 0){
+if (state == 0){
 	
 	// Enemy 3 footprint & invisible stuff
 	if (object_get_name(object_index) == "obj_enemy_03"){

@@ -1,6 +1,5 @@
 global.player_exp += 10;
-
-ds_map_replace(gamedata, "EXP", global.player_exp);
+global.player_gems += 10;
 
 //Update leaderboard
 if (instance_exists(obj_leaderboard)) {
