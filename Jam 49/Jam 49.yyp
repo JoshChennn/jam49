@@ -105,7 +105,6 @@
     {"id":{"name":"obj_enemy_02","path":"objects/obj_enemy_02/obj_enemy_02.yy",},},
     {"id":{"name":"spr_enemy_02_down_right","path":"sprites/spr_enemy_02_down_right/spr_enemy_02_down_right.yy",},},
     {"id":{"name":"spr_smoke","path":"sprites/spr_smoke/spr_smoke.yy",},},
-    {"id":{"name":"Sprite44","path":"sprites/Sprite44/Sprite44.yy",},},
     {"id":{"name":"spr_sword","path":"sprites/spr_sword/spr_sword.yy",},},
     {"id":{"name":"spr_blacksmith","path":"sprites/spr_blacksmith/spr_blacksmith.yy",},},
     {"id":{"name":"spr_enemy_03_up_right","path":"sprites/spr_enemy_03_up_right/spr_enemy_03_up_right.yy",},},
