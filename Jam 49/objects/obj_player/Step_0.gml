@@ -16,18 +16,8 @@ if (distance_to_object(closest_enemy) <= 96){
 	
 } else {
 	//sketchy direction determination
-	if (key_up && key_right) direction = 45;
-	else if (key_up && key_left) direction = 135;
-	else if (key_down && key_right) direction = 315;
-	else if (key_down && key_left) direction = 225;
-	else if (key_left) direction = 180;
-	else if (key_up) direction = 90;
-	else if (key_right) direction = 0;
-	else if (key_down) direction = 270;
-	else if (key_up && key_right) direction = 45;
-	else if (key_up && key_left) direction = 135;
-	else if (key_down && key_right) direction = 315;
-	else if (key_down && key_left) direction = 225;
+	
+	direction = point_direction(0,0,key_right-key_left,key_down-key_up);
 }
 
 #endregion
@@ -184,7 +174,7 @@ if swing {
 }
 
 
-point_dir = point_dir + (angle_difference(dir,point_dir) * 0.5);
+point_dir = point_dir + (angle_difference(direction,point_dir) * 0.5);
 
 //If not pulling bow
 if (!keyboard_check(ord("N"))) {
@@ -225,3 +215,10 @@ if (hearts <= 0) game_restart();
 
 //sword cooldown
 if (sword_cool_down > 0) sword_cool_down--;
+
+//Player image direction
+var new_image_index = direction/45 + 2;
+if (new_image_index >= 8) {
+	new_image_index -= 8;
+}
+image_index = new_image_index;
