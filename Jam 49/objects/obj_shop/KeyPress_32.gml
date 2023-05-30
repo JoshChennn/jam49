@@ -2,8 +2,10 @@ if (distance_to_object(obj_player) < 180 and popup == 0) {
 	//Popup
 	popup = instance_create_layer(0,0,"Instances",obj_tutorialPopup);
 	typer = instance_create_layer(0,0,"Instances",obj_typewriter);
-	typer._text = "Haha, we only sell POTATO PEELS!\nAHAHAHAHAAAAAAAAAAAAA\n*inhale*\nAAAAAHAHAHAHAHAHA\n   . . .   \nAlso, we have an aisle for hero stuff, come check it out if you wanna.";
-	
+	typer._text = "Hello, random person with a weapon, you!\nI am storeowner Steve Snecklestone, and PLEASE don't\npoint that thing at me!\nTake a look at what we've got:";
+	var time_left = instance_create_layer(0,0,"Instances",obj_timeLeft);
+	time_left.text_x = 350;
+	time_left.text_y = -300;
 }
 else if popup != 0 and !typer.typing {
 	instance_destroy(popup);
@@ -19,7 +21,12 @@ else if popup != 0 and typer.typing {
 		typing = false;
 	}
 	var new_buy_button = instance_create_layer(0,0,"Instances",obj_buy);
-	new_buy_button._id = 0;
-	new_buy_button = instance_create_layer(0,0,"Instances",obj_buy);
-	new_buy_button._id = 1;
+	switch (item) {
+		case "BOW":
+			new_buy_button._id = 0;
+			break;
+		case "EXTRA LIFE":
+			new_buy_button._id = 1;
+			break;
+	}
 }

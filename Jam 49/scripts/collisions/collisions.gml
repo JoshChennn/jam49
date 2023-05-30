@@ -10,13 +10,23 @@ function place_meeting_obstacle(_x,_y){
 		}
 	}
 }
-function find_price(_deal) {
+function find_upgrade_price(_deal) {
 	switch (_deal) {
 		case "SWORD":
 			return global.sword_level*3 + 1;
 			break;
 		case "BOW":
 			return global.bow_level*4 + 1;
+			break;
+	}
+}
+function find_store_price(_deal) {
+	switch (_deal) {
+		case "BOW":
+			return 15;
+			break;
+		case "EXTRA LIFE":
+			return 10;
 			break;
 	}
 }
