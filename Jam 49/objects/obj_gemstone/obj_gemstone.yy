@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_gemstone",
-    "path": "sprites/spr_gemstone/spr_gemstone.yy",
+    "name": "spr_gemstone_01",
+    "path": "sprites/spr_gemstone_01/spr_gemstone_01.yy",
   },
   "spriteMaskId": null,
   "visible": true,

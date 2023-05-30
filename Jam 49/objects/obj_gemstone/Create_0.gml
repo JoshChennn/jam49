@@ -14,8 +14,24 @@ factor = 1;
 
 flying = true;
 
-var amount = 255 / 60;
-var val = (irandom(255) div amount) * amount;
-image_blend = make_color_hsv(val, 255, 255);
 
-my_value = 5;
+my_type = irandom(2);
+
+switch(my_type){
+
+	case 0:
+		my_value = 1;
+		sprite_index = spr_gemstone_01;
+	break;
+	
+	case 1:
+		my_value = 5;
+		sprite_index = spr_gemstone_02;
+	break;
+	
+	case 2:
+		my_value = 10;
+		sprite_index = spr_gemstone_03;
+	break;
+
+}
