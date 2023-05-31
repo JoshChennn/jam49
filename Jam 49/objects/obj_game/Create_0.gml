@@ -19,5 +19,3 @@ if (!file_exists("gamedata.penguin")){
 	global.player_gems = gem_value;
 
 }
-
-
