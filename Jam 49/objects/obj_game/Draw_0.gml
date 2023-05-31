@@ -1,1 +1,0 @@
-if (surface_exists(global.surf)) draw_surface(global.surf, 0, 0);

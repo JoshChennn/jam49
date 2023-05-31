@@ -12,7 +12,7 @@ var closest_enemy = instance_nearest(x, y, par_combat_targets)
 if (distance_to_object(closest_enemy) <= 96){
 	
 	//auto aim at the closest enemy or fireball when not pushin a directional button
-	dest_direction = (point_direction(x, y, closest_enemy.x, closest_enemy.y) div 45) * 45;
+	direction = (point_direction(x, y, closest_enemy.x, closest_enemy.y) div 45) * 45;
 	
 } else {
 	//sketchy direction determination

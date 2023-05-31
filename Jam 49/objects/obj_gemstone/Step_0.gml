@@ -54,6 +54,5 @@ if (!flying){
 }
 
 if (place_meeting(x + spd * directi, y, par_wall_basic))
-or (place_meeting(x + spd * directi, y, obj_gemstone)) 
 	spd = 0;
 	

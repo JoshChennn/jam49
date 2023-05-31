@@ -1,2 +1,11 @@
+var amount = floor(irandom_range(1, max_hlth / choose(3, 4, 5)));
 
-mp_grid_clear_cell(global.grid, cell_width * (x div cell_width), cell_width * (y div cell_width));
+if (irandom(5) == 0){
+	
+	repeat(amount){
+
+		instance_create_depth(x + irandom_range(-64, 64), y - irandom_range(0, 48), depth - 1, obj_gemstone);
+
+	}
+	
+}
