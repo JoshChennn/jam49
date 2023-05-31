@@ -55,8 +55,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Jam 49",
-    "path": "Jam 49.yyp",
+    "name": "Game",
+    "path": "folders/Sprites/Game.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
