@@ -1,2 +1,2 @@
-x = obj_camera.x-150;
-y = obj_camera.y+100;
+x = obj_camera.x-100;
+y = obj_camera.y+150;

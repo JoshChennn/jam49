@@ -1,8 +1,8 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_trade",
-  "bbox_bottom": 132,
+  "name": "spr_buySword",
+  "bbox_bottom": 199,
   "bbox_left": 0,
   "bbox_right": 199,
   "bbox_top": 0,
@@ -13,26 +13,26 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aa622878-b89b-4350-b846-850ead664631",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a44d827b-a566-498f-b7c1-577a49371d3f",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 133,
+  "height": 200,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"11e0204d-6c5b-4bb1-a30e-9d459b69ad2f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"192fb57b-def6-4bd3-865c-ee3dee49bb14","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Game",
-    "path": "folders/Sprites/Game.yy",
+    "name": "GUI",
+    "path": "folders/Sprites/GUI.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_trade",
+    "name": "spr_buySword",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"aa622878-b89b-4350-b846-850ead664631","path":"sprites/spr_trade/spr_trade.yy",},},},"Disabled":false,"id":"6185af10-9c52-412c-aeef-9605043eed94","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a44d827b-a566-498f-b7c1-577a49371d3f","path":"sprites/spr_buySword/spr_buySword.yy",},},},"Disabled":false,"id":"1e820612-df93-410e-8fac-a6369998c6f0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

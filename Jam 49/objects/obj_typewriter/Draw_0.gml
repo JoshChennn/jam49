@@ -17,4 +17,4 @@ draw_set_font(fnt_trade);
 draw_set_color(c_black);
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
-draw_text(obj_camera.x,obj_camera.y-250,string_copy(_text,1,count));
+draw_text(obj_camera.x,obj_camera.y-280,string_copy(_text,1,count));
