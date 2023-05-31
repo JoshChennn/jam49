@@ -1,1 +1,0 @@
-if (file_exists("gamedata.penguin")) file_delete("gamedata.penguin");

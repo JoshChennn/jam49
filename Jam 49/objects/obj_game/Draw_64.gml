@@ -1,4 +1,14 @@
-draw_text(mouse_x + 64, mouse_y, "Player Experience Points: " + string(global.player_exp));
+
+
+
+
+
+
+
+
+
+//old debug stuff
+/*draw_text(mouse_x + 64, mouse_y, "Player Experience Points: " + string(global.player_exp));
 
 draw_set_color(c_lime);
 draw_set_halign(fa_center);

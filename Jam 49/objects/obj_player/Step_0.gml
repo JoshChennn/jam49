@@ -12,7 +12,7 @@ var closest_enemy = instance_nearest(x, y, par_combat_targets)
 if (distance_to_object(closest_enemy) <= 96){
 	
 	//auto aim at the closest enemy or fireball when not pushin a directional button
-	direction = (point_direction(x, y, closest_enemy.x, closest_enemy.y) div 45) * 45;
+	dest_direction = (point_direction(x, y, closest_enemy.x, closest_enemy.y) div 45) * 45;
 	
 } else {
 	//sketchy direction determination
@@ -28,10 +28,6 @@ if (distance_to_object(closest_enemy) <= 96){
 	else if (key_up) direction = 90;
 	else if (key_right) direction = 0;
 	else if (key_down) direction = 270;
-	else if (key_up && key_right) direction = 45;
-	else if (key_up && key_left) direction = 135;
-	else if (key_down && key_right) direction = 315;
-	else if (key_down && key_left) direction = 225;
 	
 }
 
@@ -47,7 +43,7 @@ if (keyboard_check_pressed(vk_up)) || (keyboard_check_pressed(ord("W"))) dash_up
 if (keyboard_check_pressed(vk_down)) || (keyboard_check_pressed(ord("S"))) dash_down++;
 
 var dash_speed = 24;
-var counter_max = 30;
+var counter_max = 10;
 
 //handle dash left
 if (dash_left > 1){

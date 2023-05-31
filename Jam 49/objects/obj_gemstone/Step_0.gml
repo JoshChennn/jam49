@@ -57,5 +57,3 @@ if (place_meeting(x + spd * directi, y, par_wall_basic))
 or (place_meeting(x + spd * directi, y, obj_gemstone)) 
 	spd = 0;
 	
-var other_gem = instance_place(x + spd * directi, y + 8, obj_gemstone);
-if (other_gem) other_gem.x += sprite_width * choose(-1, 1);
