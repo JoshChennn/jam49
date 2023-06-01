@@ -266,7 +266,7 @@ if (state == 0){
 	
 		#region CLOSE TO PLAYER
 	
-			if (distance_to_object(obj_player) > 64){
+			if (distance_to_object(obj_player) > 96){
 		
 				image_alpha = 0;
 		
