@@ -23,9 +23,9 @@
     {"name":"Enemy 02","order":2,"path":"folders/Sprites/Enemies/Enemy 02.yy",},
     {"name":"Enemy 03","order":3,"path":"folders/Sprites/Enemies/Enemy 03.yy",},
     {"name":"GUI","order":1,"path":"folders/Sprites/GUI.yy",},
+    {"name":"Player","order":3,"path":"folders/Sprites/Player.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Player","order":3,"path":"folders/Sprites/Player.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_buy","order":13,"path":"sprites/spr_buy/spr_buy.yy",},
