@@ -1,8 +1,9 @@
 if (distance_to_object(obj_player) < 180 and popup == 0) {
 	//Popup
 	popup = instance_create_layer(0,0,"Instances",obj_scroll);
+	popup.image_index = 2;
 	typer = instance_create_layer(0,0,"Instances",obj_typewriter);
-	typer._text = string(LLHighscoresTopFormatted("14517"));
+	typer._text = "";
 }
 else if popup != 0 and typer.typing = false {
 	instance_destroy(popup);
