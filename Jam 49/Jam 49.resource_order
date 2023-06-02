@@ -104,6 +104,7 @@
     {"name":"spr_enemy","order":20,"path":"sprites/spr_enemy/spr_enemy.yy",},
     {"name":"spr_enemy_03_up_right","order":6,"path":"sprites/spr_enemy_03_up_right/spr_enemy_03_up_right.yy",},
     {"name":"obj_smoke","order":8,"path":"objects/obj_smoke/obj_smoke.yy",},
+    {"name":"bgm_title","order":6,"path":"sounds/bgm_title/bgm_title.yy",},
     {"name":"obj_campfire","order":6,"path":"objects/obj_campfire/obj_campfire.yy",},
     {"name":"spr_gemstone_03","order":16,"path":"sprites/spr_gemstone_03/spr_gemstone_03.yy",},
     {"name":"spr_upLeft","order":6,"path":"sprites/spr_upLeft/spr_upLeft.yy",},

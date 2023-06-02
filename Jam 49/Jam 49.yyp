@@ -133,6 +133,7 @@
     {"id":{"name":"spr_enemy_03_up_right","path":"sprites/spr_enemy_03_up_right/spr_enemy_03_up_right.yy",},},
     {"id":{"name":"spr_enemy_01_down","path":"sprites/spr_enemy_01_down/spr_enemy_01_down.yy",},},
     {"id":{"name":"obj_smoke","path":"objects/obj_smoke/obj_smoke.yy",},},
+    {"id":{"name":"bgm_title","path":"sounds/bgm_title/bgm_title.yy",},},
     {"id":{"name":"obj_campfire","path":"objects/obj_campfire/obj_campfire.yy",},},
     {"id":{"name":"spr_gemstone_03","path":"sprites/spr_gemstone_03/spr_gemstone_03.yy",},},
     {"id":{"name":"spr_upLeft","path":"sprites/spr_upLeft/spr_upLeft.yy",},},
