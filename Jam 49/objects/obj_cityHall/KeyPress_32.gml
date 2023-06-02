@@ -1,6 +1,6 @@
 if (distance_to_object(obj_player) < 180 and popup == 0) {
 	//Popup
-	popup = instance_create_layer(0,0,"Instances",obj_tutorialPopup);
+	popup = instance_create_layer(0,0,"Instances",obj_scroll);
 	typer = instance_create_layer(0,0,"Instances",obj_typewriter);
 	typer._text = "More taxes?\ny/n?\nJust kidding, I'm doing it anyway";
 }

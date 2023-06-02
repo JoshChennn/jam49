@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_tutorialPopup",
+  "name": "obj_scroll",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":27,"eventType":9,"isDnD":false,},
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_tutorialPopup",
-    "path": "sprites/spr_tutorialPopup/spr_tutorialPopup.yy",
+    "name": "spr_scroll",
+    "path": "sprites/spr_scroll/spr_scroll.yy",
   },
   "spriteMaskId": null,
   "visible": true,

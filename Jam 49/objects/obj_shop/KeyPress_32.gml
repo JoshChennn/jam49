@@ -1,6 +1,6 @@
 if (distance_to_object(obj_player) < 180 and popup == 0) {
 	//Popup
-	popup = instance_create_layer(0,0,"Instances",obj_tutorialPopup);
+	popup = instance_create_layer(0,0,"Instances",obj_scroll);
 	typer = instance_create_layer(0,0,"Instances",obj_typewriter);
 	typer._text = "Hello, random person with a weapon, you!\nI am storeowner Steve Snecklestone, and PLEASE don't\npoint that thing at me!\nTake a look at what we've got:\n(Press SPACE to exit, and R to refresh the shop)";
 	var time_left = instance_create_layer(0,0,"Instances",obj_timeLeft);
