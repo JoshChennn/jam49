@@ -1,6 +1,7 @@
 if (distance_to_object(obj_player) < 180 and popup == 0) {
 	//Popup
 	popup = instance_create_layer(0,0,"Instances",obj_scroll);
+	popup.image_index = 1;
 	typer = instance_create_layer(0,0,"Instances",obj_typewriter);
 	typer._text = "Hallo, fellow heiumon!\nIt is I, VanBethoven, another hoomahn!\nI can upgrade anysing you vant, as long as it's not garlic, hehe.\nHear is vat I am offereeng:\n(Press SPACE to exit, and R to refresh deal)";
 	var time_left = instance_create_layer(0,0,"Instances",obj_timeLeft);
