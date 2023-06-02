@@ -131,6 +131,7 @@
     {"name":"spr_tree","order":18,"path":"sprites/spr_tree/spr_tree.yy",},
     {"name":"spr_downLeft","order":8,"path":"sprites/spr_downLeft/spr_downLeft.yy",},
     {"name":"obj_music","order":7,"path":"objects/obj_music/obj_music.yy",},
+    {"name":"spr_buySword","order":9,"path":"sprites/spr_buySword/spr_buySword.yy",},
     {"name":"obj_enemy_03","order":3,"path":"objects/obj_enemy_03/obj_enemy_03.yy",},
     {"name":"spr_enemy_01_down_left","order":1,"path":"sprites/spr_enemy_01_down_left/spr_enemy_01_down_left.yy",},
     {"name":"obj_gemstone","order":16,"path":"objects/obj_gemstone/obj_gemstone.yy",},

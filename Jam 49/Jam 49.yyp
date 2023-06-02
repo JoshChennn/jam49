@@ -165,6 +165,7 @@
     {"id":{"name":"obj_splash","path":"objects/obj_splash/obj_splash.yy",},},
     {"id":{"name":"spr_downLeft","path":"sprites/spr_downLeft/spr_downLeft.yy",},},
     {"id":{"name":"obj_music","path":"objects/obj_music/obj_music.yy",},},
+    {"id":{"name":"spr_buySword","path":"sprites/spr_buySword/spr_buySword.yy",},},
     {"id":{"name":"obj_enemy_03","path":"objects/obj_enemy_03/obj_enemy_03.yy",},},
     {"id":{"name":"spr_enemy_01_down_left","path":"sprites/spr_enemy_01_down_left/spr_enemy_01_down_left.yy",},},
     {"id":{"name":"obj_gemstone","path":"objects/obj_gemstone/obj_gemstone.yy",},},
