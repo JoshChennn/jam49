@@ -26,6 +26,8 @@
     {"name":"Player","order":3,"path":"folders/Sprites/Player.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"BGM","order":5,"path":"folders/Sounds/BGM.yy",},
+    {"name":"SFX","order":6,"path":"folders/Sounds/SFX.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_buy","order":13,"path":"sprites/spr_buy/spr_buy.yy",},
@@ -77,6 +79,7 @@
     {"name":"par_combat_targets","order":15,"path":"objects/par_combat_targets/par_combat_targets.yy",},
     {"name":"spr_enemy_02_up_left","order":6,"path":"sprites/spr_enemy_02_up_left/spr_enemy_02_up_left.yy",},
     {"name":"bgm_battle_04","order":3,"path":"sounds/bgm_battle_04/bgm_battle_04.yy",},
+    {"name":"bgm_village","order":5,"path":"sounds/bgm_village/bgm_village.yy",},
     {"name":"obj_sword","order":7,"path":"objects/obj_sword/obj_sword.yy",},
     {"name":"obj_sword_effect","order":12,"path":"objects/obj_sword_effect/obj_sword_effect.yy",},
     {"name":"obj_monster_test","order":18,"path":"objects/obj_monster_test/obj_monster_test.yy",},

@@ -15,9 +15,9 @@ if (forth) {
 
 }
 
-if (keyboard_check_pressed(vk_space)){
+if (keyboard_check_pressed(vk_anykey)){
 
-	//if (audio_is_playing(sfx_splash_screen)) audio_stop_sound(sfx_splash_screen);
+	if (audio_is_playing(sfx_splash_screen)) audio_stop_sound(sfx_splash_screen);
 	room_goto_next();
 
 }

@@ -9,7 +9,10 @@
     "name": "Game",
     "path": "folders/Objects/Game.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "par_wall_basic",
+    "path": "objects/par_wall_basic/par_wall_basic.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
