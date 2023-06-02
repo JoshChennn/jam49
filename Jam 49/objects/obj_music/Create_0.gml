@@ -2,7 +2,7 @@ if (room == rm_mainWorld){
 
 	if (!audio_is_playing(bgm_village)) audio_play_sound(bgm_village, 10, true);
 
-} else if (room == rm_mainWorld){
+} else if (room == rm_mirrorWorld){
 	
 	if (audio_is_playing(bgm_village)) audio_stop_sound(bgm_village);
 	

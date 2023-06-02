@@ -17,6 +17,8 @@
     {"name":"Sequences","order":11,"path":"folders/Sequences.yy",},
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
+    {"name":"BGM","order":5,"path":"folders/Sounds/BGM.yy",},
+    {"name":"SFX","order":6,"path":"folders/Sounds/SFX.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Enemies","order":2,"path":"folders/Sprites/Enemies.yy",},
     {"name":"Enemy 01","order":1,"path":"folders/Sprites/Enemies/Enemy 01.yy",},
@@ -26,8 +28,6 @@
     {"name":"Player","order":3,"path":"folders/Sprites/Player.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"BGM","order":5,"path":"folders/Sounds/BGM.yy",},
-    {"name":"SFX","order":6,"path":"folders/Sounds/SFX.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_buy","order":13,"path":"sprites/spr_buy/spr_buy.yy",},
