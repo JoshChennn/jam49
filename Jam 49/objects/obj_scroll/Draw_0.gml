@@ -32,9 +32,9 @@ if (image_index == 1) {
 		}
 		draw_set_halign(fa_left);
 		draw_text(x-231,y-7+i*37,string(i+2)+".");
-		draw_text(x-200,y-7+i*37,string(LLHighscoresTopNamesList()[i+2]));
+		draw_text(x-200,y-7+i*37,string(LLHighscoresTopNamesList()[i+1]));
 		draw_set_halign(fa_right);
-		draw_text(x+168,y-7+i*37,string(LLHighscoresTopScoreList()[i+2]));
+		draw_text(x+168,y-7+i*37,string(LLHighscoresTopScoreList()[i+1]));
 	}
 	
 	//VILLAGERS
