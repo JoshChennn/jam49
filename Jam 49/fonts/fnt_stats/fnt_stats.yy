@@ -111,7 +111,7 @@
     "9647": {"character":9647,"h":85,"offset":7,"shift":28,"w":14,"x":369,"y":350,},
   },
   "hinting": 0,
-  "includeTTF": false,
+  "includeTTF": true,
   "interpreter": 0,
   "italic": false,
   "kerningPairs": [
@@ -1618,5 +1618,5 @@
     "name": "Default",
     "path": "texturegroups/Default",
   },
-  "TTFName": "",
+  "TTFName": "${project_dir}/fonts/fnt_stats/Trattatello.ttf",
 }
