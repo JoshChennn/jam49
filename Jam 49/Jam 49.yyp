@@ -103,6 +103,7 @@
     {"id":{"name":"obj_gemIcon","path":"objects/obj_gemIcon/obj_gemIcon.yy",},},
     {"id":{"name":"obj_portal","path":"objects/obj_portal/obj_portal.yy",},},
     {"id":{"name":"spr_shop","path":"sprites/spr_shop/spr_shop.yy",},},
+    {"id":{"name":"obj_tower","path":"objects/obj_tower/obj_tower.yy",},},
     {"id":{"name":"obj_grass","path":"objects/obj_grass/obj_grass.yy",},},
     {"id":{"name":"obj_enemy_attack_normal","path":"objects/obj_enemy_attack_normal/obj_enemy_attack_normal.yy",},},
     {"id":{"name":"spr_volumeSlider","path":"sprites/spr_volumeSlider/spr_volumeSlider.yy",},},
