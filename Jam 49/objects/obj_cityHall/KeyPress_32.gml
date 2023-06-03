@@ -3,7 +3,7 @@ if (distance_to_object(obj_player) < 160 and popup == 0) {
 	popup = instance_create_layer(0,0,"Instances",obj_scroll);
 	popup.image_index = 3;
 	typer = instance_create_layer(0,0,"Instances",obj_typewriter);
-	typer._text = "More taxes?\ny/n?\nJust kidding, I'm doing it anyway";
+	typer._text = "More taxes?\nY/N\n.  .  .  \nJust kidding, \nI'm doing it anyway!";
 }
 else if popup != 0 and typer.typing = false {
 	instance_destroy(popup);

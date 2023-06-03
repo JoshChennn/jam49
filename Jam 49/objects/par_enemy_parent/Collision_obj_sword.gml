@@ -1,4 +1,4 @@
-if (noob_mode <= 0){
+if (noob_mode <= 0 and other.swinging){
 
 	noob_mode = 20;
 	hlth -= other.damage;

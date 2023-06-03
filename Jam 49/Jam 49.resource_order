@@ -132,6 +132,7 @@
     {"name":"spr_wall","order":1,"path":"sprites/spr_wall/spr_wall.yy",},
     {"name":"spr_downRight","order":2,"path":"sprites/spr_downRight/spr_downRight.yy",},
     {"name":"spr_fade","order":2,"path":"sprites/spr_fade/spr_fade.yy",},
+    {"name":"obj_treeLeaves","order":20,"path":"objects/obj_treeLeaves/obj_treeLeaves.yy",},
     {"name":"spr_upRight","order":4,"path":"sprites/spr_upRight/spr_upRight.yy",},
     {"name":"spr_scroll","order":1,"path":"sprites/spr_scroll/spr_scroll.yy",},
     {"name":"spr_tree","order":18,"path":"sprites/spr_tree/spr_tree.yy",},

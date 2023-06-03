@@ -1,6 +1,6 @@
 if !swinging {
 	swinging = true;
-	var _point = obj_player.direction/45;
+	var _point = floor(obj_player.direction/45);
 	switch (_point) {
 		case 0:
 			sword_dir = 100;
