@@ -1,23 +1,23 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "sfx_splash_screen",
+  "name": "sfx_running_hard",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
   "bitDepth": 1,
-  "bitRate": 128,
+  "bitRate": 320,
   "compression": 1,
   "conversionMode": 0,
-  "duration": 4.173917,
+  "duration": 1.33483,
   "parent": {
     "name": "SFX",
     "path": "folders/Sounds/SFX.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "sfx_splash_screen.ogg",
+  "soundFile": "sfx_running_hard.ogg",
   "type": 0,
   "volume": 1.0,
 }

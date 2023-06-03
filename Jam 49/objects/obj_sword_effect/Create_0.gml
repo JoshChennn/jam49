@@ -1,4 +1,4 @@
-image_alpha = .4;
+image_alpha = .2;
 image_speed = 0;
 image_index = 0;
 decrement = 4;

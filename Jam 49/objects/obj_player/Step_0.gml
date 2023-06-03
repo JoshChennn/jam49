@@ -1,7 +1,7 @@
 //If not at a building
 //if (obj_blacksmith.popup == 0 and obj_campfire.popup == 0 and obj_cityHall.popup == 0 and obj_shop.popup == 0) {
 	//Movement variables
-if (room = rm_mirrorWorld) {	
+if (room == rm_mirrorWorld) {	
 	key_left = keyboard_check(ord("A")) or keyboard_check(vk_left);
 	key_up = keyboard_check(ord("W")) or keyboard_check(vk_up);
 	key_right = keyboard_check(ord("D")) or keyboard_check(vk_right);
@@ -29,7 +29,7 @@ var closest_enemy = instance_nearest(x, y, par_combat_targets)
 if (distance_to_object(closest_enemy) <= 128){
 	
 	//auto aim at the closest enemy or fireball when not pushin a directional button
-	direction = (point_direction(x, y, closest_enemy.x, closest_enemy.y) div 45) * 45;
+	dir = (point_direction(x, y, closest_enemy.x, closest_enemy.y) div 45) * 45;
 	
 } else {
 	//sketchy direction determination
@@ -37,14 +37,14 @@ if (distance_to_object(closest_enemy) <= 128){
 	//direction = point_direction(0,0,key_right-key_left,key_down-key_up);
 	// ^ nahh that's not a good way to handle it cause if you dont press anything it's always gonna be 0 (facing right)
 		
-	if (key_up && key_right) direction = 45;
-	else if (key_up && key_left) direction = 135;
-	else if (key_down && key_right) direction = 315;
-	else if (key_down && key_left) direction = 225;
-	else if (key_left) direction = 180;
-	else if (key_up) direction = 90;
-	else if (key_right) direction = 0;
-	else if (key_down) direction = 270;
+	if (key_up && key_right) dir = 45;
+	else if (key_up && key_left) dir = 135;
+	else if (key_down && key_right) dir = 315;
+	else if (key_down && key_left) dir = 225;
+	else if (key_left) dir = 180;
+	else if (key_up) dir = 90;
+	else if (key_right) dir = 0;
+	else if (key_down) dir = 270;
 	
 }
 
@@ -189,7 +189,7 @@ y += moveY;
 
 depth = -y-75;
 
-point_dir = point_dir + (angle_difference(direction,point_dir) * 0.5);
+point_dir = point_dir + (angle_difference(dir,point_dir) * 0.5);
 
 //If not pulling bow
 if (!keyboard_check(ord("N"))) {
@@ -269,4 +269,17 @@ if (moveX != 0 or moveY != 0) { //If running
 else { //Still
 	sprite_index = spr_playerStill;
 	image_index = dir/45;
+}
+
+//running sound
+if (hsp != 0) || (vsp != 0){
+	if (room == rm_mirrorWorld){
+		
+		if (!audio_is_playing(sfx_running_hard)) audio_play_sound(sfx_running_hard, 10, false);
+		
+	}
+} else {
+
+	audio_stop_sound(sfx_running_hard);
+
 }

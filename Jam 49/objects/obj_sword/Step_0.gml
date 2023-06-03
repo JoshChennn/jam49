@@ -7,6 +7,12 @@ if swinging {
 	if (angle_difference(sword_dir,point)*sign(sword_speed) < 0) {
 		swinging = false;
 	}
+	
+	if (irandom(5) == 0){
+		var effect = instance_create_depth(x, y, depth + 1, obj_sword_effect);
+		effect.image_angle = sword_dir;
+	}
+	
 }
 else {
 	x = obj_player.x+40;

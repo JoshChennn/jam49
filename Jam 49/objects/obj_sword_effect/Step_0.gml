@@ -10,9 +10,8 @@ var val = tanh(decrement);
 if (image_alpha > 0) image_alpha = val * .2;
 else instance_destroy();
 
-x = obj_player.x + lengthdir_x(48, obj_player.direction);
-y = obj_player.y + lengthdir_y(48, obj_player.direction);;
-image_angle = obj_player.direction;
+x = obj_player.x + lengthdir_x(48, obj_player.dir);
+y = obj_player.y + lengthdir_y(48, obj_player.dir);;
 
 if (!instance_exists(obj_sword)){
 
@@ -21,3 +20,5 @@ if (!instance_exists(obj_sword)){
 
 
 }
+
+depth = obj_sword.depth + 1;
