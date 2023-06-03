@@ -35,3 +35,4 @@ switch(my_type){
 	break;
 
 }
+depth = -y-10
