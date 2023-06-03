@@ -1,1 +1,2 @@
-val+= .02;
+time += .05;
+counter++;

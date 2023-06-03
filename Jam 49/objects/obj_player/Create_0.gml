@@ -15,6 +15,7 @@ sound_death_played = false;
 
 gain_running_sound = 0;
 running_sound = 0;
+focus_potion_timer = 0;
 
 dash_left = 0;
 dash_right = 0;
