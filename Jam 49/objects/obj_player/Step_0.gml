@@ -172,19 +172,6 @@ y += moveY;
 
 depth = -y-75;
 
-//If swinging sword
-if swing {
-	sword_dir += 15;
-	sword.x = x+lengthdir_x(60,sword_dir);
-	sword.y = y+lengthdir_y(60,sword_dir);
-	sword.direction = point_direction(x,y,sword.x,sword.y);
-	if (sword_dir >= swing_dir + 50) {
-		instance_destroy(sword);
-		swing = false;
-	}
-}
-
-
 point_dir = point_dir + (angle_difference(direction,point_dir) * 0.5);
 
 //If not pulling bow
@@ -224,9 +211,6 @@ if (!keyboard_check(ord("N"))) {
 //death
 if (hearts <= 0) game_restart();
 
-//sword cooldown
-if (sword_cool_down > 0) sword_cool_down--;
-
 //Player image direction
 if (moveX != 0 or moveY != 0) { //If running
 	run_delay--;
@@ -237,7 +221,7 @@ if (moveX != 0 or moveY != 0) { //If running
 		}
 		run_delay = 10;
 	}
-	switch (direction) {
+	switch (dir) {
 		case 0:
 			sprite_index = spr_right;
 			break
@@ -267,5 +251,5 @@ if (moveX != 0 or moveY != 0) { //If running
 }
 else { //Still
 	sprite_index = spr_playerStill;
-	image_index = direction/45;
+	image_index = dir/45;
 }

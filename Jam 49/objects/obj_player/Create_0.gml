@@ -12,6 +12,7 @@ sword = 0;
 hearts = 3;
 hsp = 0;
 vsp = 0;
+instance_create_layer(0,0,"Instances",obj_sword);
 
 sword_cool_down = 0;
 
