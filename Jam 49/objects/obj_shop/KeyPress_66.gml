@@ -1,6 +1,6 @@
-if (distance_to_object(obj_player) < 180 and popup != 0 and !typer.typing) {
+if (distance_to_object(obj_player) < 180 and popup != 0) {
 	if (global.bow_level > 0) {
-		item = "LIVES";
+		item = "EXTRA LIFE";
 	}
 	else {
 		item = choose("BOW","EXTRA LIFE");
