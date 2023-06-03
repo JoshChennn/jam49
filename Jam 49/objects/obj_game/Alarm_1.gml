@@ -1,0 +1,1 @@
+instance_create_depth(obj_camera.x,obj_camera.y,-4999,obj_username);

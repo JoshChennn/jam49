@@ -1,4 +1,4 @@
-draw_self()
+draw_self();
 draw_set_font(fnt_stats);
 draw_set_color($1d1d1d);
 draw_set_valign(fa_middle);

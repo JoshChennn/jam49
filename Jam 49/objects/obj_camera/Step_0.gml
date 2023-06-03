@@ -28,4 +28,10 @@ x += (targetX - x) * 0.04;
 y += (targetY - y) * 0.04;
 camera_set_view_pos(view_camera[0],x-960,y-540);
 
-if fad >= 1 game_end();
+if (fad >= 1) {
+	ds_map_replace(obj_game.gamedata, "EXP", global.player_exp);
+	ds_map_replace(obj_game.gamedata, "gems", global.player_gems);
+
+	ds_map_secure_save(obj_game.gamedata, "gamedata.penguin");
+	game_end();
+}
