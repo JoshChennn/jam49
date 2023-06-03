@@ -11,5 +11,5 @@ if (distance_to_object(obj_player) < 160 and popup != 0 and !typer.typing) {
 	instance_destroy(typer);
 	if (instance_exists(obj_tradeButton))instance_destroy(obj_tradeButton);
 	typer = instance_create_layer(0,0,"Instances",obj_typewriter);
-	typer._text = "I cee you vould like somzing else! Vell, here is vat I shall offer now:\n(Press SPACE to exit, and R to refresh deal)";
+	typer._text = "No? Ok, no problemo!\nStephano very patient!\nHere is what I will offer now:";
 }
