@@ -9,10 +9,12 @@ if (noob_mode <= 0 and other.speed != 0){
 	path_start(pth_crazy, 8, path_action_stop, false);
 	path_orientation = obj_player.dir;
 	
+	var location = (distance_to_object(obj_player) * .2) * -sign(x - obj_player.x);
+	
 	if (!audio_is_playing(sfx_enemy_hit_arrow_01)) 
 	&& (!audio_is_playing(sfx_enemy_hit_arrow_02))
 	&& (!audio_is_playing(sfx_enemy_hit_arrow_03)) 
-		audio_play_sound(choose(sfx_enemy_hit_arrow_01, sfx_enemy_hit_arrow_02, sfx_enemy_hit_arrow_03), 10, false);
+		audio_play_sound_at(choose(sfx_enemy_hit_arrow_01, sfx_enemy_hit_arrow_02, sfx_enemy_hit_arrow_03), location, y, 0, 100, 300, 1, false, 10);
 
 	instance_destroy(other);
 }
