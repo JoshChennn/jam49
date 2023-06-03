@@ -170,7 +170,7 @@ if (place_meeting_obstacle(x,y+moveY)) {
 }
 y += moveY;
 
-depth = -y;
+depth = -y-75;
 
 //If swinging sword
 if swing {
@@ -228,8 +228,44 @@ if (hearts <= 0) game_restart();
 if (sword_cool_down > 0) sword_cool_down--;
 
 //Player image direction
-var new_image_index = direction/45 + 2;
-if (new_image_index >= 8) {
-	new_image_index -= 8;
+if (moveX != 0 or moveY != 0) { //If running
+	run_delay--;
+	if (run_delay == 0) {
+		run_index++;
+		if (run_index == 4) {
+			run_index = 0;
+		}
+		run_delay = 10;
+	}
+	switch (direction) {
+		case 0:
+			sprite_index = spr_right;
+			break
+		case 45:
+			sprite_index = spr_upRight;
+			break;
+		case 90:
+			sprite_index = spr_up;
+			break;
+		case 135:
+			sprite_index = spr_upLeft;
+			break;
+		case 180:
+			sprite_index = spr_left;
+			break;
+		case 225:
+			sprite_index = spr_downLeft;
+			break
+		case 270:
+			sprite_index = spr_down;
+			break;
+		case 315:
+			sprite_index = spr_downRight;
+			break;
+	}
+	image_index = run_index;
 }
-image_index = new_image_index;
+else { //Still
+	sprite_index = spr_playerStill;
+	image_index = direction/45;
+}
