@@ -1,12 +1,10 @@
-/*//spawn those little fiends
+//spawn those little fiends
 
 var type_index
-<<<<<<< Updated upstream
-=======
+
 enemy_types[0] = obj_enemy_01;
 //enemy_types[1] = obj_enemy_02;
 //enemy_types[2] = obj_enemy_03;
->>>>>>> Stashed changes
 
 if (capacity_used < enemy_max_capacity){
 	
