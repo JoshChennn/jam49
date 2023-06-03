@@ -1,4 +1,3 @@
-
 //If swinging sword
 if swinging {
 	image_angle = sword_dir;

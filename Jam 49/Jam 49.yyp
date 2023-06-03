@@ -162,6 +162,7 @@
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"spr_downRight","path":"sprites/spr_downRight/spr_downRight.yy",},},
     {"id":{"name":"spr_fade","path":"sprites/spr_fade/spr_fade.yy",},},
+    {"id":{"name":"obj_treeLeaves","path":"objects/obj_treeLeaves/obj_treeLeaves.yy",},},
     {"id":{"name":"spr_upRight","path":"sprites/spr_upRight/spr_upRight.yy",},},
     {"id":{"name":"par_enemy_parent","path":"objects/par_enemy_parent/par_enemy_parent.yy",},},
     {"id":{"name":"spr_scroll","path":"sprites/spr_scroll/spr_scroll.yy",},},
