@@ -9,6 +9,7 @@ if (irandom(5) == 0){
 	}
 	
 }
+<<<<<<< Updated upstream
 switch (object_get_name(object_index)) {
 	case "obj_enemy_01":
 		with (obj_spawner) {
@@ -34,3 +35,7 @@ global.player_exp += 10;
 if (instance_exists(obj_leaderboard)) {
 	LootLockerSubmitScore("14517",string(global.player_exp));
 }
+=======
+
+if (irandom(50) == 0) && (!instance_exists(obj_focus_potion)) instance_create_depth(x + irandom_range(-64, 64), y - irandom_range(0, 48), depth - 1, obj_focus_potion);
+>>>>>>> Stashed changes
