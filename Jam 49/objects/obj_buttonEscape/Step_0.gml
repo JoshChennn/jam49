@@ -9,5 +9,5 @@ if (!instance_exists(obj_scroll)) {
 	exit;
 }
 
-x = obj_scroll.x - 180;
-y = obj_scroll.y + 145;
+x = obj_scroll.x - 115;
+y = obj_scroll.y + 163;

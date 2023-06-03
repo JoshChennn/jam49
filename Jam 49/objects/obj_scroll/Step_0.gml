@@ -7,5 +7,5 @@ if (!instance_exists(obj_buttonV) and (image_index == 0 or image_index == 2)) {
 }
 else if (!instance_exists(obj_buttonEscape) and (image_index == 3 or image_index == 4)) {
 	instance_create_depth(x-178, y+79, depth-1, obj_buttonF1);
-	instance_create_depth(x-116, y+122, depth-1, obj_buttonEscape);
+	instance_create_depth(x-115, y+163, depth-1, obj_buttonEscape);
 }
