@@ -5,7 +5,7 @@ if (distance_to_object(obj_player) < 180 and popup != 0 and !typer.typing) {
 	else {
 		item = choose("BOW","EXTRA LIFE");
 	}
-	global.player_exp -= 50;
+	global.player_exp -= 5;
 	var float = instance_create_layer(obj_camera.x,obj_camera.y,"Instances",obj_floatText);
-	float._text = "-50 EXP";
+	float._text = "-5 EXP";
 }

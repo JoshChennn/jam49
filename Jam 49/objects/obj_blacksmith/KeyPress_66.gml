@@ -5,9 +5,9 @@ if (distance_to_object(obj_player) < 160 and popup != 0 and !typer.typing) {
 	else {
 		deal = choose("SWORD","BOW");
 	}
-	global.player_exp -= 50;
+	global.player_exp -= 5;
 	var float = instance_create_layer(obj_camera.x,obj_camera.y,"Instances",obj_floatText);
-	float._text = "-50 EXP";
+	float._text = "-5 EXP";
 	instance_destroy(typer);
 	if (instance_exists(obj_tradeButton))instance_destroy(obj_tradeButton);
 	typer = instance_create_layer(0,0,"Instances",obj_typewriter);
