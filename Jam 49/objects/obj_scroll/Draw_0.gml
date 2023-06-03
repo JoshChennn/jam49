@@ -17,10 +17,10 @@ if (image_index == 1) {
 		draw_set_color(c_black);
 	}
 	draw_set_halign(fa_left);
-	draw_text(x-231,y-106,"1.");
-	draw_text(x-200,y-106,string(LLHighscoresTopNamesList()[0]));
+	draw_text(x-231,y-132,"1.");
+	draw_text(x-200,y-132,string(LLHighscoresTopNamesList()[0]));
 	draw_set_halign(fa_right);
-	draw_text(x+168,y-106,string(LLHighscoresTopScoreList()[0]));
+	draw_text(x+168,y-132,string(LLHighscoresTopScoreList()[0]));
 	
 	//NOBLES
 	for (var i = 0; i < 3; i++) {
@@ -31,10 +31,10 @@ if (image_index == 1) {
 			draw_set_color(c_black);
 		}
 		draw_set_halign(fa_left);
-		draw_text(x-231,y+3+i*37,string(i+2)+".");
-		draw_text(x-200,y+3+i*37,string(LLHighscoresTopNamesList()[i+1]));
+		draw_text(x-231,y-33+i*37,string(i+2)+".");
+		draw_text(x-200,y-33+i*37,string(LLHighscoresTopNamesList()[i+1]));
 		draw_set_halign(fa_right);
-		draw_text(x+168,y-7+i*37,string(LLHighscoresTopScoreList()[i+1]));
+		draw_text(x+168,y-33+i*37,string(LLHighscoresTopScoreList()[i+1]));
 	}
 	
 	//VILLAGERS
@@ -42,10 +42,10 @@ if (image_index == 1) {
 		for (var i = 5; i < 8; i++) {
 			draw_set_color(c_black);
 			draw_set_halign(fa_left);
-			draw_text(x-231,y-17+i*37,string(i)+".");
-			draw_text(x-200,y-17+i*37,string(LLHighscoresTopNamesList()[i]));
+			draw_text(x-231,y-43+i*37,string(i)+".");
+			draw_text(x-200,y-43+i*37,string(LLHighscoresTopNamesList()[i]));
 			draw_set_halign(fa_right);
-			draw_text(x+168,y-7+i*37,string(LLHighscoresTopScoreList()[i]));
+			draw_text(x+168,y-43+i*37,string(LLHighscoresTopScoreList()[i]));
 		}
 	}
 	else {
