@@ -1,3 +1,15 @@
+draw_set_alpha(.3);
+draw_set_color(c_black);
+
+if (sprite_index == spr_downLeft or sprite_index == spr_down or image_index == 5 or image_index == 6) {
+	draw_ellipse(x-30,y+30,x+40,y+90,false);
+}
+else {
+	draw_ellipse(x-35,y+30,x+35,y+90,false);
+}
+draw_set_alpha(1);
+draw_set_color(c_white);
+
 draw_self();
 
 if (keyboard_check(ord("N")) and global.bow_level > 0){

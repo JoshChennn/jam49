@@ -12,10 +12,11 @@ if (hearts <= 0){
 	
 	if (room == rm_mirrorWorld){
 		
-		with(all){
-	
-			direction = (irandom(360) div 45) * 45;
-			speed = irandom_range(8, 16);
+		with(par_enemy_parent){
+
+			image_alpha = 0;
+			x = -100;
+			y = -100;
 	
 		}
 	
@@ -61,8 +62,9 @@ if (hearts <= 0){
 
 	var closest_enemy = instance_nearest(x, y, par_combat_targets) 
 
-	if (distance_to_object(closest_enemy) <= 128) && (!keyboard_check(ord("N"))){
+	if (focus_potion_timer > 0) && (distance_to_object(closest_enemy) <= 128) && (vsp_dash == 0) && (hsp_dash == 0) && (!keyboard_check(ord("N"))){
 	
+		if (irandom(10) == 0) effect_create_above(ef_spark, x + irandom_range(-64, 64), y - irandom_range(32, 64), 0, c_aqua);
 		//auto aim at the closest enemy or fireball when not pushin a directional button
 		dir = (point_direction(x, y, closest_enemy.x, closest_enemy.y) div 45) * 45;
 	
@@ -95,7 +97,7 @@ if (hearts <= 0){
 	if (keyboard_check_pressed(vk_down)) || (keyboard_check_pressed(ord("S"))) dash_down++;
 
 	var dash_speed = 24;
-	var counter_max = 10;
+	var counter_max = 15;
 
 	//handle dash left
 	if (dash_left > 1){

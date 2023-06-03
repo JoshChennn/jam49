@@ -3,7 +3,7 @@ if (distance_to_object(obj_player) < 160 and popup == 0) {
 	popup = instance_create_layer(0,0,"Instances",obj_scroll);
 	popup.image_index = 0;
 	typer = instance_create_layer(0,0,"Instances",obj_typewriter);
-	typer._text = "Blacksmith: Hola, mi \namigo! Come, get\nan upgrade at \nStephano's Senior\nSilverwork (and \nother metals)!";
+	typer._text = "Blacksmith: Hola, mi amigo!\nCome, get an upgrade at Stephano's Senior Silverwork (and other metals)! I promise these prices are definitely fair, guarunteed for sure!";
 }
 else if popup != 0 and typer.typing == false {
 	instance_destroy(popup);
