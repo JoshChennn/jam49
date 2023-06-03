@@ -1,4 +1,4 @@
-if (distance_to_object(obj_player) < 180 and popup != 0 and !typer.typing) {
+if (distance_to_object(obj_player) < 160 and popup != 0 and !typer.typing) {
 	if (global.bow_level == 0) {
 		deal = "SWORD";
 	}
