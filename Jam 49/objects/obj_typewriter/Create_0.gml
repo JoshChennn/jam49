@@ -8,4 +8,4 @@ time = spd;
 //If typing is allowed
 typing = true;
 
-depth = -room_height+1
+depth = -room_height+2;
