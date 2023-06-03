@@ -4,10 +4,6 @@ if (distance_to_object(obj_player) < 160 and popup == 0) {
 	popup.image_index = 2;
 	typer = instance_create_layer(0,0,"Instances",obj_typewriter);
 	typer._text = "Hello, random person\nwith a weapon,\nyou! PLEASE don't point\nthat thing at me!";
-	var time_left = instance_create_layer(0,0,"Instances",obj_timeLeft);
-	time_left.text_x = 350;
-	time_left.text_y = -300;
-	time_left._parent = self;
 }
 else if popup != 0 and !typer.typing {
 	instance_destroy(popup);
@@ -15,7 +11,6 @@ else if popup != 0 and !typer.typing {
 	instance_destroy(typer);
 	typer = 0;
 	with(obj_buy) instance_destroy();
-	with(obj_timeLeft) instance_destroy();
 }
 else if popup != 0 and typer.typing {
 	//Skip typing

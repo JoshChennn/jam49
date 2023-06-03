@@ -4,10 +4,6 @@ if (distance_to_object(obj_player) < 160 and popup == 0) {
 	popup.image_index = 0;
 	typer = instance_create_layer(0,0,"Instances",obj_typewriter);
 	typer._text = "Blacksmith: Hola, mi \namigo! Come, get\nan upgrade at \nStephano's Senior\nSilverwork (and \nother metals)!";
-	var time_left = instance_create_layer(0,0,"Instances",obj_timeLeft);
-	time_left.text_x = 350;
-	time_left.text_y = -300;
-	time_left._parent = self;
 }
 else if popup != 0 and typer.typing == false {
 	instance_destroy(popup);
@@ -15,7 +11,6 @@ else if popup != 0 and typer.typing == false {
 	instance_destroy(typer);
 	typer = 0;
 	instance_destroy(obj_tradeButton);
-	instance_destroy(obj_timeLeft);
 }
 else if popup != 0 and typer.typing {
 	//Skip typing
