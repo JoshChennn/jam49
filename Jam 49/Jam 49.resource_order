@@ -61,6 +61,7 @@
     {"name":"spr_arrow","order":10,"path":"sprites/spr_arrow/spr_arrow.yy",},
     {"name":"obj_tree","order":19,"path":"objects/obj_tree/obj_tree.yy",},
     {"name":"obj_scrollTextbox","order":7,"path":"objects/obj_scrollTextbox/obj_scrollTextbox.yy",},
+    {"name":"spr_leaves","order":21,"path":"sprites/spr_leaves/spr_leaves.yy",},
     {"name":"obj_crownIcon","order":6,"path":"objects/obj_crownIcon/obj_crownIcon.yy",},
     {"name":"spr_gemstone_01","order":14,"path":"sprites/spr_gemstone_01/spr_gemstone_01.yy",},
     {"name":"obj_gemIcon","order":5,"path":"objects/obj_gemIcon/obj_gemIcon.yy",},

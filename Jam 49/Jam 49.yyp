@@ -87,6 +87,7 @@
     {"id":{"name":"spr_arrow","path":"sprites/spr_arrow/spr_arrow.yy",},},
     {"id":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},},
     {"id":{"name":"obj_scrollTextbox","path":"objects/obj_scrollTextbox/obj_scrollTextbox.yy",},},
+    {"id":{"name":"spr_leaves","path":"sprites/spr_leaves/spr_leaves.yy",},},
     {"id":{"name":"obj_crownIcon","path":"objects/obj_crownIcon/obj_crownIcon.yy",},},
     {"id":{"name":"spr_gemstone_01","path":"sprites/spr_gemstone_01/spr_gemstone_01.yy",},},
     {"id":{"name":"obj_gemIcon","path":"objects/obj_gemIcon/obj_gemIcon.yy",},},
