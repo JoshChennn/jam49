@@ -40,7 +40,5 @@ arrow = 0;
 run_index = 0;
 run_delay = 10;
 
-//Remember to set these to 0 for final project
-global.gems = 500;
 global.sword_level = 1;
 global.bow_level = 0;

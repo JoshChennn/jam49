@@ -4,13 +4,13 @@ with (obj_blacksmith) {
 			case "SWORD":
 				var float = instance_create_layer(x+150,y+100,"Instances",obj_floatText);
 				float._text = "-"+string(find_upgrade_price("SWORD"))+" GEMS";
-				global.gems -= find_upgrade_price("SWORD");
+				global.player_gems -= find_upgrade_price("SWORD");
 				global.sword_level += 1;
 				break;
 			case "BOW":
 				var float = instance_create_layer(x+150,y+100,"Instances",obj_floatText);
 				float._text = "-"+string(find_upgrade_price("BOW"))+" GEMS";
-				global.gems -= global.bow_level*4 + 1;
+				global.player_gems -= find_upgrade_price("BOW");
 				global.bow_level += 1;
 				break;
 		}
