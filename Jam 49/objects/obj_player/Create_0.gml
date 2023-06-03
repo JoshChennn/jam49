@@ -5,15 +5,11 @@ spdMax = 4;
 spd = 0;
 acc = 0.6;
 depth = -1;
-swing = false;
 point_dir = 0;
 sword_dir = 0;
-sword = 0;
 hearts = 3;
 hsp = 0;
 vsp = 0;
-
-sword_cool_down = 0;
 
 gain_running_sound = 0;
 running_sound = 0;

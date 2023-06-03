@@ -45,6 +45,7 @@ if (noob_mode > 0){
 } else {
 	
 	image_blend = c_white;
+	sound_played = false;
 
 	switch (state){
 

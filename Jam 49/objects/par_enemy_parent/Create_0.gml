@@ -1,3 +1,5 @@
+sound_played = false;
+
 if (object_get_name(object_index) == "obj_enemy_01"){
 		 
 	movespeed = 1.5;

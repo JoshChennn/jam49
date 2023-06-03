@@ -4,6 +4,8 @@ if (obj_player.arrow == id) {
 	image_angle = obj_player.dir;
 	direction = image_angle;
 }
+depth = -y;
+
 
 if (obj_player.arrow != 0) && (speed = 0) && (obj_player._stretch < 10) && (keyboard_check_released(ord("N"))){
 	instance_destroy();
