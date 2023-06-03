@@ -7,7 +7,7 @@ if !swinging {
 	var _point = floor(obj_player.dir/45);
 	switch (_point) {
 		case 0:
-			sword_dir = 100;
+			sword_dir = 75;
 			break;
 		case 1:
 			sword_dir = 125;
@@ -19,7 +19,7 @@ if !swinging {
 			sword_dir = 65;
 			break;
 		case 4:
-			sword_dir = 85;
+			sword_dir = 105;
 			break;
 		case 5:
 			sword_dir = 115;

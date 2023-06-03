@@ -15,7 +15,7 @@ if swinging {
 	
 }
 else {
-	x = obj_player.x+40;
-	y = obj_player.y-10;
-	image_angle = 60;
+	x = obj_player.x+lengthdir_x(40,obj_player.dir-55);
+	y = obj_player.y+10+lengthdir_y(30,obj_player.dir-30);
+	image_angle = 90;
 }

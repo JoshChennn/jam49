@@ -1,4 +1,4 @@
-if (obj_player.direction >= 180) {
+if (obj_player.dir > 180 or obj_player.dir = 0) {
 	depth = obj_player.depth-1;
 }
 else {
