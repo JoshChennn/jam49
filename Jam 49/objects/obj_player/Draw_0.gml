@@ -1,3 +1,10 @@
+draw_set_alpha(.3);
+draw_set_color(c_black);
+
+draw_ellipse(x-35,y+30,x+35,y+90,false);
+draw_set_alpha(1);
+draw_set_color(c_white);
+
 draw_self();
 
 if (keyboard_check(ord("N")) and global.bow_level > 0){
