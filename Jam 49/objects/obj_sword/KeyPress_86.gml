@@ -8,6 +8,7 @@ if !swinging {
 	switch (_point) {
 		case 0:
 			sword_dir = 75;
+			depth_difference = 1;
 			break;
 		case 1:
 			sword_dir = 125;
@@ -20,12 +21,13 @@ if !swinging {
 			break;
 		case 4:
 			sword_dir = 105;
+			depth_difference = -1;
 			break;
 		case 5:
 			sword_dir = 115;
 			break;
 		case 6:
-			sword_dir = 170;
+			sword_dir = 320;
 			break;
 		case 7:
 			sword_dir = 85;
