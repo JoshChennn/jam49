@@ -11,6 +11,8 @@ hearts = 3;
 hsp = 0;
 vsp = 0;
 
+sound_death_played = false;
+
 gain_running_sound = 0;
 running_sound = 0;
 
