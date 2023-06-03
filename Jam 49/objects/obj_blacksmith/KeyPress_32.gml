@@ -14,7 +14,6 @@ else if popup != 0 and typer.typing == false {
 	popup = 0;
 	instance_destroy(typer);
 	typer = 0;
-	instance_destroy(obj_tradeButton);
 	instance_destroy(obj_timeLeft);
 }
 else if popup != 0 and typer.typing {
