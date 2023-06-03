@@ -10,7 +10,7 @@ if (keyboard_check(ord("N")) and global.bow_level > 0){
 }
 
 
-//draw_text(x, y - 64, "Gemstones: " + string(global.player_gems));
+//draw_text(x, y - 64, "Gain: " + string(gain_running_sound));
 
 /*
 draw_text(x, y - 32, dash_left);

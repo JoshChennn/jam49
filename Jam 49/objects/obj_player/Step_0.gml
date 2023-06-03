@@ -198,6 +198,8 @@ if (!keyboard_check(ord("N"))) {
 		arrow = 0;
 	}
 	_stretch = 0;
+	audio_stop_sound(sfx_stretch_bow_01);
+	audio_stop_sound(sfx_stretch_bow_02);
 }
 
 #region BLINK MODE
@@ -272,14 +274,30 @@ else { //Still
 }
 
 //running sound
-if (hsp != 0) || (vsp != 0){
+if (moveX != 0) || (moveY != 0){
+	
+	if (gain_running_sound < .7) gain_running_sound += .05;
+	
 	if (room == rm_mirrorWorld){
 		
-		if (!audio_is_playing(sfx_running_hard)) audio_play_sound(sfx_running_hard, 10, false);
+		audio_stop_sound(sfx_running_grass);
+		if (!audio_is_playing(sfx_running_hard)) running_sound = audio_play_sound(sfx_running_hard, 10, false, 0);
+		
+	} else 	if (room == rm_mainWorld){
+		
+		audio_stop_sound(sfx_running_hard);
+		if (!audio_is_playing(sfx_running_grass)) running_sound = audio_play_sound(sfx_running_grass, 10, false, 0);
 		
 	}
+	
+	audio_sound_gain(running_sound, gain_running_sound, 1);
+	
 } else {
 
-	audio_stop_sound(sfx_running_hard);
+	if (gain_running_sound > 0) gain_running_sound -= .2;
+	else {
+		audio_stop_sound(sfx_running_hard);
+		audio_stop_sound(sfx_running_grass);
+	}
 
 }

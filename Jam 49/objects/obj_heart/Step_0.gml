@@ -4,3 +4,10 @@ else image_index = 0;
 
 x = obj_camera.x + (_id - 1) * 100;
 y = obj_camera.y - 450;
+
+if (alarm[0] > -1){
+
+	image_xscale = 1 + alarm[0] * .1;
+	image_yscale = 1 + alarm[0] * .1;
+
+}

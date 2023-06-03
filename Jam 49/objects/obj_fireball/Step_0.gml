@@ -14,7 +14,7 @@ if (place_meeting(x, y, obj_player)) && (!obj_player.blink_mode){
 
 }
 
-if (place_meeting(x, y, obj_sword)){
+if (place_meeting(x, y, obj_sword)) && (obj_sword.swinging){
 
 	deflect = true;
 	path_end();

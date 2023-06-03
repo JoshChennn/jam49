@@ -47,7 +47,9 @@ if (!flying){
 	} else {
 	
 		if (y < y_origin) y += (-logn(100, counter) + 1) * 8;
-		else flying = false;
+		else {
+			flying = false;
+		}
 	
 	}
 	
@@ -55,4 +57,6 @@ if (!flying){
 
 if (place_meeting(x + spd * directi, y, par_wall_basic))
 	spd = 0;
+	
+if (bounce > 0) && (y == y_origin) audio_play_sound(sfx_gemstone_drop, 10, false);	
 	

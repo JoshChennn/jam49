@@ -1,0 +1,1 @@
+if (room != rm_intro) && (audio_is_playing(sfx_splash_screen)) audio_stop_sound(sfx_splash_screen);

@@ -1,4 +1,8 @@
 if !swinging {
+	
+	audio_play_sound(choose(sfx_sword_swing_01, sfx_sword_swing_02, sfx_sword_swing_03), 10, false);
+	
+	
 	swinging = true;
 	var _point = floor(obj_player.dir/45);
 	switch (_point) {

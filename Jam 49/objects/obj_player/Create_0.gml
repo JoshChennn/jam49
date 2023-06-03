@@ -15,6 +15,9 @@ vsp = 0;
 
 sword_cool_down = 0;
 
+gain_running_sound = 0;
+running_sound = 0;
+
 dash_left = 0;
 dash_right = 0;
 dash_up = 0;
@@ -41,4 +44,4 @@ run_index = 0;
 run_delay = 10;
 
 global.sword_level = 1;
-global.bow_level = 0;
+global.bow_level = 1;
