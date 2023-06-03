@@ -3,7 +3,6 @@ if (distance_to_object(obj_player) >= 160 and popup != 0) {
 	popup = 0;
 	instance_destroy(typer);
 	typer = 0;
-	instance_destroy(obj_timeLeft);
 	with (obj_buy) instance_destroy();
 }
 if popup != 0 and !typer.typing and !instance_exists(obj_buy) {
