@@ -1,4 +1,4 @@
-var amount = floor(irandom_range(1, max_hlth / choose(3, 4, 5)));
+ var amount = floor(irandom_range(1, max_hlth / choose(3, 4, 5)));
 
 if (irandom(5) == 0){
 	
@@ -8,4 +8,21 @@ if (irandom(5) == 0){
 
 	}
 	
+}
+switch (object_get_name(object_index)) {
+	case "obj_enemy_01":
+		with (obj_spawner) {
+			enemies_alive -= enemy_volume[0];
+		}
+		break;
+	case "obj_enemy_02":
+		with (obj_spawner) {
+			enemies_alive -= enemy_volume[1];
+		}
+		break;
+	case "obj_enemy_03":
+		with (obj_spawner) {
+			enemies_alive -= enemy_volume[2];
+		}
+		break;
 }
