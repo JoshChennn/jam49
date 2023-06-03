@@ -11,6 +11,13 @@ hearts = 3;
 hsp = 0;
 vsp = 0;
 
+<<<<<<< Updated upstream
+=======
+sword_cool_down = 0;
+
+sound_death_played = false;
+
+>>>>>>> Stashed changes
 gain_running_sound = 0;
 running_sound = 0;
 

@@ -1,4 +1,4 @@
-if !swinging {
+if (!swinging) && (obj_player._stretch == 0) && (obj_player.arrow == 0) {
 	
 	audio_play_sound(choose(sfx_sword_swing_01, sfx_sword_swing_02, sfx_sword_swing_03), 10, false);
 	
