@@ -74,6 +74,7 @@
     {"id":{"name":"obj_username","path":"objects/obj_username/obj_username.yy",},},
     {"id":{"name":"obj_leaderboard","path":"objects/obj_leaderboard/obj_leaderboard.yy",},},
     {"id":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},},
+    {"id":{"name":"sfx_dash","path":"sounds/sfx_dash/sfx_dash.yy",},},
     {"id":{"name":"bgm_battle_03","path":"sounds/bgm_battle_03/bgm_battle_03.yy",},},
     {"id":{"name":"spr_usernamePopup","path":"sprites/spr_usernamePopup/spr_usernamePopup.yy",},},
     {"id":{"name":"spr_playerStill","path":"sprites/spr_playerStill/spr_playerStill.yy",},},

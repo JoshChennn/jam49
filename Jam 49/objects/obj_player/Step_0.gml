@@ -67,6 +67,7 @@ if (dash_left > 1){
 	
 	hsp_dash = -dash_speed;
 	dash_left = 0;
+	audio_play_sound(sfx_dash, 10, false);
 	
 } else if (dash_left > 0){
 
@@ -86,6 +87,7 @@ if (dash_right > 1){
 	
 	hsp_dash = dash_speed;
 	dash_right = 0;
+	audio_play_sound(sfx_dash, 10, false);
 	
 } else if (dash_right > 0){
 
@@ -105,6 +107,7 @@ if (dash_up > 1){
 	
 	vsp_dash = -dash_speed;
 	dash_up = 0;
+	audio_play_sound(sfx_dash, 10, false);
 	
 } else if (dash_up > 0){
 
@@ -124,6 +127,7 @@ if (dash_down > 1){
 	
 	vsp_dash = dash_speed;
 	dash_down = 0;
+	audio_play_sound(sfx_dash, 10, false);
 	
 } else if (dash_down > 0){
 

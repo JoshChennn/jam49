@@ -52,6 +52,7 @@
     {"name":"obj_username","order":3,"path":"objects/obj_username/obj_username.yy",},
     {"name":"obj_leaderboard","order":4,"path":"objects/obj_leaderboard/obj_leaderboard.yy",},
     {"name":"spr_grass","order":17,"path":"sprites/spr_grass/spr_grass.yy",},
+    {"name":"sfx_dash","order":22,"path":"sounds/sfx_dash/sfx_dash.yy",},
     {"name":"bgm_battle_03","order":2,"path":"sounds/bgm_battle_03/bgm_battle_03.yy",},
     {"name":"spr_usernamePopup","order":3,"path":"sprites/spr_usernamePopup/spr_usernamePopup.yy",},
     {"name":"sfx_enemy_hit_arrow_02","order":20,"path":"sounds/sfx_enemy_hit_arrow_02/sfx_enemy_hit_arrow_02.yy",},

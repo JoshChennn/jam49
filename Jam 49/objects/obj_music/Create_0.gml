@@ -26,4 +26,4 @@ if (room == rm_mainWorld){
 
 }
 
-audio_group_set_gain(grp_bgm, .5, 1);
+audio_group_set_gain(grp_bgm, .4, 1);
