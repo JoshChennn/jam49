@@ -145,6 +145,7 @@
     {"name":"sfx_running_grass","order":2,"path":"sounds/sfx_running_grass/sfx_running_grass.yy",},
     {"name":"obj_buy","order":14,"path":"objects/obj_buy/obj_buy.yy",},
     {"name":"spr_scrollTextbox","order":8,"path":"sprites/spr_scrollTextbox/spr_scrollTextbox.yy",},
+    {"name":"spr_tower","order":24,"path":"sprites/spr_tower/spr_tower.yy",},
     {"name":"spr_explosion","order":4,"path":"sprites/spr_explosion/spr_explosion.yy",},
     {"name":"spr_enemy_01_left","order":3,"path":"sprites/spr_enemy_01_left/spr_enemy_01_left.yy",},
     {"name":"sfx_player_hit_01","order":13,"path":"sounds/sfx_player_hit_01/sfx_player_hit_01.yy",},
