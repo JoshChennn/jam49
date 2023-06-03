@@ -25,8 +25,10 @@ if (hearts <= 0){
 			sound_death_played = true;
 		}
 		
-		if (image_alpha > 0) image_alpha -= .01;
-		else {
+		if (image_alpha > 0){
+			image_alpha -= .01;
+			obj_sword.image_alpha -= .015;
+		} else {
 	
 			room_goto(rm_gameover);
 	
@@ -64,7 +66,7 @@ if (hearts <= 0){
 
 	if (focus_potion_timer > 0) && (distance_to_object(closest_enemy) <= 128) && (vsp_dash == 0) && (hsp_dash == 0) && (!keyboard_check(ord("N"))){
 	
-		if (irandom(10) == 0) instance_create_depth(x + irandom_range(-8, 8), y - 48, depth - 1, obj_potion_effect);
+		if (irandom(10) == 0) instance_create_depth(x + irandom_range(-24, 24), y - 48, depth - 1, obj_potion_effect);
 		//auto aim at the closest enemy or fireball when not pushin a directional button
 		dir = (point_direction(x, y, closest_enemy.x, closest_enemy.y) div 45) * 45;
 	

@@ -87,10 +87,14 @@ if (noob_mode > 0){
 		
 				case "obj_enemy_01":
 			
-					if (distance_to_object(obj_player) <= 64){
+					if (distance_to_object(obj_player) <= 320){
 	
 						if (irandom(200) == 0) state = 1;
 	
+					} else if (distance_to_object(obj_player) <= 96){
+					
+						if (irandom(80) == 0) state = 1;
+					
 					}		
 			
 				break;
@@ -98,7 +102,7 @@ if (noob_mode > 0){
 				case "obj_enemy_02":
 			
 			
-					if (distance_to_object(obj_player) >= 256) && (instance_number(obj_fireball) <= 2){
+					if (distance_to_object(obj_player) >= 384) && (instance_number(obj_fireball) <= 2){
 	
 						if (irandom(500) == 0) state = 1;
 	
@@ -145,6 +149,14 @@ if (noob_mode > 0){
 				else image_blend = c_white;
 		
 				if (pre_attack_timer >= 100){
+					
+					if (irandom(10) < 7){
+						destination_x = obj_player.x;
+						destination_y = obj_player.y;
+					} else {
+						destination_x = obj_player.x + lengthdir_x(256, obj_player.dir + choose(-45, 45));
+						destination_y = obj_player.y;
+					}
 			
 					state = 2;
 					pre_attack_timer = 0;
@@ -162,7 +174,14 @@ if (noob_mode > 0){
 				switch (object_get_name(object_index)){
 			
 					case  "obj_enemy_01":
+					
 						scr_enemy_01_attack();
+						
+						if (place_meeting(x, y, par_enemy_parent)){
+							state = 0;
+							alarm[1] = 1;
+						}
+						
 					break;
 				
 					case  "obj_enemy_02":
