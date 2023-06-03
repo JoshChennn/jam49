@@ -1,4 +1,4 @@
-if (distance_to_object(obj_player) < 180 and popup == 0) {
+if (distance_to_object(obj_player) < 160 and popup == 0) {
 	//Popup
 	popup = instance_create_layer(0,0,"Instances",obj_scroll);
 	typer = instance_create_layer(0,0,"Instances",obj_typewriter);
@@ -14,6 +14,7 @@ else if popup != 0 and !typer.typing {
 	instance_destroy(typer);
 	typer = 0;
 	with(obj_buy) instance_destroy();
+	with(obj_timeLeft) instance_destroy();
 }
 else if popup != 0 and typer.typing {
 	//Skip typing
