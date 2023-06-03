@@ -1,4 +1,4 @@
- var amount = floor(irandom_range(1, max_hlth / choose(3, 4, 5)));
+var amount = floor(irandom_range(1, max_hlth / choose(3, 4, 5)));
 
 if (irandom(5) == 0){
 	
@@ -25,4 +25,12 @@ switch (object_get_name(object_index)) {
 			enemies_alive -= enemy_volume[2];
 		}
 		break;
+}
+
+
+// INCREASE EXP -- TEMPORARY
+global.player_exp += 10;
+//Update leaderboard
+if (instance_exists(obj_leaderboard)) {
+	LootLockerSubmitScore("14517",string(global.player_exp));
 }

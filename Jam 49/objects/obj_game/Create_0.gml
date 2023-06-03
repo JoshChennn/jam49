@@ -9,6 +9,8 @@ if (!file_exists("gamedata.penguin")){
 	ds_map_replace(gamedata, "EXP", global.player_exp);
 	ds_map_replace(gamedata, "gems", global.player_gems);
 	
+	//Set username the first time
+	alarm_set(1,300);
 	
 } else {
 
@@ -17,7 +19,4 @@ if (!file_exists("gamedata.penguin")){
 	var gem_value = ds_map_find_value(gamedata, "gems");
 	global.player_exp = exp_value;
 	global.player_gems = gem_value;
-
-	//Set username the first time
-	alarm_set(1,300);
 }
