@@ -1,5 +1,8 @@
 randomize();
 
+gems_to_gain = 0;
+exp_to_gain = 0;
+
 if (!file_exists("gamedata.penguin")){
 	
 	global.player_exp = 0;
@@ -21,3 +24,5 @@ if (!file_exists("gamedata.penguin")){
 	global.player_gems = gem_value;
 	
 }
+
+global.flags = 0;

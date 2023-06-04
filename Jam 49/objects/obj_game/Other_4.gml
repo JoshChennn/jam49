@@ -9,3 +9,14 @@ if (room = rm_mainWorld or room = rm_mirrorWorld) {
 		instance_create_layer(xx,yy,"Instances",obj_grass);
 	}
 }
+
+if (room == rm_mirrorWorld) {
+	repeat (5) {
+		var xx,yy;
+		do {
+			xx = irandom(room_width);
+			yy = irandom(room_height);
+		} until position_empty(xx,yy);
+		instance_create_layer(xx,yy,"Instances",obj_flag);
+	}
+}

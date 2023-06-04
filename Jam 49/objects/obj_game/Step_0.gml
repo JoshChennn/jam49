@@ -19,3 +19,4 @@ if (room == rm_gameover){
 }
 
 if (room == rm_mainWorld) && (audio_is_playing(bgs_portal)) audio_stop_sound(bgs_portal);
+

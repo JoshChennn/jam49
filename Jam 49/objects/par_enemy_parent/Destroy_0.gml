@@ -30,11 +30,8 @@ switch (object_get_name(object_index)) {
 
 
 // INCREASE EXP -- TEMPORARY
-global.player_exp += 10;
-//Update leaderboard
-if (instance_exists(obj_leaderboard)) {
-	LootLockerSubmitScore("14517",string(global.player_exp));
-}
+obj_game.exp_to_gain += 10 + max_hlth / 10;
+
 
 if (irandom(50) == 0) && (!instance_exists(obj_focus_potion)) instance_create_depth(x + irandom_range(-64, 64), y - irandom_range(0, 48), depth - 1, obj_focus_potion);
 

@@ -1,4 +1,4 @@
-global.player_gems += my_value;
+obj_game.gems_to_gain += my_value;
 instance_destroy();
 
 if (obj_player.pick_up_sounds_playing < 4){
