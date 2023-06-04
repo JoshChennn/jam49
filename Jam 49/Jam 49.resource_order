@@ -138,6 +138,7 @@
     {"name":"sfx_gemstone_pickup","order":10,"path":"sounds/sfx_gemstone_pickup/sfx_gemstone_pickup.yy",},
     {"name":"spr_gemstone_03","order":16,"path":"sprites/spr_gemstone_03/spr_gemstone_03.yy",},
     {"name":"spr_upLeft","order":6,"path":"sprites/spr_upLeft/spr_upLeft.yy",},
+    {"name":"spr_shield","order":25,"path":"sprites/spr_shield/spr_shield.yy",},
     {"name":"spr_bow","order":9,"path":"sprites/spr_bow/spr_bow.yy",},
     {"name":"obj_floatText","order":4,"path":"objects/obj_floatText/obj_floatText.yy",},
     {"name":"scr_enemy_01_attack","order":2,"path":"scripts/scr_enemy_01_attack/scr_enemy_01_attack.yy",},
