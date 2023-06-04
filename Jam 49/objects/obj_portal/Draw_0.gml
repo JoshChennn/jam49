@@ -1,3 +1,5 @@
 draw_set_color(c_white);
-draw_ellipse(x+50-300,y+100-200,x+50+300,y+100+200,20);
+if (room = rm_mirrorWorld) {
+	draw_sprite(spr_shield,0,x+50,y+100);
+}
 draw_self();
