@@ -1,8 +1,12 @@
-if (!active) && (other.swinging){
+if (other.swinging){
 
-	active = true;
-	global.flags++;
+	if (!active){
+	
+		active = true;
+		global.flags++;
+
+	}
+
+	audio_play_sound(sfx_enemy_hit_sword_01, 10, false);
 
 }
-
-audio_play_sound(sfx_enemy_hit_sword_01, 10, false);
