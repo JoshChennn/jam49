@@ -1,9 +1,9 @@
 if (distance_to_object(obj_player) < 180 and popup != 0) {
 	if (global.bow_level > 0) {
-		item = "EXTRA LIFE";
+		item = choose("EXTRA LIFE","ARROWS");
 	}
 	else {
-		item = choose("BOW","EXTRA LIFE","ARROWS");
+		item = choose("BOW","EXTRA LIFE");
 	}
 	
 	if (item == "BOW") {

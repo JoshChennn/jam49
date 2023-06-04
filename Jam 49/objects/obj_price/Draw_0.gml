@@ -9,5 +9,10 @@ if (obj_blacksmith.popup != 0) {
 }
 if (obj_shop.popup != 0) {
 	draw_text(obj_camera.x-200,obj_camera.y-100,obj_shop.price);
-	draw_text(obj_camera.x+120,obj_camera.y-100,obj_shop.item);
+	if (obj_shop.item == "ARROWS") {
+		draw_text(obj_camera.x+120,obj_camera.y-100,string(obj_shop.arrows_increase)+" ARROWS");
+	}
+	else {
+		draw_text(obj_camera.x+120,obj_camera.y-100,obj_shop.item);
+	}
 }
