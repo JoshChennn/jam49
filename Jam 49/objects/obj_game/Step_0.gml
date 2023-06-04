@@ -14,6 +14,8 @@ if (room == rm_gameover){
 	instance_activate_object(obj_sword);
 	instance_activate_object(obj_fade);
 	
-	if (audio_is_playing(bgm_gameover)) audio_sound_gain(bgm_gameover, 0, 2000);
+	if (audio_is_playing(bgm_gameover)) audio_sound_gain(bgm_gameover, 0, 800);
 
 }
+
+if (room == rm_mainWorld) && (audio_is_playing(bgs_portal)) audio_stop_sound(bgs_portal);

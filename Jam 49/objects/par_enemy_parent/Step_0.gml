@@ -320,5 +320,11 @@ if (state == 0){
 
 depth = -y - 75;
 
+//sketchy position limiter
+if (x == 0) || (x == room_width) last_x = x;
+if (y == 0) || (y == room_height) last_y = y;
+
+if (x < 0) || (x > room_width) x = last_x;
+if (y < 0) || (y > room_height) y = last_y;
 
 

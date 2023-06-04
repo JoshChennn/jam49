@@ -1,4 +1,6 @@
 sound_played = false;
+last_x = 0;
+last_y = 0;
 
 if (object_get_name(object_index) == "obj_enemy_01"){
 		 

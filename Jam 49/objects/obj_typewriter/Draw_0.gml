@@ -4,6 +4,7 @@ if typing {
 		if time >= spd {
 			count++;
 			time = 0;
+			if (!audio_is_playing(sfx_typewriter)) audio_play_sound(sfx_typewriter, 10, false, 1, 0, random_range(.96, 1.1));
 		}
 	}
 	else { //Reached the end of the text

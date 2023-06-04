@@ -27,5 +27,5 @@ if (room == rm_mirrorWorld){
 	
 }
 
-audio_group_set_gain(grp_bgm, .25, 1);
+audio_group_set_gain(grp_bgm, .2, 1);
 audio_group_set_gain(grp_gems, .75, 1);
