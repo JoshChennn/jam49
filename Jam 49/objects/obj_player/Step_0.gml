@@ -12,6 +12,9 @@ if (hearts <= 0){
 	image_speed = 0;
 	image_index = 0;
 	
+	obj_game.exp_to_gain = 0;
+	obj_game.gems_to_gain = 0;
+	
 	if (room == rm_mirrorWorld){
 		
 		with(par_enemy_parent){
