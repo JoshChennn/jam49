@@ -140,7 +140,7 @@
     {"id":{"name":"obj_motion_planning","path":"objects/obj_motion_planning/obj_motion_planning.yy",},},
     {"id":{"name":"spr_enemy_03_down","path":"sprites/spr_enemy_03_down/spr_enemy_03_down.yy",},},
     {"id":{"name":"spr_portal","path":"sprites/spr_portal/spr_portal.yy",},},
-    {"id":{"name":"obj_timeLeft","path":"objects/obj_timeLeft/obj_timeLeft.yy",},},
+    {"id":{"name":"obj_price","path":"objects/obj_price/obj_price.yy",},},
     {"id":{"name":"obj_tutorial","path":"objects/obj_tutorial/obj_tutorial.yy",},},
     {"id":{"name":"scr_enemy_02_attack","path":"scripts/scr_enemy_02_attack/scr_enemy_02_attack.yy",},},
     {"id":{"name":"obj_potion_effect","path":"objects/obj_potion_effect/obj_potion_effect.yy",},},

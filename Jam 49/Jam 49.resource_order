@@ -112,7 +112,7 @@
     {"name":"obj_motion_planning","order":4,"path":"objects/obj_motion_planning/obj_motion_planning.yy",},
     {"name":"spr_enemy_03_down","order":2,"path":"sprites/spr_enemy_03_down/spr_enemy_03_down.yy",},
     {"name":"spr_portal","order":2,"path":"sprites/spr_portal/spr_portal.yy",},
-    {"name":"obj_timeLeft","order":5,"path":"objects/obj_timeLeft/obj_timeLeft.yy",},
+    {"name":"obj_price","order":5,"path":"objects/obj_price/obj_price.yy",},
     {"name":"obj_tutorial","order":1,"path":"objects/obj_tutorial/obj_tutorial.yy",},
     {"name":"scr_enemy_02_attack","order":3,"path":"scripts/scr_enemy_02_attack/scr_enemy_02_attack.yy",},
     {"name":"obj_potion_effect","order":22,"path":"objects/obj_potion_effect/obj_potion_effect.yy",},

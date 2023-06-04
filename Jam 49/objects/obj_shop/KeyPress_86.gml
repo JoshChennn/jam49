@@ -15,4 +15,13 @@ switch item {
 			float._text = "-10 GEMS";
 		}
 		break;
+	if (global.bow_level > 0) {
+		item = "EXTRA LIFE";
+	}
+	else {
+		item = choose("BOW","EXTRA LIFE");
+	}
+	instance_destroy(typer);
+	typer = instance_create_layer(0,0,"Instances",obj_typewriter);
+	typer._text = "Ok... Don't know why you would want that. I have another strange object for you, you seem like the type.";
 }
