@@ -3,6 +3,7 @@ draw_self();
 if (image_index == 1) {
 	//Find and determine player rank
 	rank = LLPlayerRank();
+	draw_text(x,y,string(rank));
 	if rank == 1 pos = 0;
 	else if rank > 1 and rank < 5 pos = 1;
 	else pos = 2;
