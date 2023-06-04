@@ -13,7 +13,13 @@ if (distance_to_object(obj_player) < 160 and popup != 0) {
 			global.bow_level += 1;
 			break;
 	}
+	if (global.bow_level == 0) {
+		deal = "SWORD";
+	}
+	else {
+		deal = choose("SWORD","BOW");
+	}
 	instance_destroy(typer);
 	typer = instance_create_layer(0,0,"Instances",obj_typewriter);
-	typer._text = "Danke! Now, if you would like\nanother upgrade, here it is!";
+	typer._text = "Very good senor! If you would like another upgrade, here it is!";
 }
