@@ -1,4 +1,4 @@
-image_alpha = 1 - (tanh(path_position) * .5);
+//image_alpha = 1 - (tanh(path_position) * .5);
 
 if  ((!deflect) && (path_index == -1) && (alarm[0] == -1)) || place_meeting(x, y, par_wall_basic){
 
