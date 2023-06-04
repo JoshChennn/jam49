@@ -183,6 +183,7 @@
     {"name":"spr_downLeft","order":8,"path":"sprites/spr_downLeft/spr_downLeft.yy",},
     {"name":"spr_buttonV","order":12,"path":"sprites/spr_buttonV/spr_buttonV.yy",},
     {"name":"obj_music","order":7,"path":"objects/obj_music/obj_music.yy",},
+    {"name":"sfx_enemy_bite","order":35,"path":"sounds/sfx_enemy_bite/sfx_enemy_bite.yy",},
     {"name":"spr_buySword","order":9,"path":"sprites/spr_buySword/spr_buySword.yy",},
     {"name":"obj_enemy_03","order":3,"path":"objects/obj_enemy_03/obj_enemy_03.yy",},
     {"name":"obj_volumeSlider","order":14,"path":"objects/obj_volumeSlider/obj_volumeSlider.yy",},

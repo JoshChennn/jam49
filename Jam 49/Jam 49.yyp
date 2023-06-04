@@ -220,6 +220,7 @@
     {"id":{"name":"spr_downLeft","path":"sprites/spr_downLeft/spr_downLeft.yy",},},
     {"id":{"name":"spr_buttonV","path":"sprites/spr_buttonV/spr_buttonV.yy",},},
     {"id":{"name":"obj_music","path":"objects/obj_music/obj_music.yy",},},
+    {"id":{"name":"sfx_enemy_bite","path":"sounds/sfx_enemy_bite/sfx_enemy_bite.yy",},},
     {"id":{"name":"spr_buySword","path":"sprites/spr_buySword/spr_buySword.yy",},},
     {"id":{"name":"obj_enemy_03","path":"objects/obj_enemy_03/obj_enemy_03.yy",},},
     {"id":{"name":"obj_volumeSlider","path":"objects/obj_volumeSlider/obj_volumeSlider.yy",},},
