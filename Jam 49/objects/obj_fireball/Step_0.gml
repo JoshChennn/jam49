@@ -1,4 +1,4 @@
-image_alpha = 1 - (tanh(path_position) * .5);
+//image_alpha = 1 - (tanh(path_position) * .5);
 
 if  ((!deflect) && (path_index == -1) && (alarm[0] == -1)) || place_meeting(x, y, par_wall_basic){
 
@@ -24,3 +24,5 @@ if (place_meeting(x, y, obj_sword)) && (obj_sword.swinging){
 	if (!audio_is_playing(sfx_deflect_fire_ball)) audio_play_sound(sfx_deflect_fire_ball, 10, false);
 
 }
+
+image_angle = direction;

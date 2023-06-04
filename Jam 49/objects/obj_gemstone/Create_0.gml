@@ -4,7 +4,7 @@ bouncing = false;
 y_origin = y;
 
 directi = choose(-1, 1);
-spd = 6;
+spd = random_range(1,3);
 top_height = 96;
 up = true;
 
@@ -25,12 +25,12 @@ switch(my_type){
 	break;
 	
 	case 1:
-		my_value = 5;
+		my_value = 3;
 		sprite_index = spr_gemstone_02;
 	break;
 	
 	case 2:
-		my_value = 10;
+		my_value = 5;
 		sprite_index = spr_gemstone_03;
 	break;
 	

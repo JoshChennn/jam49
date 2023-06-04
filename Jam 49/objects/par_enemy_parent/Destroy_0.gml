@@ -1,13 +1,7 @@
 var amount = floor(irandom_range(1, max_hlth / choose(3, 4, 5)));
 
-if (irandom(5) == 0){
-	
-	repeat(amount){
-
-		instance_create_depth(x + irandom_range(-64, 64), y - irandom_range(0, 48), depth - 1, obj_gemstone);
-
-	}
-	
+repeat(amount){
+	instance_create_depth(x + irandom_range(-64, 64), y - irandom_range(0, 48), depth - 1, obj_gemstone);
 }
 
 switch (object_get_name(object_index)) {
@@ -40,4 +34,9 @@ var location = (distance_to_object(obj_player) * .2) * -sign(x - obj_player.x);
 audio_play_sound_at(sfx_enemy_death, location, y, 0, 100, 300, 1, false, 10, 2, 0, random_range(.95, 1.05));
 
 
-
+repeat(30) {
+	var part = instance_create_depth(x,y,depth,obj_particle);
+	part.direction = irandom_range(0,359);
+	if irandom_range(0,5) == 0 part.image_blend = c_orange;
+	else part.image_blend = c_black;
+}
