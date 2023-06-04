@@ -3,6 +3,8 @@ grow = false;
 x = obj_portal.x;
 y = obj_portal.y;
 
+
+/*
 var number = 360 / 80;
 var radius = 400;
 
