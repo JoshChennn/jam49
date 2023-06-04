@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+grow = false;
 
 x = obj_portal.x;
 y = obj_portal.y;

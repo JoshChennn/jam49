@@ -22,9 +22,10 @@ else if fading == 1 { //Getting darker
 }
 
 if (room = rm_mirrorWorld) {
-	repeat (4) {
+	repeat (7) {
 		var rand_dir = irandom(359);
-		instance_create_layer(x + lengthdir_x(400, rand_dir), y + lengthdir_y(400 * .8, rand_dir), "Instances", obj_particle);
+		var r = 400;
+		instance_create_layer(x + lengthdir_x(r*obj_shield.image_xscale, rand_dir), y + lengthdir_y(r * .75*obj_shield.image_xscale, rand_dir), "Instances", obj_particle);
 		alarm_set(0,3);
 	}
 	

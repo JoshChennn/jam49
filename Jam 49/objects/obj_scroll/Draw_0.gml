@@ -45,14 +45,16 @@ if (image_index == 1) {
 			draw_set_color(c_black);
 			draw_set_halign(fa_left);
 			draw_text(x-231,y-43+i*37,string(i)+".");
-			draw_text(x-200,y-43+i*37,string(LLHighscoresTopNamesList()[i]));
+			draw_text(x-200,y-43+i*37,string(LLHighscoresTopNamesList()[i-1]));
 			draw_set_halign(fa_right);
-			draw_text(x+168,y-43+i*37,string(LLHighscoresTopScoreList()[i]));
+			draw_text(x+168,y-43+i*37,string(LLHighscoresTopScoreList()[i-1]));
 		}
 	}
-	//else {
-		//for (var i = rank-1; i < rank+2; i++) {
-		for (var i = 10; i < 13; i++) {
+	else {
+		var temp1 = int64(rank)-1;
+		var temp2 = int64(rank)+2;
+		var diff = int64(rank) - 5;
+		for (var i = temp1; i < temp2; i++) {
 			if (rank == i) {
 				draw_set_color(c_green);
 			}
@@ -60,10 +62,10 @@ if (image_index == 1) {
 				draw_set_color(c_black);
 			}
 			draw_set_halign(fa_left);
-			draw_text(x-231,y-17+i*37,string(i)+".");
-			draw_text(x-200,y-17+i*37,string(LLHighscoresTopNamesList()[i]));
+			draw_text(x-231,y-12+(i-diff)*37,string(i)+".");
+			draw_text(x-200,y-12+(i-diff)*37,string(LLHighscoresTopNamesList()[i-1]));
 			draw_set_halign(fa_right);
-			draw_text(x+168,y-7+i*37,string(LLHighscoresTopScoreList()[i]));
+			draw_text(x+168,y-2+(i-diff)*37,string(LLHighscoresTopScoreList()[i-1]));
 		}
-	//}
+	}
 }
