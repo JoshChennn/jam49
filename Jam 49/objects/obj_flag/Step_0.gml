@@ -6,3 +6,5 @@ if (irandom_range(0,15) = 1) {
 	part.depth = depth+1;
 	if image_index = 1 part.image_blend = $b9ba05;
 }
+
+depth = -y;

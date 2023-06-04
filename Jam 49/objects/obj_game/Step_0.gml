@@ -23,6 +23,6 @@ if (room == rm_mainWorld) && (audio_is_playing(bgs_portal)) audio_stop_sound(bgs
 if (room == rm_mirrorWorld) && (global.flags >= 5) && (!played_flag_notification){
 
 	played_flag_notification = true;
-	audio_play_sound(sfx_flag_notification, 10, false);
+	audio_play_sound(sfx_flag_notification, 10, false, 2);
 
 }
