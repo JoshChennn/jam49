@@ -2,7 +2,7 @@ randomize();
 
 //AUDIO VOLUME
 global.sfxVol = 100;
-global.musicVol = 100;
+global.musicVol = 65;
 
 gems_to_gain = 0;
 exp_to_gain = 0;
@@ -27,6 +27,8 @@ if (!file_exists("gamedata.penguin")){
 	var gem_value = ds_map_find_value(gamedata, "gems");
 	global.player_exp = exp_value;
 	global.player_gems = gem_value;
+	global.sfxVol = ds_map_find_value(gamedata, "sfx");
+	global.musicVol = ds_map_find_value(gamedata, "bgm");
 	
 }
 

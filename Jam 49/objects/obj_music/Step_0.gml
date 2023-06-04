@@ -25,8 +25,11 @@ if (room == rm_mirrorWorld){
 
 
 var sound_val = (1 / instance_number(obj_gemstone_audio_dummy)) * 3;
-clamp(sound_val, .25, 1);
+sound_val = clamp(sound_val, .15, .4);
 
-audio_group_set_gain(grp_gems, sound_val, 1); 
+audio_group_set_gain(grp_gems, sound_val * global.sfxVol / 100, 1); 
+audio_group_set_gain(grp_bgm, global.musicVol / 100, 1);
+audio_group_set_gain(grp_combat,1.5 * global.sfxVol / 100, 1);
+audio_group_set_gain(grp_various, global.sfxVol / 100, 1);
 
 
