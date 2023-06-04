@@ -30,6 +30,9 @@ if (!file_exists("gamedata.penguin")){
 	global.sfxVol = ds_map_find_value(gamedata, "sfx");
 	global.musicVol = ds_map_find_value(gamedata, "bgm");
 	
+	if (global.sfxVol == undefined) global.sfxVol = 100;
+	if (global.musicVol == undefined) global.musicVol = 65;
+	
 }
 
 global.flags = 0;
