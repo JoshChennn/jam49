@@ -1,5 +1,9 @@
 randomize();
 
+//AUDIO VOLUME
+global.sfxVol = 100;
+global.musicVol = 100;
+
 gems_to_gain = 0;
 exp_to_gain = 0;
 played_flag_notification = false;
