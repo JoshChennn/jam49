@@ -24,3 +24,5 @@ if (place_meeting(x, y, obj_sword)) && (obj_sword.swinging){
 	if (!audio_is_playing(sfx_deflect_fire_ball)) audio_play_sound(sfx_deflect_fire_ball, 10, false);
 
 }
+
+image_angle = direction;
