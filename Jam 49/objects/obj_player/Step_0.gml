@@ -235,10 +235,11 @@ if (hearts <= 0){
 	point_dir = point_dir + (angle_difference(dir,point_dir) * 0.5);
 
 	//If not pulling bow
-	if (!keyboard_check(ord("N"))) {
+	if (!keyboard_check(ord("B"))) {
 		if (arrow != 0 and _stretch > 10) {
 			arrow.speed = _stretch;
 			arrow = 0;
+			arrows--;
 		}
 		_stretch = 0;
 		audio_stop_sound(sfx_stretch_bow_01);

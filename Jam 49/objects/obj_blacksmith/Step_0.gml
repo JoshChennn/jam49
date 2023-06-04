@@ -5,7 +5,7 @@ if (distance_to_object(obj_player) >= 160 and popup != 0) {
 	typer = 0;
 	instance_destroy(obj_price);
 }
-if (global.player_gems < find_upgrade_price(deal)) {
+if (global.player_gems < price) {
 	trade_possible = false;
 }
 else {

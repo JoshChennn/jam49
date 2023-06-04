@@ -39,6 +39,7 @@ for (var i = 0; i < 3; i++) {
 }
 _stretch = 0;
 arrow = 0;
+arrows = 0;
 run_index = 0;
 run_delay = 10;
 
