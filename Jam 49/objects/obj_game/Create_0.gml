@@ -2,6 +2,7 @@ randomize();
 
 gems_to_gain = 0;
 exp_to_gain = 0;
+played_flag_notification = false;
 
 if (!file_exists("gamedata.penguin")){
 	

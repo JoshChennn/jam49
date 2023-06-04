@@ -10,12 +10,7 @@ if (room == rm_mirrorWorld){
 		
 		ds_map_replace(gamedata, "EXP", global.player_exp);
 		ds_map_replace(gamedata, "gems", global.player_gems);
-		
-		//Update leaderboard
-		if (instance_exists(obj_leaderboard)) {
-			LootLockerSubmitScore("14517",string(global.player_exp));
-		}
-	
+			
 	}
 
 }

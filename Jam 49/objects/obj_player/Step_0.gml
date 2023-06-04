@@ -12,8 +12,8 @@ if (hearts <= 0){
 	image_speed = 0;
 	image_index = 0;
 	
-	global.player_exp += obj_game.exp_to_gain - floor(obj_game.exp_to_gain / global.flags);
-	global.player_gems += obj_game.gems_to_gain - floor(obj_game.gems_to_gain / global.flags);	
+	global.player_exp += obj_game.exp_to_gain - floor(obj_game.exp_to_gain * .8);
+	global.player_gems += obj_game.gems_to_gain - floor(obj_game.gems_to_gain * .8);	
 	ds_map_replace(obj_game.gamedata, "EXP", global.player_exp);
 	ds_map_replace(obj_game.gamedata, "gems", global.player_gems);
 	global.flags = 0;

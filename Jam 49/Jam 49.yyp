@@ -189,6 +189,7 @@
     {"id":{"name":"sfx_gemstone_pickup","path":"sounds/sfx_gemstone_pickup/sfx_gemstone_pickup.yy",},},
     {"id":{"name":"spr_gemstone_03","path":"sprites/spr_gemstone_03/spr_gemstone_03.yy",},},
     {"id":{"name":"spr_upLeft","path":"sprites/spr_upLeft/spr_upLeft.yy",},},
+    {"id":{"name":"sfx_flag_notification","path":"sounds/sfx_flag_notification/sfx_flag_notification.yy",},},
     {"id":{"name":"spr_shield","path":"sprites/spr_shield/spr_shield.yy",},},
     {"id":{"name":"spr_bow","path":"sprites/spr_bow/spr_bow.yy",},},
     {"id":{"name":"obj_floatText","path":"objects/obj_floatText/obj_floatText.yy",},},
