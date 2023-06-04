@@ -3,4 +3,5 @@ if (distance_to_object(obj_player) >= 160 and popup != 0) {
 	popup = 0;
 	instance_destroy(typer);
 	typer = 0;
+	instance_destroy(obj_price);
 }
