@@ -1,7 +1,7 @@
 if (other.swinging) && (flash_timer <= 0){
 
 	hp--;
-	flash_timer = 25;
+	flash_timer = 15;
 	audio_play_sound(sfx_enemy_hit_heavy, 10, false, .65);
 
 }

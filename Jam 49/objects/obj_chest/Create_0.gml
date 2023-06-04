@@ -8,6 +8,6 @@ do {
 x = xx;
 y = yy;
 
-hp = 4;
+hp = 8;
 
 flash_timer = 0;
