@@ -1,3 +1,5 @@
+randomize();
+
 if (room == rm_mainWorld){
 
 	if (!audio_is_playing(bgm_village)) audio_play_sound(bgm_village, 10, true);

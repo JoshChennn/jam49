@@ -1,11 +1,11 @@
 draw_set_alpha(.3);
 draw_set_color(c_black);
-
+var in_air = image_index % 2 == 0 ? 1 : 0;
 if (sprite_index == spr_downLeft or sprite_index == spr_down or image_index == 5 or image_index == 6) {
-	draw_ellipse(x-30,y+30,x+40,y+90,false);
+	draw_ellipse(x-30+(in_air*10),y+50+(in_air*5),x+40-(in_air*10),y+80-(in_air*5),false);
 }
 else {
-	draw_ellipse(x-35,y+30,x+35,y+90,false);
+	draw_ellipse(x-35+(in_air*10),y+50+(in_air*5),x+35-(in_air*10),y+80-(in_air*5),false);
 }
 draw_set_alpha(1);
 draw_set_color(c_white);
