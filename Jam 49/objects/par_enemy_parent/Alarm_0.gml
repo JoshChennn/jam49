@@ -3,7 +3,7 @@
 path_delete(path);
 path = path_add();
 
-if (irandom(5) > 0){
+if (irandom(10) > 3){
 
 	destination_x = obj_player.x;
 	destination_y = obj_player.y;
