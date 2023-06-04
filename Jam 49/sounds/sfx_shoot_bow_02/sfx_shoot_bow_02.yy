@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "sfx_shoot_bow_02",
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "grp_combat",
+    "path": "audiogroups/grp_combat",
   },
   "bitDepth": 1,
   "bitRate": 128,
@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "sfx_shoot_bow_02.ogg",
   "type": 0,
-  "volume": 1.0,
+  "volume": 0.74,
 }

@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "bgm_battle_01.ogg",
   "type": 1,
-  "volume": 1.0,
+  "volume": 0.85,
 }

@@ -19,4 +19,5 @@ if (!file_exists("gamedata.penguin")){
 	var gem_value = ds_map_find_value(gamedata, "gems");
 	global.player_exp = exp_value;
 	global.player_gems = gem_value;
+	
 }

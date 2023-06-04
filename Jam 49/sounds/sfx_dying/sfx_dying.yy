@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "sfx_dying",
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "grp_various",
+    "path": "audiogroups/grp_various",
   },
   "bitDepth": 1,
   "bitRate": 320,

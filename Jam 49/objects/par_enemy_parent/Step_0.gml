@@ -317,3 +317,8 @@ if (state == 0){
 
 } else image_alpha = 1;
 #endregion
+
+depth = -y - 75;
+
+
+

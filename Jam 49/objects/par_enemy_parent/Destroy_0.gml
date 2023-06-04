@@ -38,3 +38,9 @@ if (instance_exists(obj_leaderboard)) {
 
 if (irandom(50) == 0) && (!instance_exists(obj_focus_potion)) instance_create_depth(x + irandom_range(-64, 64), y - irandom_range(0, 48), depth - 1, obj_focus_potion);
 
+//play death sound
+var location = (distance_to_object(obj_player) * .2) * -sign(x - obj_player.x);
+audio_play_sound_at(sfx_enemy_death, location, y, 0, 100, 300, 1, false, 10, 2, 0, random_range(.95, 1.05));
+
+
+

@@ -9,6 +9,8 @@ if (hearts <= 0){
 	vsp = 0;
 	moveX = 0;
 	moveY = 0;
+	image_speed = 0;
+	image_index = 0;
 	
 	if (room == rm_mirrorWorld){
 		
@@ -331,16 +333,28 @@ if (hearts <= 0){
 		
 		}
 	
-		audio_sound_gain(running_sound, gain_running_sound, 1);
-	
 	} else {
 
-		if (gain_running_sound > 0) gain_running_sound -= .2;
+		if (gain_running_sound > 0) gain_running_sound -= .1;
 		else {
 			audio_stop_sound(sfx_running_hard);
 			audio_stop_sound(sfx_running_grass);
 		}
 
 	}
+
+}
+
+audio_sound_gain(running_sound, gain_running_sound, 1);
+
+//gemstone ickup audio limiter
+if (pick_up_sounds_playing >= 4) && (!audio_is_playing(sfx_gemstone_pickup)) pick_up_sounds_playing = 0;
+
+if (hsp_dash != 0) || (vsp_dash != 0){
+
+	var effect = instance_create_depth(x, y, depth + 2, obj_dash_effect);
+	effect.sprite_index = sprite_index;
+	effect.image_index = image_index;
+	effect.image_speed = 0;
 
 }

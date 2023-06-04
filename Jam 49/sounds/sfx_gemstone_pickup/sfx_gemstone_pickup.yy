@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "sfx_gemstone_pickup",
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "grp_gems",
+    "path": "audiogroups/grp_gems",
   },
   "bitDepth": 1,
   "bitRate": 128,
@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "sfx_gemstone_pickup.wav",
   "type": 0,
-  "volume": 1.0,
+  "volume": 0.46,
 }

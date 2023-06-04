@@ -4,6 +4,7 @@ switch item {
 			global.bow_level = 1;
 			
 			global.player_gems -= price;
+			audio_play_sound(sfx_purchase, 10, false);
 			var float = instance_create_layer(obj_camera.x,obj_camera.y,"Instances",obj_floatText);
 			float._text = "-"+string(price)+" GEMS";
 		}
@@ -12,6 +13,7 @@ switch item {
 		if (obj_player.hearts < 3) {
 			obj_player.hearts = clamp(obj_player.hearts+1,0,3);
 			global.player_gems -= price;
+			audio_play_sound(sfx_purchase, 10, false);
 			var float = instance_create_layer(obj_camera.x,obj_camera.y,"Instances",obj_floatText);
 			float._text = "-"+string(price)+" GEMS";
 		}
@@ -19,6 +21,7 @@ switch item {
 	case "ARROWS":
 		obj_player.arrows += arrows_increase;
 		global.player_gems -= price;
+		audio_play_sound(sfx_purchase, 10, false);
 		var float = instance_create_layer(obj_camera.x,obj_camera.y,"Instances",obj_floatText);
 		float._text = "-"+string(price)+" GEMS";
 		break;

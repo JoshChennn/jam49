@@ -5,12 +5,14 @@ if (distance_to_object(obj_player) < 160 and popup != 0) {
 			float._text = "-"+string(price)+" GEMS";
 			global.player_gems -= price;
 			global.sword_level += 1;
+			audio_play_sound(sfx_purchase, 10, false);
 			break;
 		case "BOW":
 			var float = instance_create_layer(x+150,y+100,"Instances",obj_floatText);
 			float._text = "-"+string(price)+" GEMS";
 			global.player_gems -= price;
 			global.bow_level += 1;
+			audio_play_sound(sfx_purchase, 10, false);
 			break;
 	}
 	if (global.bow_level == 0) {

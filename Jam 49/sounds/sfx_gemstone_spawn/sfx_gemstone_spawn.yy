@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "sfx_gemstone_spawn",
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "grp_gems",
+    "path": "audiogroups/grp_gems",
   },
   "bitDepth": 1,
   "bitRate": 128,

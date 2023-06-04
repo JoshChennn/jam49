@@ -37,4 +37,7 @@ switch(my_type){
 }
 depth = -y-10
 
-audio_play_sound(sfx_gemstone_spawn, 10, false, 2, 0, choose(0.917 , 1.083, 1.249, 1.415, 1.581, 1.747))
+
+audio_play_sound(sfx_gemstone_spawn, 10, false, 2, 0, choose(0.917 , 1.083, 1.249, 1.415, 1.581, 1.747));
+
+my_dummy = instance_create_depth(-200, -200, 1, obj_gemstone_audio_dummy);

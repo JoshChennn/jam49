@@ -12,6 +12,7 @@ hsp = 0;
 vsp = 0;
 
 sound_death_played = false;
+pick_up_sounds_playing = 0;
 
 gain_running_sound = 0;
 running_sound = 0;

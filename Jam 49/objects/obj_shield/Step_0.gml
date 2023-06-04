@@ -5,3 +5,4 @@ with obj_tower {
 	}
 }
 image_alpha = towers_up/6;
+
