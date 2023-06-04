@@ -1,25 +1,36 @@
 if (!place_meeting(x,y,obj_player)) {
 	coll_player = false;
+	delay = 0;
 }
-//Starting to brighen up
-if fading == -1 {
-	fade -= .04;
-	if (fade <= 0) {
-		fading = 0;
-		fade = 0;
+
+if (delay > 60){
+	
+	//Starting to brighen up
+	if fading == -1 {
+		fade -= .04;
+		if (fade <= 0) {
+			fading = 0;
+			fade = 0;
+		}
+		obj_fade.image_alpha = fade;
 	}
-	obj_fade.image_alpha = fade;
-}
-else if fading == 1 { //Getting darker
-	fade += .04;
-	if (fade >= 1) {
-		if (room == rm_mainWorld) room = rm_mirrorWorld;
-		else room = rm_mainWorld;
-		fading = -1;
-		fade = 1;
+	else if fading == 1 { //Getting darker
+		fade += .04;
+		if (fade >= 1){
+			
+			audio_play_sound(sfx_portal, 10, false);
+			
+			if (room == rm_mainWorld) room = rm_mirrorWorld;
+			else room = rm_mainWorld;
+			fading = -1;
+			fade = 1;
+		}
+		obj_fade.image_alpha = fade;
 	}
-	obj_fade.image_alpha = fade;
-}
+		
+	}
+
+
 
 if (room = rm_mirrorWorld) {
 	repeat (7) {
@@ -34,6 +45,4 @@ if (room = rm_mirrorWorld) {
 	clamp(gain, 0.001, 2);
 	if (!audio_is_playing(bgs_portal)) audio_play_sound_at(bgs_portal, location, y, 0, 100, 300, 1, false, 10);
 	audio_sound_gain(bgs_portal, gain, 1);
-	
-	
 }
