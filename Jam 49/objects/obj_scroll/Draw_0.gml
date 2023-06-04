@@ -9,14 +9,15 @@ if (image_index == 1) {
 	else pos = 2;
 	
 	draw_set_font(fnt_type);
+	draw_set_color(c_black);
 	
 	//KING
-	if (pos == 0) {
+	/*if (pos == 0) {
 		draw_set_color(c_green);
 	}
 	else {
 		draw_set_color(c_black);
-	}
+	}*/
 	draw_set_halign(fa_left);
 	draw_text(x-231,y-132,"1.");
 	draw_text(x-200,y-132,string(LLHighscoresTopNamesList()[0]));
@@ -25,12 +26,12 @@ if (image_index == 1) {
 	
 	//NOBLES
 	for (var i = 0; i < 3; i++) {
-		if (rank == i+2) {
+		/*if (rank == i+2) {
 			draw_set_color(c_green);
 		}
 		else {
 			draw_set_color(c_black);
-		}
+		}*/
 		draw_set_halign(fa_left);
 		draw_text(x-231,y-33+i*37,string(i+2)+".");
 		draw_text(x-200,y-33+i*37,string(LLHighscoresTopNamesList()[i+1]));
@@ -49,19 +50,20 @@ if (image_index == 1) {
 			draw_text(x+168,y-43+i*37,string(LLHighscoresTopScoreList()[i]));
 		}
 	}
-	else {
-		for (var i = rank-1; i < rank+1; i++) {
-			if (rank == i) {
+	//else {
+		//for (var i = rank-1; i < rank+2; i++) {
+		for (var i = 10; i < 13; i++) {
+			/*if (rank == i) {
 				draw_set_color(c_green);
 			}
 			else {
 				draw_set_color(c_black);
-			}
+			}*/
 			draw_set_halign(fa_left);
 			draw_text(x-231,y-17+i*37,string(i)+".");
 			draw_text(x-200,y-17+i*37,string(LLHighscoresTopNamesList()[i]));
 			draw_set_halign(fa_right);
 			draw_text(x+168,y-7+i*37,string(LLHighscoresTopScoreList()[i]));
 		}
-	}
+	//}
 }
