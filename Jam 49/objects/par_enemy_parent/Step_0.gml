@@ -178,8 +178,8 @@ if (noob_mode > 0){
 						scr_enemy_01_attack();
 						
 						if (place_meeting(x, y, par_enemy_parent)){
-							state = 0;
-							alarm[1] = 1;
+							other.state = 0;
+							other.alarm[1] = 1;
 						}
 						
 					break;

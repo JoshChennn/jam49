@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function place_meeting_obstacle(_x,_y){
 	with (obj_player) {
-		if (place_meeting(_x,_y,par_wall_basic)){
+		if (place_meeting(_x,_y,par_wall_basic)) || (y + moveY < -64) || (y + moveY > room_height - 64) || (x + moveX < 0) || (x + moveX > room_width){
 			return true;
 		}
 		else {

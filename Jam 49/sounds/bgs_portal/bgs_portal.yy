@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "bgs_portal",
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "grp_bgs",
+    "path": "audiogroups/grp_bgs",
   },
   "bitDepth": 1,
   "bitRate": 128,

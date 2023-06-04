@@ -7,3 +7,4 @@ audio_group_unload(grp_bgm);
 audio_group_unload(grp_gems);
 audio_group_unload(grp_combat);
 audio_group_unload(grp_various);
+audio_group_unload(grp_bgs);

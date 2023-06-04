@@ -8,7 +8,9 @@ function scr_enemy_02_attack(){
 	
 		var location = (distance_to_object(obj_player) * .2) * -sign(x - obj_player.x);
 	
-	if (distance_to_object(obj_player) < 400){
+	if (x > camera_get_view_x(view_camera[0]) - 128) &&  (x < camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 128)
+	&& (y > camera_get_view_y(view_camera[0]) - 128) &&  (y < camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) + 128){
+		
 		if (!audio_is_playing(sfx_fire_ball_01)) 
 		&& (!audio_is_playing(sfx_fire_ball_02))
 		&& (!audio_is_playing(sfx_fire_ball_03)) 
