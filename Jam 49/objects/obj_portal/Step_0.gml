@@ -27,4 +27,12 @@ if (room = rm_mirrorWorld) {
 		instance_create_layer(x + lengthdir_x(400, rand_dir), y + lengthdir_y(400 * .8, rand_dir), "Instances", obj_particle);
 		alarm_set(0,3);
 	}
+	
+	var gain = (1 / distance_to_object(obj_player)) * 250;
+	var location = (distance_to_object(obj_player) * .2) * -sign(x - obj_player.x);
+	clamp(gain, 0.001, 1);
+	if (!audio_is_playing(bgs_portal)) audio_play_sound_at(bgs_portal, location, y, 0, 100, 300, 1, false, 10);
+	audio_sound_gain(bgs_portal, gain, 1);
+	
+	
 }

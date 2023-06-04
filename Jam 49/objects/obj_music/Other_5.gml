@@ -1,1 +1,1 @@
-if (room == rm_mirrorWorld) audio_stop_sound(bgm_index);
+if (room == rm_mirrorWorld) audio_stop_sound(current_bgm);

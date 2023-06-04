@@ -18,6 +18,8 @@ if (room == rm_mirrorWorld){
 		}
 
 	}
+	
+	if (!audio_is_playing(current_bgm)) bgm_index = -1;
 
 }
 
