@@ -1,10 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_volumeSelect",
+  "name": "obj_volumeSliderMusic",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -29,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_volumeSelect",
-    "path": "sprites/spr_volumeSelect/spr_volumeSelect.yy",
+    "name": "spr_volumeSlider",
+    "path": "sprites/spr_volumeSlider/spr_volumeSlider.yy",
   },
   "spriteMaskId": null,
   "visible": true,
