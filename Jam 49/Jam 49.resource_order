@@ -92,6 +92,7 @@
     {"name":"spr_focus_potion","order":23,"path":"sprites/spr_focus_potion/spr_focus_potion.yy",},
     {"name":"spr_enemy_01_up","order":5,"path":"sprites/spr_enemy_01_up/spr_enemy_01_up.yy",},
     {"name":"spr_enemy_01_up_right","order":7,"path":"sprites/spr_enemy_01_up_right/spr_enemy_01_up_right.yy",},
+    {"name":"sfx_chest_break","order":42,"path":"sounds/sfx_chest_break/sfx_chest_break.yy",},
     {"name":"sfx_enemy_hit_heavy","order":24,"path":"sounds/sfx_enemy_hit_heavy/sfx_enemy_hit_heavy.yy",},
     {"name":"obj_invisible_wall","order":1,"path":"objects/obj_invisible_wall/obj_invisible_wall.yy",},
     {"name":"flow","order":5,"path":"scripts/flow/flow.yy",},
