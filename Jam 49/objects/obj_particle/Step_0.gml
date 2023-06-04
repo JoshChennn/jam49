@@ -1,3 +1,2 @@
-//image_alpha -= .0025;
-image_alpha -= 0.015;
+image_alpha -= fade;
 if (image_alpha <= 0) instance_destroy();
