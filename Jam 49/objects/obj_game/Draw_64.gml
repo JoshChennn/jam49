@@ -1,6 +1,12 @@
+if (room == rm_mirrorWorld){
+	
+	draw_text(140, 64, "  : " + string(gems_to_gain))
+	draw_sprite(spr_gemIcon, -1, 48, 48);
 
+	draw_text(140, 128, "  : " + string(exp_to_gain))
+	draw_sprite(spr_crownIcon, -1, 48, 112);
 
-
+}
 
 
 
