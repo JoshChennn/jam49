@@ -8,7 +8,6 @@ if (object_get_name(object_index) == "obj_enemy_01"){
 	hlth = 20;
 	max_hlth = hlth;
 	damage = .5;
-	image_blend = c_white;
 	
 	sprite_left = spr_enemy_01_left;
 	sprite_right = spr_enemy_01_right;
@@ -25,7 +24,6 @@ if (object_get_name(object_index) == "obj_enemy_01"){
 	hlth = 40;
 	max_hlth = hlth;
 	damage = .5;
-	image_blend = c_orange;
 	
 	sprite_left = spr_enemy_02_left;
 	sprite_right = spr_enemy_02_right;
@@ -35,6 +33,9 @@ if (object_get_name(object_index) == "obj_enemy_01"){
 	sprite_up_right = spr_enemy_02_up_right;
 	sprite_down_left = spr_enemy_02_down_left;
 	sprite_down_right = spr_enemy_02_down_right;
+	
+	image_xscale = .75;
+	image_yscale = .75;
 		
 } else if (object_get_name(object_index) == "obj_enemy_03"){
 	
@@ -42,7 +43,6 @@ if (object_get_name(object_index) == "obj_enemy_01"){
 	hlth = 60;
 	max_hlth = hlth;
 	damage = .5;
-	image_blend = c_aqua;
 	
 	foot_print_timer = 0;
 	foot_print_orientation = 0;

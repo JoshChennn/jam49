@@ -8,10 +8,6 @@ var player = instance_position(x + lengthdir_x(player_distance, potential_direct
 var circle_other = collision_circle(x, y, radius, par_enemy_parent, true, true);
 var circle_player = collision_circle(x, y, radius_player, obj_player, true, true);
 
-if (object_get_name(object_index) == "obj_enemy_01") image_blend = c_white;
-else if (object_get_name(object_index) == "obj_enemy_02") image_blend = c_orange;
-else if (object_get_name(object_index) == "obj_enemy_03") image_blend = c_aqua;
-
 if (noob_mode > 0){
 
 	noob_mode--;
@@ -22,13 +18,7 @@ if (noob_mode > 0){
 	if (blink > 1) blink = 0;
 		
 	if (blink) image_blend = c_red;
-	else {
-		
-		if (object_get_name(object_index) == "obj_enemy_01") image_blend = c_white;
-		else if (object_get_name(object_index) == "obj_enemy_02") image_blend = c_orange;
-		else if (object_get_name(object_index) == "obj_enemy_03") image_blend = c_aqua;
-		
-		}
+	else image_blend = c_white;
 		
 	if (pre_attack_timer >= 80){
 			

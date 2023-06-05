@@ -11,7 +11,7 @@ if (!place_meeting(x,y,obj_player)) {
 	if (delay <= 60) delay = 0;
 }
 //depth = -y+200;
-if (delay > 60){
+if (delay > 30){
 	
 	//Starting to brighen up
 	if fading == -1 {

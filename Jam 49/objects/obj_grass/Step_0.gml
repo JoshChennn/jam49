@@ -1,1 +1,1 @@
-if(place_meeting(x, y, obj_portal)) instance_destroy();
+if (collision_circle(x, y, 300, obj_portal, true, true)) instance_destroy();
