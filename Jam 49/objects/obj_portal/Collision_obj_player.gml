@@ -8,3 +8,4 @@ if (leave_possible) {
 
 	delay++;
 }
+other_col_player = true;

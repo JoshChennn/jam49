@@ -12,8 +12,13 @@ if (enemies_alive < enemy_cap and enemies_to_go > 0) {
 		var possible = false;
 		var xx,yy;
 		repeat (5) {
-			xx = x + irandom_range(-300, 300);
-			yy = y + irandom_range(-64, 64);
+			if (irandom(1) == 0){
+				xx = irandom(room_width);
+				yy = choose(48, room_height - 48);
+			} else {
+				xx = choose(48, room_width - 48);
+				yy = irandom(room_height);			
+			}
 			if (place_empty(xx, yy, par_enemy_parent)) {
 				possible = true;
 				break;
