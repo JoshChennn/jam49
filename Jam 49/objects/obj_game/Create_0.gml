@@ -8,8 +8,8 @@ global.portalHealth = 100;
 global.sfxVol = 100;
 global.musicVol = 60;
 
-global.sword_level = 0;
-global.bow_level = 0;
+global.sword_level = 1;
+global.bow_level = 1;
 global.arrows = 0;
 
 gems_to_gain = 0;
@@ -20,8 +20,8 @@ if (!file_exists("gamedata.penguin")){
 	
 	global.player_exp = 0;
 	global.player_gems = 0;
-	global.sword_level = 0;
-	global.bow_level = 0;
+	global.sword_level = 1;
+	global.bow_level = 1;
 	
 	gamedata = ds_map_create();
 	ds_map_replace(gamedata, "EXP", global.player_exp);
@@ -49,8 +49,8 @@ if (!file_exists("gamedata.penguin")){
 	if (global.sfxVol == undefined) global.sfxVol = 100;
 	if (global.musicVol == undefined) global.musicVol = 60;
 	
-	if (global.sword_level == undefined) global.sword_level = 0;
-	if (global.bow_level == undefined) global.bow_level = 0;
+	if (global.sword_level == undefined or global.sword_level == 0) global.sword_level = 1;
+	if (global.bow_level == undefined or global.bow_level == 0) global.bow_level = 1;
 }
 
 global.flags = 0;

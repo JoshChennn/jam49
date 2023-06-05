@@ -1,4 +1,4 @@
-if (global.player_exp >= 10){
+if (global.player_exp >= 5){
 	if (distance_to_object(obj_player) < 160 and popup != 0) {
 		if (global.bow_level == 0) {
 			deal = "SWORD";
@@ -13,7 +13,7 @@ if (global.player_exp >= 10){
 			price = global.bow_level*4+6+rand_difference();
 		}
 		if (!audio_is_playing(sfx_new_offer)) audio_play_sound(sfx_new_offer, 10, false);
-		global.player_exp -= 10;
+		global.player_exp -= 5;
 		LootLockerSubmitScore("14517",string(global.player_exp));
 		var float = instance_create_layer(obj_camera.x,obj_camera.y,"Instances",obj_floatText);
 		float._text = "-10 EXP";
