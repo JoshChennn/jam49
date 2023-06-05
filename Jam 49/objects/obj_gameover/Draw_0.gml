@@ -4,6 +4,15 @@ draw_rectangle(0, 0, room_width, room_height, false);
 draw_set_color(c_white);
 
 draw_sprite(spr_gameover, -1, room_width * .5, room_height * .5);
+draw_set_font(fnt_type);
+draw_set_halign(fa_center);
+draw_set_color($1d1d1d);
+if (audio_is_playing(sfx_dying)) {
+	draw_text(room_width/2,540,"You were killed by monsters.\nYou'll still get to keep half of your rewards.");
+}
+else {
+	draw_text(room_width/2,540,"The monsters destroyed the portal.\nYou'll still get to keep half of your rewards.");
+}
 
 if (counter > 120){
 	draw_set_alpha((sin(time) + 1.5) * .395);
