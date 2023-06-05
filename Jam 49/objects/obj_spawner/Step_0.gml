@@ -19,7 +19,7 @@ if (enemies_alive < enemy_cap and enemies_to_go > 0) {
 				xx = choose(48, room_width - 48);
 				yy = irandom(room_height);			
 			}
-			if (place_empty(xx, yy, par_enemy_parent)) {
+			if (place_empty(xx, yy, par_enemy_parent) and clamp(obj_camera.x-xx,obj_camera.x-960,obj_camera.x+960) != obj_camera.x-xx and clamp(obj_camera.y-yy,obj_camera.y-960,obj_camera.y+960) != obj_camera.y-yy) {
 				possible = true;
 				break;
 			}

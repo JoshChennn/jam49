@@ -1,12 +1,12 @@
 switch (object_get_name(object_index)) {
 	case "obj_enemy_01":
-		global.portalHealth -= 1;
+		global.portalHealth -= 4;
 		break;
 	case "obj_enemy_02":
-		global.portalHealth -= 3;
+		global.portalHealth -= 7;
 		break;
 	case "obj_enemy_03":
-		global.portalHealth -= 5;
+		global.portalHealth -= 10;
 		break;
 }
 if (global.portalHealth <= 0) {

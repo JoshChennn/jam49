@@ -19,7 +19,7 @@ if (capacity_used < enemy_max_capacity){
 					xx = choose(48, room_width - 48);
 					yy = irandom(room_height);			
 				}
-			} until place_empty(xx, yy, par_enemy_parent);
+			} until place_empty(xx, yy, par_enemy_parent) and clamp(obj_camera.x-xx,obj_camera.x-960,obj_camera.x+960) != obj_camera.x-xx and clamp(obj_camera.y-yy,obj_camera.y-960,obj_camera.y+960) != obj_camera.y-yy;
 		
 			var enemy = instance_create_layer(xx, yy, "Instances", enemy_types[type_index])
 			capacity_used += enemy_volume[type_index];
