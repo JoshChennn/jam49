@@ -9,7 +9,7 @@ if (sprite_index != -1) draw_self();
 
 var hp = (hlth / max_hlth) * 60;
 if (hlth < max_hlth) {
-	draw_set_alpha(floor(image_alpha));
+	//draw_set_alpha(floor(image_alpha));
 	//draw_healthbar(x - dist, y - 48 - 8, x + dist, y - 32 - 8, hp, c_dkgray, c_maroon, c_green, 0, true, true);
 	draw_sprite_part(spr_enemyHealth,1,0,0,hp,20,x-30,y-70);
 	draw_sprite(spr_enemyHealth,0,x,y-60);
