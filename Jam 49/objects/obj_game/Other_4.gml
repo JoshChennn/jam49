@@ -1,3 +1,6 @@
+gems_to_gain = 0;
+exp_to_gain = 0;
+
 alarm[0] = 1;
 if (room = rm_mainWorld or room = rm_mirrorWorld) {
 	repeat (50) {
