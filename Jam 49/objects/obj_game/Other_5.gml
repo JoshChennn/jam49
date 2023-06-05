@@ -8,8 +8,8 @@ if (room == rm_mirrorWorld){
 	
 	} else {
 
-		global.player_exp += exp_to_gain;
-		global.player_gems += gems_to_gain;
+		global.player_exp += floor(exp_to_gain);
+		global.player_gems += floor(gems_to_gain);
 	
 	}
 	

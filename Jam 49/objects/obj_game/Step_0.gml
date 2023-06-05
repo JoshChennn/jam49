@@ -27,6 +27,11 @@ if (room == rm_mirrorWorld) && (global.flags >= 5) && (!played_flag_notification
 
 }
 
+gems_to_gain = floor(gems_to_gain);
+exp_to_gain = floor(exp_to_gain);
+global.player_gems = floor(global.player_gems);
+global.player_exp = floor(global.player_exp);
+
 //Portal health particles
 /*if (room == rm_mirrorWorld and !keyboard_check(vk_escape)) {
 	var part = instance_create_depth(obj_camera.x-250+global.portalHealth*5,obj_camera.y-540+irandom_range(165,175),depth,obj_particle);

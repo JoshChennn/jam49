@@ -1,5 +1,5 @@
 //how many enemy volume there can be
-enemy_max_capacity = 50;
+enemy_max_capacity = 30 + floor(global.sword_level  * 1.5);
 capacity_used = 0;
 
 //how many of the capacity the enemy types use up

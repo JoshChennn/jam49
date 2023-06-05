@@ -1,4 +1,4 @@
-var amount = floor(irandom_range(1, max_hlth / choose(3, 4, 5)));
+var amount = floor(irandom_range(1, floor(max_hlth / choose(3, 5, 8, 10))));
 
 if (hlth <= 0) {
 	repeat(amount){
@@ -26,7 +26,7 @@ switch (object_get_name(object_index)) {
 
 
 // INCREASE EXP -- TEMPORARY
-obj_game.exp_to_gain += 10 + max_hlth / 10;
+obj_game.exp_to_gain += floor(8 + max_hlth / 8);
 
 //if (irandom(50) == 0) && (!instance_exists(obj_focus_potion)) instance_create_depth(x + irandom_range(-64, 64), y - irandom_range(0, 48), depth - 1, obj_focus_potion);
 

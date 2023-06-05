@@ -4,10 +4,10 @@ last_y = y;
 
 if (object_get_name(object_index) == "obj_enemy_01"){
 		 
-	movespeed = 1.5;
-	hlth = 20;
+	movespeed = 1.5 + floor(global.sword_level * .05);
+	hlth = 15 + floor(global.sword_level * .8);
 	max_hlth = hlth;
-	damage = .5;
+	damage = .5 + floor(global.sword_level * .15);
 	
 	sprite_left = spr_enemy_01_left;
 	sprite_right = spr_enemy_01_right;
@@ -21,7 +21,7 @@ if (object_get_name(object_index) == "obj_enemy_01"){
 } else if (object_get_name(object_index) == "obj_enemy_02"){ 
 	
 	movespeed = .85;
-	hlth = 40;
+	hlth = 30 + floor(global.sword_level * 1.2);
 	max_hlth = hlth;
 	damage = .5;
 	
@@ -40,7 +40,7 @@ if (object_get_name(object_index) == "obj_enemy_01"){
 } else if (object_get_name(object_index) == "obj_enemy_03"){
 	
 	movespeed = .5;
-	hlth = 60;
+	hlth = 50;
 	max_hlth = hlth;
 	damage = .5;
 	
