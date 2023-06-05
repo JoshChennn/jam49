@@ -12,15 +12,6 @@ if (hearts <= 0){
 	image_speed = 0;
 	image_index = 0;
 	
-	global.player_exp += obj_game.exp_to_gain - floor(obj_game.exp_to_gain * .8);
-	global.player_gems += obj_game.gems_to_gain - floor(obj_game.gems_to_gain * .8);	
-	ds_map_replace(obj_game.gamedata, "EXP", global.player_exp);
-	ds_map_replace(obj_game.gamedata, "gems", global.player_gems);
-	LootLockerSubmitScore("14517",string(global.player_exp));
-	global.flags = 0;
-	obj_game.exp_to_gain = 0;
-	obj_game.gems_to_gain = 0;
-	
 	if (room == rm_mirrorWorld){
 		
 		with(par_enemy_parent){
@@ -327,7 +318,7 @@ if (hearts <= 0){
 	//running sound
 	if (moveX != 0) || (moveY != 0){
 	
-		if (gain_running_sound < 1.2) gain_running_sound += .05;
+		if (gain_running_sound < 1) gain_running_sound += .05;
 	
 		if (room == rm_mirrorWorld){
 		
