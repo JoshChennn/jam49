@@ -1,6 +1,6 @@
 if (!place_meeting(x,y,obj_player)) {
 	coll_player = false;
-	delay = 0;
+	if (delay <= 60) delay = 0;
 }
 depth = -y+200;
 if (delay > 60){
@@ -11,6 +11,7 @@ if (delay > 60){
 		if (fade <= 0) {
 			fading = 0;
 			fade = 0;
+			delay = 0;
 		}
 		obj_fade.image_alpha = fade;
 	}
