@@ -2,6 +2,8 @@ randomize();
 
 alarm[2] = 240;
 
+lose = 0;
+
 global.portalHealth = 100;
 
 //AUDIO VOLUME

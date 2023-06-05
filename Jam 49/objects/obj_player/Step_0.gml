@@ -12,6 +12,8 @@ if (hearts <= 0){
 	image_speed = 0;
 	image_index = 0;
 	
+	obj_game.lose = 1;
+	
 	if (room == rm_mirrorWorld){
 		
 		with(par_enemy_parent){

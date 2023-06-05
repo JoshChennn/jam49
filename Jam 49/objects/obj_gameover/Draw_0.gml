@@ -7,12 +7,14 @@ draw_sprite(spr_gameover, -1, room_width * .5, room_height * .5);
 draw_set_font(fnt_type);
 draw_set_halign(fa_center);
 draw_set_color($1d1d1d);
-if (audio_is_playing(sfx_dying)) {
+if (obj_game.lose == 1) {
 	draw_text(room_width/2,540,"You were killed by monsters.\nYou'll still get to keep half of your rewards.");
 }
-else {
+else if (obj_game.lose == 2) {
 	draw_text(room_width/2,540,"The monsters destroyed the portal.\nYou'll still get to keep half of your rewards.");
 }
+draw_text(room_width/2-80,715,obj_game.exp_to_gain);
+draw_text(room_width/2-80,775,obj_game.gems_to_gain);
 
 if (counter > 120){
 	draw_set_alpha((sin(time) + 1.5) * .395);
