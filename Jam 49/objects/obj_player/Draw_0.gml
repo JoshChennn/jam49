@@ -10,7 +10,11 @@ else {
 draw_set_alpha(1);
 draw_set_color(c_white);
 
-draw_self();
+var _depth = 1;
+if (dir > 180 or dir == 0) {
+	draw_self();
+	_depth = 0;
+}
 
 if (keyboard_check(ord("B")) and global.bow_level > 0){
 	
@@ -20,7 +24,7 @@ if (keyboard_check(ord("B")) and global.bow_level > 0){
 	draw_line_width(x+lengthdir_x(40-_stretch,point_dir),y+lengthdir_y(40-_stretch,point_dir),x+lengthdir_x(40,point_dir)+lengthdir_x(28,point_dir-90),y+lengthdir_y(40,point_dir)+lengthdir_y(28,point_dir-90),2);
 
 }
-
+if (_depth) draw_self();
 
 //draw_text(x, y - 64, "Gain: " + string(gain_running_sound));
 
