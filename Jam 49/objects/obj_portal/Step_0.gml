@@ -27,7 +27,7 @@ if (delay > 30){
 		fade += .04;
 		if (fade >= 1){
 			
-			audio_play_sound(sfx_portal, 10, false);
+			audio_play_sound(sfx_portal, 10, false, 3);
 			
 			if (room == rm_mainWorld) room = rm_mirrorWorld;
 			else room = rm_mainWorld;

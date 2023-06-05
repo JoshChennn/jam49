@@ -33,3 +33,10 @@ if (noob_mode <= 0) && (other.swinging) && (!sound_played) {
 
 
 }
+
+if (object_get_name(object_index) == "obj_enemy_03") && (other.swinging){
+
+	instance_destroy();
+	instance_create_depth(x, y, depth, obj_explosion);
+
+}

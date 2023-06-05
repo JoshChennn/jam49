@@ -305,9 +305,11 @@ if (state == 0){
 			foot_print_orientation++;
 			if (foot_print_orientation > 1) foot_print_orientation = 0;
 		
-			var foot_print = instance_create_depth(x, y, depth + 1, obj_enemy_03_footprint);			
-			foot_print.image_index = foot_print_orientation;
-			foot_print.image_angle = direction;
+			if (path_index != -1){
+				var foot_print = instance_create_depth(x, y, depth + 1, obj_enemy_03_footprint);			
+				foot_print.image_index = foot_print_orientation;
+				foot_print.image_angle = direction;
+			} else alarm[0] = 120;
 			
 		}
 

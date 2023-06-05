@@ -18,3 +18,11 @@ if (noob_mode <= 0 and other.speed != 0){
 
 	instance_destroy(other);
 }
+
+
+if (object_get_name(object_index) == "obj_enemy_03"){
+
+	instance_destroy();
+	instance_create_depth(x, y, depth, obj_explosion);
+
+}
