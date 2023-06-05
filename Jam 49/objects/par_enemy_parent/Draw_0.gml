@@ -1,6 +1,8 @@
-if (object_get_name(object_index)) == "obj_enemy_03" && (image_alpha <= 0){
+if (object_get_name(object_index)) == "obj_enemy_03"{
 	var old_alpha = image_alpha;
-	draw_set_alpha(1+image_alpha);
+	if (image_alpha != 1){
+	draw_set_alpha(1 - image_alpha * .5);
+	} else draw_set_alpha(.3);
 	draw_set_color(c_black);
 	draw_ellipse(x-55,y+15,x+55,y+49,false);
 	draw_set_alpha(old_alpha);
