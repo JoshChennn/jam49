@@ -1,4 +1,4 @@
-if (irandom_range(0,10) = 1) {
+if (irandom_range(0,8) = 1) {
 	var xx = irandom_range(-30,30);
 	var yy = irandom_range(-30,30);
 	var part = instance_create_depth(x+xx,y+yy,depth+100,obj_particle);

@@ -14,9 +14,13 @@ if swinging {
 	}
 	
 }
-else {
+else if (obj_player._stretch == 0) {
 	x = obj_player.x+lengthdir_x(40,obj_player.dir-55);
 	y = obj_player.y+10+lengthdir_y(30,obj_player.dir-30);
 	image_angle = 90;
 	depth_difference = 0;
+}
+else {
+	x = obj_camera.x-1100;
+	y = obj_camera.y-1000;
 }
