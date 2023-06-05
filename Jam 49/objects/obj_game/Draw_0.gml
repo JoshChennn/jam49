@@ -1,1 +1,1 @@
-draw_rectangle_color(0, 0, room_width, room_height, c_black, c_white, c_dkgray, c_ltgray, true); 
+//draw_rectangle_color(0, 0, room_width, room_height, c_black, c_white, c_dkgray, c_ltgray, true); 

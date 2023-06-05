@@ -14,9 +14,9 @@ if (capacity_used < enemy_max_capacity){
 			do {
 				if (irandom(1) == 0){
 					xx = irandom(room_width);
-					yy = choose(48, room_height - 48);
+					yy = choose(96, room_height - 96);
 				} else {
-					xx = choose(48, room_width - 48);
+					xx = choose(96, room_width - 96);
 					yy = irandom(room_height);			
 				}
 			} until place_empty(xx, yy, par_enemy_parent) and clamp(obj_camera.x-xx,obj_camera.x-960,obj_camera.x+960) != obj_camera.x-xx and clamp(obj_camera.y-yy,obj_camera.y-960,obj_camera.y+960) != obj_camera.y-yy;

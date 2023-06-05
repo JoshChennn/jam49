@@ -13,6 +13,7 @@ if (obj_game.lose == 1) {
 else if (obj_game.lose == 2) {
 	draw_text(room_width/2,540,"The monsters destroyed the portal.\nYou'll still get to keep half of your rewards.");
 }
+
 draw_text(room_width/2-80,715,floor(obj_game.exp_to_gain/2));
 draw_text(room_width/2-80,775,floor(obj_game.gems_to_gain/2));
 

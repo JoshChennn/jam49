@@ -151,6 +151,7 @@
     {"id":{"name":"sfx_player_hit_02","path":"sounds/sfx_player_hit_02/sfx_player_hit_02.yy",},},
     {"id":{"name":"spr_gameover","path":"sprites/spr_gameover/spr_gameover.yy",},},
     {"id":{"name":"obj_sword_effect","path":"objects/obj_sword_effect/obj_sword_effect.yy",},},
+    {"id":{"name":"obj_wall_portal","path":"objects/obj_wall_portal/obj_wall_portal.yy",},},
     {"id":{"name":"sfx_fire_ball_02","path":"sounds/sfx_fire_ball_02/sfx_fire_ball_02.yy",},},
     {"id":{"name":"collisions","path":"scripts/collisions/collisions.yy",},},
     {"id":{"name":"sfx_scroll_close","path":"sounds/sfx_scroll_close/sfx_scroll_close.yy",},},

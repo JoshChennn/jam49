@@ -120,6 +120,7 @@
     {"name":"sfx_player_hit_02","order":14,"path":"sounds/sfx_player_hit_02/sfx_player_hit_02.yy",},
     {"name":"spr_gameover","order":16,"path":"sprites/spr_gameover/spr_gameover.yy",},
     {"name":"obj_sword_effect","order":12,"path":"objects/obj_sword_effect/obj_sword_effect.yy",},
+    {"name":"obj_wall_portal","order":30,"path":"objects/obj_wall_portal/obj_wall_portal.yy",},
     {"name":"sfx_fire_ball_02","order":30,"path":"sounds/sfx_fire_ball_02/sfx_fire_ball_02.yy",},
     {"name":"sfx_scroll_close","order":36,"path":"sounds/sfx_scroll_close/sfx_scroll_close.yy",},
     {"name":"obj_monster_test","order":18,"path":"objects/obj_monster_test/obj_monster_test.yy",},

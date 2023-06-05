@@ -1,3 +1,5 @@
+depth = -y;
+
 leave_possible = true;
 if (room = rm_mirrorWorld) {
 	with (obj_flag) {
@@ -8,7 +10,7 @@ if (!place_meeting(x,y,obj_player)) {
 	coll_player = false;
 	if (delay <= 60) delay = 0;
 }
-depth = -y+200;
+//depth = -y+200;
 if (delay > 60){
 	
 	//Starting to brighen up

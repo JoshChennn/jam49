@@ -16,7 +16,7 @@ if (global.player_exp >= 5){
 		global.player_exp -= 5;
 		LootLockerSubmitScore("14517",string(global.player_exp));
 		var float = instance_create_layer(obj_camera.x,obj_camera.y,"Instances",obj_floatText);
-		float._text = "-10 EXP";
+		float._text = "-5 EXP";
 		instance_destroy(typer);
 		typer = instance_create_layer(0,0,"Instances",obj_typewriter);
 		typer._text = "Storekeeper: No? Ok, no problemo! Stephano very patient! Here is what I will offer now:";
