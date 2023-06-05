@@ -2,7 +2,7 @@ if (!place_meeting(x,y,obj_player)) {
 	coll_player = false;
 	delay = 0;
 }
-
+depth = -y+200;
 if (delay > 60){
 	
 	//Starting to brighen up
