@@ -1,3 +1,20 @@
+if (object_get_name(object_index)) == "obj_enemy_03" && (image_alpha <= 0){
+	var old_alpha = image_alpha;
+	draw_set_alpha(1+image_alpha);
+	draw_set_color(c_black);
+	draw_ellipse(x-55,y+15,x+55,y+49,false);
+	draw_set_alpha(old_alpha);
+	draw_set_color(c_white);
+}
+else {
+	var old_alpha = image_alpha;
+	draw_set_alpha(0.3);
+	draw_set_color(c_black);
+	draw_ellipse(x-55,y+15,x+55,y+49,false);
+	draw_set_alpha(old_alpha);
+	draw_set_color(c_white);
+}
+
 if (sprite_index != -1) draw_self();
 
 var hp = (hlth / max_hlth) * 60;
