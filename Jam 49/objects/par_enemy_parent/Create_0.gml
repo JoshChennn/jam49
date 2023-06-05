@@ -2,6 +2,8 @@ sound_played = false;
 last_x = x;
 last_y = y;
 
+portal = false;
+
 if (object_get_name(object_index) == "obj_enemy_01"){
 		 
 	movespeed = 1.5 + floor(global.sword_level * .05);

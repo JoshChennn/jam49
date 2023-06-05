@@ -18,8 +18,6 @@ if (global.portalHealth <= 0) {
 		image_speed = 0;
 		image_index = 0;
 	
-		obj_game.lose = 2;
-	
 		if (room == rm_mirrorWorld){
 		
 			with(par_enemy_parent){
@@ -34,16 +32,18 @@ if (global.portalHealth <= 0) {
 				audio_play_sound(sfx_dying, 10, false);
 				obj_player.sound_death_played = true;
 			}
-		
-			if (obj_player.image_alpha > 0){
+			room_goto(rm_gameover);
+			obj_game.lose = 2;
+			/*if (obj_player.image_alpha > 0){
 				obj_player.image_alpha -= .01;
 				obj_sword.image_alpha -= .015;
 			} else {
 	
-				room_goto(rm_gameover);
+				
 	
-			}
+			}*/
 		}
 	}
 }
+portal = true;
 instance_destroy();

@@ -18,7 +18,6 @@ if (room == rm_mirrorWorld){
 		LootLockerSubmitScore("14517",string(global.player_exp));
 		global.flags = 0;
 		with(obj_flag) instance_destroy();
-		
-		lose = 0;
 
 }
+else if room == rm_gameover lose = 0;

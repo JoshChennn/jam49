@@ -26,7 +26,8 @@ switch (object_get_name(object_index)) {
 
 
 // INCREASE EXP -- TEMPORARY
-obj_game.exp_to_gain += floor(8 + max_hlth / 8);
+if portal == false obj_game.exp_to_gain += floor(8 + max_hlth / 8);
+portal = false;
 
 //if (irandom(50) == 0) && (!instance_exists(obj_focus_potion)) instance_create_depth(x + irandom_range(-64, 64), y - irandom_range(0, 48), depth - 1, obj_focus_potion);
 
