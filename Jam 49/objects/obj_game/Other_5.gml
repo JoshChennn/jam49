@@ -2,7 +2,7 @@ if (room == rm_mirrorWorld){
 	
 	if (obj_player.hearts > 0){
 
-		if (global.flags >= 5){
+		//if (global.flags >= 5){
 	
 			global.flags = 0;
 			with(obj_flag) instance_destroy();
@@ -16,7 +16,7 @@ if (room == rm_mirrorWorld){
 			ds_map_replace(gamedata, "EXP", global.player_exp);
 			ds_map_replace(gamedata, "gems", global.player_gems);
 			LootLockerSubmitScore("14517",string(global.player_exp));
-		}
+		//}
 
 	} else {
 	
