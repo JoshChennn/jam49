@@ -1,15 +1,11 @@
-crystals_on = 5;
+leave_possible = true;
 if (room = rm_mirrorWorld) {
-	crystals_on = 0;
 	with (obj_flag) {
-		if active other.crystals_on++;
+		if !active other.leave_possible = false;
 	}
 }
-if crystals_on == 5 leave_possible = true;
-else leave_possible = false;
 if (!place_meeting(x,y,obj_player)) {
 	coll_player = false;
-	other_col_player = false;
 	if (delay <= 60) delay = 0;
 }
 depth = -y+200;
