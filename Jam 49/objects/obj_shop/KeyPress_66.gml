@@ -2,10 +2,20 @@ if (global.player_exp >= 5){
 	
 	if (distance_to_object(obj_player) < 180 and popup != 0) {
 		if (global.bow_level > 0) {
-			item = choose("EXTRA LIFE","ARROWS");
+			if (obj_player.hearts == 3) {
+				item = "ARROWS"
+			}
+			else {
+				item = choose("EXTRA LIFE","ARROWS");
+			}
 		}
 		else {
-			item = choose("BOW","EXTRA LIFE");
+			if (obj_player.hearts == 3) {
+				item = "BOW"
+			}
+			else {
+				item = choose("BOW","EXTRA LIFE");
+			}
 		}
 	
 		if (item == "BOW") {

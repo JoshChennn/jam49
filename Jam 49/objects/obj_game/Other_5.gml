@@ -20,8 +20,8 @@ if (room == rm_mirrorWorld){
 
 	} else if (lose != 0) {
 	
-		global.player_exp += exp_to_gain - floor(exp_to_gain * .8);
-		global.player_gems += gems_to_gain - floor(gems_to_gain * .8);	
+		global.player_exp += floor(exp_to_gain/2);
+		global.player_gems += floor(gems_to_gain/2);	
 		ds_map_replace(obj_game.gamedata, "EXP", global.player_exp);
 		ds_map_replace(obj_game.gamedata, "gems", global.player_gems);
 		LootLockerSubmitScore("14517",string(global.player_exp));
