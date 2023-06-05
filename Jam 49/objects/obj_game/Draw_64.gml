@@ -1,16 +1,7 @@
-if (room == rm_mirrorWorld){
-	
-	draw_text(140, 64, "  : " + string(gems_to_gain))
-	draw_sprite(spr_gemIcon, -1, 48, 48);
-
-	draw_text(140, 128, "  : " + string(exp_to_gain))
-	draw_sprite(spr_crownIcon, -1, 48, 112);
-
+if (room == rm_mirrorWorld and !keyboard_check(vk_escape)) {
+	draw_sprite_part(spr_portalHealth,1,5,5,5+global.portalHealth*5,30,708,140);
+	draw_sprite(spr_portalHealth,0,960,160);
 }
-
-
-
-
 
 
 //old debug stuff

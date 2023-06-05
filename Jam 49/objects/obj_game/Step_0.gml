@@ -26,3 +26,11 @@ if (room == rm_mirrorWorld) && (global.flags >= 5) && (!played_flag_notification
 	audio_play_sound(sfx_flag_notification, 10, false, 2);
 
 }
+
+//Portal health particles
+/*if (room == rm_mirrorWorld and !keyboard_check(vk_escape)) {
+	var part = instance_create_depth(obj_camera.x-250+global.portalHealth*5,obj_camera.y-540+irandom_range(165,175),depth,obj_particle);
+	part.image_blend = $b9ba05;
+	part.direction = 0;
+	part.fade = 0.01;
+}*/

@@ -1,5 +1,7 @@
 randomize();
 
+global.portalHealth = 100;
+
 //AUDIO VOLUME
 global.sfxVol = 100;
 global.musicVol = 60;

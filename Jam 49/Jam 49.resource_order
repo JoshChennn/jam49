@@ -175,6 +175,7 @@
     {"name":"spr_tower","order":24,"path":"sprites/spr_tower/spr_tower.yy",},
     {"name":"spr_explosion","order":4,"path":"sprites/spr_explosion/spr_explosion.yy",},
     {"name":"spr_enemy_01_left","order":3,"path":"sprites/spr_enemy_01_left/spr_enemy_01_left.yy",},
+    {"name":"spr_portalHealth","order":18,"path":"sprites/spr_portalHealth/spr_portalHealth.yy",},
     {"name":"sfx_player_hit_01","order":13,"path":"sounds/sfx_player_hit_01/sfx_player_hit_01.yy",},
     {"name":"sfx_enemy_hit_arrow_03","order":21,"path":"sounds/sfx_enemy_hit_arrow_03/sfx_enemy_hit_arrow_03.yy",},
     {"name":"spr_title","order":19,"path":"sprites/spr_title/spr_title.yy",},
