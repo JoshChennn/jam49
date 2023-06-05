@@ -28,7 +28,7 @@ switch (object_get_name(object_index)) {
 // INCREASE EXP -- TEMPORARY
 obj_game.exp_to_gain += 10 + max_hlth / 10;
 
-if (irandom(50) == 0) && (!instance_exists(obj_focus_potion)) instance_create_depth(x + irandom_range(-64, 64), y - irandom_range(0, 48), depth - 1, obj_focus_potion);
+//if (irandom(50) == 0) && (!instance_exists(obj_focus_potion)) instance_create_depth(x + irandom_range(-64, 64), y - irandom_range(0, 48), depth - 1, obj_focus_potion);
 
 //play death sound
 var location = (distance_to_object(obj_player) * .2) * -sign(x - obj_player.x);
@@ -37,6 +37,7 @@ audio_play_sound_at(sfx_enemy_death, location, y, 0, 100, 300, 1, false, 10, 2, 
 
 repeat(30) {
 	var part = instance_create_depth(x,y,depth,obj_particle);
+	part.fade = 0.01;
 	part.direction = irandom_range(0,359);
 	if irandom_range(0,5) == 0 part.image_blend = c_orange;
 	else part.image_blend = c_black;
