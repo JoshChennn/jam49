@@ -5,6 +5,8 @@ global.portalHealth = 100;
 //AUDIO VOLUME
 global.sfxVol = 100;
 global.musicVol = 60;
+global.sword_level = 0;
+global.bow_level = 0;
 
 gems_to_gain = 0;
 exp_to_gain = 0;
@@ -14,6 +16,8 @@ if (!file_exists("gamedata.penguin")){
 	
 	global.player_exp = 0;
 	global.player_gems = 0;
+	global.sword_level = 0;
+	global.bow_level = 0;
 	
 	gamedata = ds_map_create();
 	ds_map_replace(gamedata, "EXP", global.player_exp);
