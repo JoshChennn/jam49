@@ -1,3 +1,9 @@
+leave_possible = true;
+if (room = rm_mirrorWorld) {
+	with (obj_flag) {
+		if !active other.leave_possible = false;
+	}
+}
 if (!place_meeting(x,y,obj_player)) {
 	coll_player = false;
 	if (delay <= 60) delay = 0;
@@ -37,7 +43,9 @@ if (room = rm_mirrorWorld) {
 	repeat (7) {
 		var rand_dir = irandom(359);
 		var r = 400;
-		if (instance_exists(obj_shield)) instance_create_layer(x + lengthdir_x(r*obj_shield.image_xscale, rand_dir), y + lengthdir_y(r * .75*obj_shield.image_xscale, rand_dir), "Instances", obj_particle);
+		if (instance_exists(obj_shield)) 
+		var a = instance_create_layer(x + lengthdir_x(r*obj_shield.image_xscale, rand_dir), y + lengthdir_y(r * .75*obj_shield.image_xscale, rand_dir), "Instances", obj_particle);
+		if leave_possible a.image_blend = $b9ba05;
 		alarm_set(0,3);
 	}
 	
