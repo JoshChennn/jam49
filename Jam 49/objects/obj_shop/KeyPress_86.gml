@@ -23,7 +23,7 @@ if (distance_to_object(obj_player) < 160) && (popup != 0){
 			break;
 		case "ARROWS":
 			 if (global.player_gems >= price){
-				obj_player.arrows += arrows_increase;
+				global.player_arrows += arrows_increase;
 				global.player_gems -= price;
 				if (!audio_is_playing(sfx_purchase)) audio_play_sound(sfx_purchase, 10, false);
 				audio_play_sound(sfx_purchase, 10, false);

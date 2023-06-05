@@ -240,7 +240,7 @@ if (hearts <= 0){
 		if (arrow != 0 and _stretch > 10) {
 			arrow.speed = _stretch;
 			arrow = 0;
-			arrows--;
+			global.player_arrows--;
 		}
 		_stretch = 0;
 		audio_stop_sound(sfx_stretch_bow_01);
