@@ -55,7 +55,7 @@ if (hearts <= 0){
 		key_right = keyboard_check(ord("D")) or keyboard_check(vk_right);
 		key_down = keyboard_check(ord("S")) or keyboard_check(vk_down);
 	}
-	else if (obj_blacksmith.popup == 0 and obj_campfire.popup == 0 and obj_cityHall.popup == 0 and obj_shop.popup == 0) {
+	else if (obj_blacksmith.popup == 0 and obj_campfire.popup == 0 and obj_cityHall.popup == 0 and obj_shop.popup == 0 and obj_portal.fading == 0) {
 		key_left = keyboard_check(ord("A")) or keyboard_check(vk_left);
 		key_up = keyboard_check(ord("W")) or keyboard_check(vk_up);
 		key_right = keyboard_check(ord("D")) or keyboard_check(vk_right);
