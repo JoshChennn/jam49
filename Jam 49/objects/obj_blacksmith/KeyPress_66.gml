@@ -20,5 +20,6 @@ if (global.player_exp >= 10){
 		instance_destroy(typer);
 		typer = instance_create_layer(0,0,"Instances",obj_typewriter);
 		typer._text = "Storekeeper: No? Ok, no problemo! Stephano very patient! Here is what I will offer now:";
+		exit;
 	}
 } else if (!audio_is_playing(sfx_error)) audio_play_sound(sfx_error, 10, false);

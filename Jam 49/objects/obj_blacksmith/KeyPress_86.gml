@@ -10,7 +10,7 @@ if (distance_to_object(obj_player) < 160 and popup != 0) {
 					global.player_gems -= price;
 					global.sword_level += 1;
 					audio_play_sound(sfx_purchase, 10, false);
-				}	
+				} else if (!audio_is_playing(sfx_error)) audio_play_sound(sfx_error, 10, false); 	
 			break;
 			case "BOW":
 				if (global.player_gems >= price){
@@ -19,7 +19,7 @@ if (distance_to_object(obj_player) < 160 and popup != 0) {
 					global.player_gems -= price;
 					global.bow_level += 1;
 					audio_play_sound(sfx_purchase, 10, false);
-				} 
+				} else if (!audio_is_playing(sfx_error)) audio_play_sound(sfx_error, 10, false); 
 			break;
 		}
 	
