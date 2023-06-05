@@ -118,6 +118,7 @@
     {"id":{"name":"sfx_enemy_death","path":"sounds/sfx_enemy_death/sfx_enemy_death.yy",},},
     {"id":{"name":"obj_enemy_attack_normal","path":"objects/obj_enemy_attack_normal/obj_enemy_attack_normal.yy",},},
     {"id":{"name":"spr_volumeSlider","path":"sprites/spr_volumeSlider/spr_volumeSlider.yy",},},
+    {"id":{"name":"obj_arrowIcon","path":"objects/obj_arrowIcon/obj_arrowIcon.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_chest","path":"objects/obj_chest/obj_chest.yy",},},
     {"id":{"name":"spr_focus_potion","path":"sprites/spr_focus_potion/spr_focus_potion.yy",},},

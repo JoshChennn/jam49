@@ -88,6 +88,7 @@
     {"name":"sfx_enemy_death","order":28,"path":"sounds/sfx_enemy_death/sfx_enemy_death.yy",},
     {"name":"obj_enemy_attack_normal","order":5,"path":"objects/obj_enemy_attack_normal/obj_enemy_attack_normal.yy",},
     {"name":"spr_volumeSlider","order":14,"path":"sprites/spr_volumeSlider/spr_volumeSlider.yy",},
+    {"name":"obj_arrowIcon","order":17,"path":"objects/obj_arrowIcon/obj_arrowIcon.yy",},
     {"name":"obj_camera","order":3,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_chest","order":29,"path":"objects/obj_chest/obj_chest.yy",},
     {"name":"spr_focus_potion","order":23,"path":"sprites/spr_focus_potion/spr_focus_potion.yy",},
