@@ -327,7 +327,7 @@ if (hearts <= 0){
 	//running sound
 	if (moveX != 0) || (moveY != 0){
 	
-		if (gain_running_sound < .7) gain_running_sound += .05;
+		if (gain_running_sound < 1.2) gain_running_sound += .05;
 	
 		if (room == rm_mirrorWorld){
 		
