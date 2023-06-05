@@ -30,10 +30,10 @@ if (distance_to_object(obj_player) < 160 and popup != 0) {
 			deal = choose("SWORD","BOW");
 		}
 		if (deal == "SWORD") {
-			price = global.sword_level*2+5+rand_difference();
+			price = global.sword_level*5+5+rand_difference();
 		}
 		else {
-			price = global.bow_level*3+4+rand_difference();
+			price = global.bow_level*4+6+rand_difference();
 		}
 		instance_destroy(typer);
 		typer = instance_create_layer(0,0,"Instances",obj_typewriter);

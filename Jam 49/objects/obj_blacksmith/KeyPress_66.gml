@@ -7,10 +7,10 @@ if (global.player_exp >= 10){
 			deal = choose("SWORD","BOW");
 		}
 		if (deal == "SWORD") {
-			price = global.sword_level*2+5+rand_difference();
+			price = global.sword_level*5+5+rand_difference();
 		}
 		else {
-			price = global.bow_level*3+4+rand_difference();
+			price = global.bow_level*4+6+rand_difference();
 		}
 		if (!audio_is_playing(sfx_new_offer)) audio_play_sound(sfx_new_offer, 10, false);
 		global.player_exp -= 10;
