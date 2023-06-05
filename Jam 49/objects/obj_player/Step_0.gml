@@ -16,6 +16,7 @@ if (hearts <= 0){
 	global.player_gems += obj_game.gems_to_gain - floor(obj_game.gems_to_gain * .8);	
 	ds_map_replace(obj_game.gamedata, "EXP", global.player_exp);
 	ds_map_replace(obj_game.gamedata, "gems", global.player_gems);
+	LootLockerSubmitScore("14517",string(global.player_exp));
 	global.flags = 0;
 	obj_game.exp_to_gain = 0;
 	obj_game.gems_to_gain = 0;
@@ -45,7 +46,6 @@ if (hearts <= 0){
 		}
 	
 	}
-	
 
 } else {
 

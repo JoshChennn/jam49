@@ -2,7 +2,7 @@ randomize();
 
 //AUDIO VOLUME
 global.sfxVol = 100;
-global.musicVol = 65;
+global.musicVol = 60;
 
 gems_to_gain = 0;
 exp_to_gain = 0;
@@ -18,7 +18,7 @@ if (!file_exists("gamedata.penguin")){
 	ds_map_replace(gamedata, "gems", global.player_gems);
 	
 	//Set username the first time
-	alarm_set(1,300);
+	alarm_set(1,60);
 	
 } else {
 
@@ -31,7 +31,7 @@ if (!file_exists("gamedata.penguin")){
 	global.musicVol = ds_map_find_value(gamedata, "bgm");
 	
 	if (global.sfxVol == undefined) global.sfxVol = 100;
-	if (global.musicVol == undefined) global.musicVol = 65;
+	if (global.musicVol == undefined) global.musicVol = 60;
 	
 }
 

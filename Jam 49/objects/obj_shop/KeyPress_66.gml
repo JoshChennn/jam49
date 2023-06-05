@@ -20,6 +20,7 @@ if (global.player_exp >= 10){
 		}
 		if (!audio_is_playing(sfx_new_offer)) audio_play_sound(sfx_new_offer, 10, false);
 		global.player_exp -= 10;
+		LootLockerSubmitScore("14517",string(global.player_exp));
 		var float = instance_create_layer(obj_camera.x,obj_camera.y,"Instances",obj_floatText);
 		float._text = "-10 EXP";
 		instance_destroy(typer);
