@@ -1,6 +1,6 @@
 if !instance_exists(obj_scroll) instance_destroy();
 else {
-	x = obj_scroll.x-115 + global.musicVol/10*29;
+	x = obj_scroll.x-115 + global.musicVol/10*28;
 	y = obj_scroll.y;
 }
 

@@ -227,7 +227,7 @@ if ((path_speed == 0) || (path_index = -1)) && (irandom(20) == 0) direction = po
 //health stuff
 if (hlth <= 0){
 
-	instance_create_depth(x, y, depth, obj_smoke);	
+	//instance_create_depth(x, y, depth, obj_smoke);	
 	instance_destroy();
 
 }
