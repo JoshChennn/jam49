@@ -19,4 +19,5 @@ if (room == rm_mirrorWorld) {
 		} until position_empty(xx,yy);
 		instance_create_layer(xx,yy,"Instances",obj_flag);
 	}
+	global.portalHealth = 100;
 }

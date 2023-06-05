@@ -1,4 +1,5 @@
 randomize();
+//file_delete("gamedata.penguin");
 
 alarm[2] = 240;
 

@@ -3,7 +3,7 @@ if (distance_to_object(obj_player) < 130 and popup == 0) {
 	popup = instance_create_layer(0,0,"Instances",obj_scroll);
 	popup.image_index = 1;
 	typer = instance_create_layer(0,0,"Instances",obj_typewriter);
-	typer._text = "";
+	typer._text = "Rnakings may take a few seconds to update. Fight monsters to gain EXP (crowns) and become king!";
 	if (!audio_is_playing(sfx_scroll_open)) audio_play_sound(sfx_scroll_open, 10, false);
 }
 else if popup != 0 and typer.typing = false {
