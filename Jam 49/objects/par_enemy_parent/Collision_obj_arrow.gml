@@ -1,5 +1,6 @@
 if (noob_mode <= 0 and other.speed != 0){
-
+	
+	hit_by_player = true;
 	noob_mode = 20;
 	hlth -= other.damage;
 	alarm[0] = -1;

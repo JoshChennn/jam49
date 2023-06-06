@@ -1,4 +1,6 @@
 if (noob_mode <= 0) && (other.swinging) && (!sound_played) {
+	
+	hit_by_player = true;
 
 	noob_mode = 20;
 	

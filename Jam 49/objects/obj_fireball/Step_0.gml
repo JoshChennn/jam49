@@ -9,7 +9,8 @@ if  ((!deflect) && (path_index == -1) && (alarm[0] == -1)) || place_meeting(x, y
 
 if (place_meeting(x, y, obj_player)) && (!obj_player.blink_mode){
 
-	instance_create_depth(x, y, depth, obj_explosion);
+	var explosion = instance_create_depth(x, y, depth, obj_explosion);
+	if (deflect) explosion.from_deflect = true;
 	if (!audio_is_playing(sfx_player_hit_fire)) audio_play_sound(sfx_player_hit_fire, 10, false);
 	instance_destroy();
 

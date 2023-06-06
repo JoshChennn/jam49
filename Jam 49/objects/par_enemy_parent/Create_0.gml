@@ -1,6 +1,7 @@
 sound_played = false;
 last_x = x;
 last_y = y;
+hit_by_player = false;
 
 portal = false;
 

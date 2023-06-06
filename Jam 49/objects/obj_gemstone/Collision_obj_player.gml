@@ -1,4 +1,7 @@
-obj_game.gems_to_gain += my_value;
+if (room == rm_mirrorWorld){
+	obj_game.gems_to_gain += my_value;
+} else global.player_gems += my_value;
+
 instance_destroy();
 
 if (obj_player.pick_up_sounds_playing < 4){
