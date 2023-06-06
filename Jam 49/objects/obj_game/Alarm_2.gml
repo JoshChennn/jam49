@@ -7,4 +7,6 @@ ds_map_replace(gamedata, "bow", global.bow_level);
 
 ds_map_secure_save(gamedata, "gamedata.penguin");
 
+LootLockerSubmitScore("14517",string(global.player_exp));
+
 alarm[2] = 240;

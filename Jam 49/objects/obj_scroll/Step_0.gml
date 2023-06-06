@@ -13,5 +13,5 @@ else if (!instance_exists(obj_buttonEscape) and (image_index == 3 or image_index
 	instance_create_depth(x, y-75, depth-1, obj_volumeSliderMusic);
 }
 else {
-	LootLockerSubmitScore("14517",string(global.player_exp));
+	//LootLockerSubmitScore("14517",string(global.player_exp));
 }

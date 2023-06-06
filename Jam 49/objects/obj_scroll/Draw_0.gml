@@ -1,11 +1,13 @@
 draw_self();
 
+
 if (image_index == 1) {
 	//Find and determine player rank
 	rank = LLPlayerRank();
-	//draw_text(x,y,string(rank));
-	if rank == 1 pos = 0;
-	else if rank > 1 and rank < 5 pos = 1;
+	if (rank == " ") or (rank == undefined) rank = 1;
+	draw_text(x,y,string(rank));
+	if (rank == 1) pos = 0;
+	else if (rank > 1) and (rank < 5) pos = 1;
 	else pos = 2;
 	
 	draw_set_font(fnt_type);
@@ -69,3 +71,4 @@ if (image_index == 1) {
 		}
 	}
 }
+

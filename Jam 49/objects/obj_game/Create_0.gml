@@ -12,7 +12,7 @@ global.sfxVol = 100;
 global.musicVol = 60;
 
 global.sword_level = 1;
-global.bow_level = 1;
+global.bow_level = 0;
 global.player_arrows = 0;
 
 gems_to_gain = 0;

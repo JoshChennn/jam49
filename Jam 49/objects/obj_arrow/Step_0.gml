@@ -7,7 +7,7 @@ if (obj_player.arrow == id) {
 depth = -y;
 
 
-if (obj_player.arrow != 0) && (speed = 0) && (obj_player._stretch < 10) && (keyboard_check_released(ord("N"))){
+if (obj_player.arrow != 0) && (speed == 0) && (obj_player._stretch < 10) && (keyboard_check_released(ord("B"))){
 	instance_destroy();
 	obj_player.arrow = 0;	
 }
